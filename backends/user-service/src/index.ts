@@ -33,9 +33,11 @@ app.post('/signUp', async (req:Request, res:Response, next:NextFunction) => {
         firstName,
         lastName,
         email, 
-        image} = req.body;
+        image,
+        favoriteFood,
+        city} = req.body;
         
-        if(!username|| !password || !firstName || !lastName || !email || !image){
+        if(!username|| !password || !firstName || !lastName || !email || !image || !favoriteFood || !city){
             next(new NewUserInputError)
         }
         else{
@@ -48,7 +50,9 @@ app.post('/signUp', async (req:Request, res:Response, next:NextFunction) => {
                 lastName,
                 email,
                 role: null, 
-                image}
+                image,
+                favoriteFood,
+                city}
             try{
                 let savedUser = await saveNewUserService(newUser)
                 res.status(201).send("Created")

@@ -53,7 +53,10 @@ userRouter.patch('/', async (req:Request, res:Response, next:NextFunction) => {
             lastName: req.body.lastName, 
             email: req.body.email,
             role: req.body.role,
-            image:req.body.image
+            image:req.body.image,
+            favoriteFood:req.body.favoriteFood,
+            city:req.body.city
+
         }
         console.log("in the router, just set the user")
         console.log(user.userId )
