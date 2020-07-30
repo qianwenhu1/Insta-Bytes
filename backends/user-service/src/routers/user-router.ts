@@ -19,12 +19,12 @@ userRouter.get('/', async (req:Request, res:Response, next:NextFunction) => {
     }
 })
 
-userRouter.get('/:id', async (req:Request, res:Response, next:NextFunction) => {
+userRouter.get('/:id', async (req:any, res:Response, next:NextFunction) => {
     let {id} = req.params;
     if(isNaN(+id)){
         next(new UserIdInputError)
     }
-    else if(req.session.user.role === "user" && req.session.user.userId !== +id){
+    else if(req.user.role === "user" && req.user.userId !== +id){
         next(new UnauthorizedEndPointError)
     }
     else{

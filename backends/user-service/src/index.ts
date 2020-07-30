@@ -1,7 +1,6 @@
 import express, { Request, Response, NextFunction } from 'express'
 import { userRouter } from './routers/user-router'
 import { loggingMiddleware } from './middleware/logging-middleware'
-import { sessionMiddleware } from './middleware/session-middleware'
 import { BadCredentialsError } from './errors/BadCredentialsError'
 import { getUsernameAndPassword } from './daos/SQL/users-dao'
 import { corsFilter } from './middleware/cors-filter'
@@ -10,6 +9,8 @@ import { User } from './models/User'
 import { saveNewUserService } from './services/user-service'
 import './event-listeners/new-user'
 import { NoUserToLogoutError } from './errors/NoUserToLogoutError'
+import jwt from 'jsonwebtoken'
+import { JWTVerifyMiddleware } from './middleware/jwt-verify-middleware'
 
 const app = express()
 
@@ -17,8 +18,7 @@ app.use(express.json({limit:'50mb'}))
 
 app.use(loggingMiddleware);
 app.use(corsFilter);
-app.use(sessionMiddleware);
-
+app.use(JWTVerifyMiddleware)
 
 app.use('/users', userRouter);
 
@@ -63,7 +63,7 @@ app.post('/signUp', async (req:Request, res:Response, next:NextFunction) => {
         }
 })
 
-app.post('/login', async (req:Request, res:Response, next:NextFunction) =>{
+app.post('/login', async (req:any, res:Response, next:NextFunction) =>{
     let username = req.body.username
     let password = req.body.password
 
@@ -72,7 +72,10 @@ app.post('/login', async (req:Request, res:Response, next:NextFunction) =>{
     } else {
         try{
             let user = await getUsernameAndPassword(username, password)
-            req.session.user = user
+            let token = jwt.sign(user, 'SecretKey', {expiresIn: '1h'})//THE SECRET should be in an env var
+            res.header('Authorization', `Bearer ${token}`)
+            req.user = user
+            console.log(user)
             res.json(user)
         }
         catch(e){
@@ -81,14 +84,14 @@ app.post('/login', async (req:Request, res:Response, next:NextFunction) =>{
     }
 })
 
-app.delete('/logout', async (req:Request, res:Response, next:NextFunction) => {
-    if (!req.session.user){
+app.delete('/logout', async (req:any, res:Response, next:NextFunction) => {
+    if (!req.user){
         next(new NoUserToLogoutError())
     }
     else {
         try{
-            req.session.user = null
-            res.json(req.session.user)
+            req.user = null
+            res.json(req.user)
         }
         catch(e){
             next(e)

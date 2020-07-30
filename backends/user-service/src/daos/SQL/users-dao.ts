@@ -35,6 +35,7 @@ export async function getAllUsers():Promise<User[]>{
 
 export async function getUserById(id: number):Promise<User>{
     let client:PoolClient;
+    
     try{
         client = await connectionPool.connect()
         let results:QueryResult = await client.query(`select u.user_id, 
@@ -51,7 +52,6 @@ export async function getUserById(id: number):Promise<User>{
         from ${schema}.users u left join ${schema}.roles r on u."role" = r.role_id 
         where u.user_id = $1;`,
         [id])
-        console.log(results.rowCount)
         if(results.rowCount === 0){
             throw new Error('User Not Found')
         }
