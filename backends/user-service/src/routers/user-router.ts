@@ -19,12 +19,12 @@ userRouter.get('/', async (req:Request, res:Response, next:NextFunction) => {
     }
 })
 
-userRouter.get('/:id', async (req:Request, res:Response, next:NextFunction) => {
+userRouter.get('/:id', async (req:any, res:Response, next:NextFunction) => {
     let {id} = req.params;
     if(isNaN(+id)){
         next(new UserIdInputError)
     }
-    else if(req.session.user.role === "user" && req.session.user.userId !== +id){
+    else if(req.user.role === "user" && req.user.userId !== +id){
         next(new UnauthorizedEndPointError)
     }
     else{
@@ -53,7 +53,10 @@ userRouter.patch('/', async (req:Request, res:Response, next:NextFunction) => {
             lastName: req.body.lastName, 
             email: req.body.email,
             role: req.body.role,
-            image:req.body.image
+            image:req.body.image,
+            favoriteFood:req.body.favoriteFood,
+            city:req.body.city
+
         }
         console.log("in the router, just set the user")
         console.log(user.userId )

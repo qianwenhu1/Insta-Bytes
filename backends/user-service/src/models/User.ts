@@ -10,4 +10,6 @@ export class User{
     email: string // not null
     role: Role // not null
     image?:string
+    favoriteFood?:string
+    city?:string
 }

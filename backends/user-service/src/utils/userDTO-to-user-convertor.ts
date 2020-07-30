@@ -10,6 +10,8 @@ export function UserDTOtoUserConvertor(udto:UserDTO):User{
         lastName: udto.last_name,
         email: udto.email,
         role: udto.role,
-        image:udto.image
+        image:udto.image,
+        favoriteFood:udto.favorite_food,
+        city:udto.city
     }
 }

@@ -1,11 +1,11 @@
-import { Request, Response, NextFunction } from "express"
+import { Response, NextFunction } from "express"
 
 
 export function authorizationMiddleware(roles:string[]){
-    return(req:Request, res:Response, next:NextFunction) => {
+    return(req:any, res:Response, next:NextFunction) => {
         let allowed = false
         for(const role of roles){
-            if(req.session.user.role === role){
+            if(req.user.role === role){
                 allowed = true
                 next()
             }

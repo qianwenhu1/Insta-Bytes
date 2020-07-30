@@ -19,7 +19,9 @@ export async function getAllUsers():Promise<User[]>{
         u.email , 
         r.role_id , 
         r."role",
-        u."image" from ${schema}.users u left join ${schema}.roles r on u."role" = r.role_id;`)
+        u."image",
+        u."favorite_food",
+        u."city" from ${schema}.users u left join ${schema}.roles r on u."role" = r.role_id;`)
         return results.rows.map(UserDTOtoUserConvertor);
     }
     catch(e){
@@ -33,6 +35,7 @@ export async function getAllUsers():Promise<User[]>{
 
 export async function getUserById(id: number):Promise<User>{
     let client:PoolClient;
+    
     try{
         client = await connectionPool.connect()
         let results:QueryResult = await client.query(`select u.user_id, 
@@ -43,11 +46,12 @@ export async function getUserById(id: number):Promise<User>{
         u.email ,
         r.role_id , 
         r."role",
-        u."image" 
+        u."image",
+        u."favorite_food",
+        u."city" 
         from ${schema}.users u left join ${schema}.roles r on u."role" = r.role_id 
         where u.user_id = $1;`,
         [id])
-        console.log(results.rowCount)
         if(results.rowCount === 0){
             throw new Error('User Not Found')
         }
@@ -130,6 +134,20 @@ export async function patchUser(user:User):Promise<User>{
             //console.log(updateResults.rows[0])
         }
 
+        if(user.favoriteFood){
+            console.log("in the favorite food")
+            await client.query(`update ${schema}.users 
+            set "favorite_food" = $1 where user_id = $2;`,[user.favoriteFood, userId])
+            //console.log(updateResults.rows[0])
+        }
+
+        if(user.city){
+            console.log("in the city")
+            await client.query(`update ${schema}.users 
+            set "city" = $1 where user_id = $2;`,[user.city, userId])
+            //console.log(updateResults.rows[0])
+        }
+
         let result:QueryResult = await client.query(`select u.user_id, 
         u.username , 
         u."password",
@@ -138,7 +156,9 @@ export async function patchUser(user:User):Promise<User>{
         u.email ,
         r.role_id , 
         r."role",
-        u."image" 
+        u."image",
+        u."favorite_food",
+        u."city" 
         from ${schema}.users u left join ${schema}.roles r on u."role" = r.role_id 
         where u.user_id = $1;`,
         [userId])
@@ -174,7 +194,9 @@ export async function getUsernameAndPassword(username:string, password:string):P
         u.email , 
         r.role_id , 
         r."role",
-        u."image"
+        u."image",
+        u."favorite_food",
+        u."city"
         from ${schema}.users u left join ${schema}.roles r on u."role" = r.role_id
         where u.username = $1 and u.password = $2;`,[username, password])
         if(results.rowCount === 0 ){
@@ -217,9 +239,9 @@ export async function saveNewUser(newUser:User):Promise<User>{
         let roleId = 3 
 
         let results = await client.query(` insert into ${schema}.users
-        ("username", "password", "first_name", "last_name", "email", "role", "image")
-        values($1,$2,$3,$4,$5,$6,$7) returning "user_id";`, 
-        [newUser.username, newUser.password, newUser.firstName, newUser.lastName, newUser.email, roleId, newUser.image])
+        ("username", "password", "first_name", "last_name", "email", "role", "image", "favorite_food", "city")
+        values($1,$2,$3,$4,$5,$6,$7,$8,$9) returning "user_id";`, 
+        [newUser.username, newUser.password, newUser.firstName, newUser.lastName, newUser.email, roleId, newUser.image, newUser.favoriteFood, newUser.city])
         
         newUser.userId = results.rows[0].user_id
         await client.query('COMMIT;')

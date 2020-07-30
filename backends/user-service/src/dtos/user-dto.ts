@@ -10,4 +10,7 @@ export class UserDTO {
     role: Role
     role_id: number
     image?:string
+    favorite_food?:string
+    city?:string
+
 }
