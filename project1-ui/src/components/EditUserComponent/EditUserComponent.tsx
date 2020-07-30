@@ -1,28 +1,36 @@
 import React, { FunctionComponent, SyntheticEvent, useState } from 'react'
-import { Button, TextField, Grid, Box } from '@material-ui/core'
+import { Button, TextField, Grid, Box, makeStyles, Typography, Paper } from '@material-ui/core'
 import { User } from '../../models/User'
 import { userUpdateUser } from '../../remote/users-api/user-update-user'
 import { RouteComponentProps } from 'react-router'
 import { toast, ToastContainer } from 'react-toastify'
 import 'react-toastify/dist/ReactToastify.css'
 
-
 //export const EditUserComponent:FunctionComponent<any> = (props) => {
 interface IUserDisplayProps extends RouteComponentProps{
     user:User
 }
 
-export const EditUserComponent:FunctionComponent<any> = (props) => {
+const useStyles = makeStyles((theme) => ({
+    paper:{
+        width: theme.spacing(42),
+        height: theme.spacing(80)
+    },
+}));
 
+
+export const EditUserComponent:FunctionComponent<any> = (props) => {
+    const classes = useStyles();
     console.log(props.user)
     let currUserId = props.user.userId
     
-
     let [username, changeUsername] = useState('')
     let [password, changePassword] = useState('')
     let [confirmPassword, changeConfirmPassword] = useState('')
     let [firstName, changeFirstName] = useState('')
     let [lastName, changeLastName] = useState('')
+    let [favoriteFood, changeFavoriteFood] = useState('')
+    let [city, changeCity] = useState('')
     let [email, changeEmail] = useState('')
     let [image, changeImage] = useState(null)
 
@@ -76,6 +84,26 @@ export const EditUserComponent:FunctionComponent<any> = (props) => {
         }
     }
 
+    const updateFavoriteFood = (e:any) => {
+        e.preventDefault()
+        if(e.currentTarget.value !== undefined){
+            changeFavoriteFood(e.currentTarget.value)
+        }
+        else{
+            changeFavoriteFood(props.user.favoriteFood)
+        }
+    }
+
+    const updateCity = (e:any) => {
+        e.preventDefault()
+        if(e.currentTarget.value !== undefined){
+            changeEmail(e.currentTarget.value)
+        }
+        else{
+            changeCity(props.user.city)
+        }
+    }
+
     const updateEmail = (e:any) => {
         e.preventDefault()
         if(e.currentTarget.value !== undefined){
@@ -109,6 +137,8 @@ export const EditUserComponent:FunctionComponent<any> = (props) => {
                 firstName,
                 lastName,
                 email,
+                favoriteFood,
+                city,
                 role:{
                     roleId:3,
                     role:"user"
@@ -131,20 +161,29 @@ export const EditUserComponent:FunctionComponent<any> = (props) => {
     return(
         <div>
             <Grid container direction="column" justify="flex-start" alignItems="center">
+            <Box m={1} pt={2}>
+            <Paper className={classes.paper} elevation={10}>
             <form onSubmit={updateUser}>
+                <Box m={2} pt={2}>
+                <Typography variant='h4'>Edit Info</Typography>
+                </Box>
                 <Box m={1} pt={2}>
                 <TextField id="standard-basic" label="Username" value={username} onChange={updateUsername}/>
                 <TextField id="standard-basic" type="password" label="Password" value={password} onChange={updatePassword}/>
                 <TextField id="standard-basic" type="password" label="Confirm Password" value={confirmPassword} onChange={updateConfirmPassword}/>
-                </Box>
-                <Box m={1} pt={2}>
+                {/* </Box> */}
+                {/* <Box m={1} pt={2}> */}
                 <TextField id="standard-basic" label="First Name" value={firstName} onChange={updateFirstName}/>
                 <TextField id="standard-basic" label="Last Name" value={lastName} onChange={updateLastName}/>              
                 <TextField id="standard-basic" type="email" label="Email" value={email} onChange={updateEmail}/>
-                </Box> 
+                {/* </Box> 
+                <Box m={1} pt={2}> */}
+                <TextField id="standard-basic" label="Favorite Food" value={favoriteFood} onChange={updateFavoriteFood}/>              
+                <TextField id="standard-basic" label="City" value={city} onChange={updateCity}/>
+                </Box>
                 <label htmlFor='file'>Profile Picture: </label>
                 <input type='file' name='file' accept='image/*' onChange={updateImage}/>
-                <img src={image}/>
+                {/* <img src={image}/> */}
                 <Grid item xs={12}>
                 <Box m = {2} pt= {2} pr={2}>
 
@@ -155,6 +194,8 @@ export const EditUserComponent:FunctionComponent<any> = (props) => {
                 </Box>
                 </Grid>
             </form>
+            </Paper>
+            </Box>
             </Grid>
             {/* < ToastContainer/> */}
         </div>
