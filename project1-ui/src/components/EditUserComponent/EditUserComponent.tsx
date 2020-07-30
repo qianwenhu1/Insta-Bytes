@@ -21,11 +21,9 @@ const useStyles = makeStyles((theme) => ({
 
 export const EditUserComponent:FunctionComponent<any> = (props) => {
     const classes = useStyles();
-    
     console.log(props.user)
     let currUserId = props.user.userId
     
-
     let [username, changeUsername] = useState('')
     let [password, changePassword] = useState('')
     let [confirmPassword, changeConfirmPassword] = useState('')
