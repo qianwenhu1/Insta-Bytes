@@ -36,7 +36,7 @@ export const NavBarComponent:FunctionComponent<any> = (props)=>{
         <AppBar position='static' style={{ background: '#4dd0e1' }}>
             <Toolbar>
           <Typography variant="h5" className={classes.title}>
-            innaConnection
+            instaBytes
           </Typography>
           {button}
         </Toolbar>

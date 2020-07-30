@@ -5,6 +5,8 @@ export interface User{
     firstName: string // not null
     lastName: string // not null
     email: string // not null
+    favoriteFood: string
+    city: string
     role: Role // not null
     image?:string
 }
