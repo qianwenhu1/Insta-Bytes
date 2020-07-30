@@ -81,7 +81,7 @@ export const NewUserComponent:FunctionComponent<any> = (props) => {
            toast.error('Passwords Do Not Match')
         }
         else{
-            if(username && password && firstName && lastName && email && image){
+            if(username && password && firstName && lastName && email && image && favoriteFood && city){
                 let newUser:User = {
                     username,
                     password,
