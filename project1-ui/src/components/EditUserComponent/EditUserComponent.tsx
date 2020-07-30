@@ -97,7 +97,7 @@ export const EditUserComponent:FunctionComponent<any> = (props) => {
     const updateCity = (e:any) => {
         e.preventDefault()
         if(e.currentTarget.value !== undefined){
-            changeEmail(e.currentTarget.value)
+            changeCity(e.currentTarget.value)
         }
         else{
             changeCity(props.user.city)
