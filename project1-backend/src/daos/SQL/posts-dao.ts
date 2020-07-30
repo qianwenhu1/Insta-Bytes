@@ -147,6 +147,25 @@ export async function saveNewpost(newPost:post):Promise<post>{
 }
 
 //Delete Post
-export async function deletePost(){
-    //unsure of what to do here
+export async function deletePost(Post:post):Promise<post>{
+    let client:PoolClient
+    try{
+        client = await connectionPool.connect()
+        await client.query('BEGIN;')
+
+        await client.query(` delete from posts p
+        where p."post_id" = $1`,
+        [Post.postId])
+        await client.query('COMMIT;')
+        //might keep just to verify post is now null
+        console.log(Post)
+        return Post
+
+    }catch(e){
+        client && client.query('ROLLBACK;')
+        console.log(e)
+        throw new Error('Unhandled Error Occured')
+    }finally{
+        client && client.release();
+    }
 }
