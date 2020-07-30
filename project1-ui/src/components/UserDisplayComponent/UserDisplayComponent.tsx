@@ -72,6 +72,14 @@ export const UserDisplayComponent:FunctionComponent<IUserDisplayProps> = (props)
                     <TableCell> {props.user?.email}</TableCell>
                 </TableRow>
                 <TableRow>
+                    <TableCell>Favorite Food: </TableCell>
+                    <TableCell> {props.user?.favoriteFood}</TableCell>
+                </TableRow>
+                <TableRow>
+                    <TableCell>City: </TableCell>
+                    <TableCell> {props.user?.city}</TableCell>
+                </TableRow>
+                <TableRow>
                     <TableCell>Role: </TableCell>
                     <TableCell> {props.user?.role}</TableCell>
                 </TableRow>
