@@ -6,7 +6,6 @@ import { RouteComponentProps } from 'react-router'
 import { toast, ToastContainer } from 'react-toastify'
 import 'react-toastify/dist/ReactToastify.css'
 
-//export const EditUserComponent:FunctionComponent<any> = (props) => {
 interface IUserDisplayProps extends RouteComponentProps{
     user:User
 }
