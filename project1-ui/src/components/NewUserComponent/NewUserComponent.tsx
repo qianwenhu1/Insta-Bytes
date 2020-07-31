@@ -14,7 +14,7 @@ const useStyles = makeStyles((theme) => ({
 
 export const NewUserComponent:FunctionComponent<any> = (props) => {
     const classes = useStyles();
-    
+
     let [username, changeUsername] = useState('')
     let [password, changePassword] = useState('')
     let [confirmPassword, changeConfirmPassword] = useState('')
