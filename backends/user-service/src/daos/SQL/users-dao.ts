@@ -5,6 +5,7 @@ import { UserNotFoundError } from "../../errors/UserNotFoundError";
 import { User } from "../../models/User";
 import { BadCredentialsError } from "../../errors/BadCredentialsError";
 import { NewUserInputError } from "../../errors/NewUserInputError";
+import { logger, errorLogger } from "../../utils/loggers";
 const schema = process.env['LB_SCHEMA'] || 'instabytes_user_service'
 
 export async function getAllUsers():Promise<User[]>{
@@ -25,7 +26,8 @@ export async function getAllUsers():Promise<User[]>{
         return results.rows.map(UserDTOtoUserConvertor);
     }
     catch(e){
-        console.log(e);
+        logger.error(e)
+        errorLogger.error(e)
         throw new Error('Unhandeled Error Occured')
     }
     finally{
@@ -60,7 +62,8 @@ export async function getUserById(id: number):Promise<User>{
         if(e.message === 'User Not Found'){
             throw new UserNotFoundError()
         }
-        console.log(e);
+        logger.error(e)
+        errorLogger.error(e)
         throw new Error('Unhandled Error Occured')
     } finally {
         client && client.release()
@@ -68,7 +71,6 @@ export async function getUserById(id: number):Promise<User>{
 }
 
 export async function patchUser(user:User):Promise<User>{
-    console.log("in patch")
     let client:PoolClient;
     try{
         client = await connectionPool.connect()
@@ -82,37 +84,26 @@ export async function patchUser(user:User):Promise<User>{
             throw new Error('User Not Found.')
         }
         userId = userId.rows[0].user_id
-        console.log(userId)
 
         if(user.username){
-            console.log("in the username")
             await client.query(`update ${schema}.users 
             set "username" = $1 where user_id = $2;`,[user.username, userId])
-            //console.log(updateResults.rows[0])
         }
         if(user.password){
-            console.log("in the password")
             await client.query(`update ${schema}.users 
             set "password" = $1 where user_id = $2;`,[user.password, userId])
-            //console.log(updateResults.rows[0])
         }
         if(user.firstName){
-            console.log("in the firstName")
             await client.query(`update ${schema}.users 
             set "first_name" = $1 where user_id = $2;`,[user.firstName, userId])
-            //console.log(updateResults.rows[0])
         }
         if(user.lastName){
-            console.log("in the lastName")
             await client.query(`update ${schema}.users 
             set "last_name" = $1 where user_id = $2;`,[user.lastName, userId])
-            //console.log(updateResults.rows[0])
         }
         if(user.email){
-            console.log("in the email")
             await client.query(`update ${schema}.users 
             set "email" = $1 where user_id = $2;`,[user.email, userId])
-            //console.log(updateResults.rows[0])
         }
         // if(user.role != undefined){
         //     console.log("in the role")
@@ -128,24 +119,18 @@ export async function patchUser(user:User):Promise<User>{
         //     console.log(updateResults.rows[0])
         // }
         if(user.image){
-            console.log("in the image")
             await client.query(`update ${schema}.users 
             set "image" = $1 where user_id = $2;`,[user.image, userId])
-            //console.log(updateResults.rows[0])
         }
 
         if(user.favoriteFood){
-            console.log("in the favorite food")
             await client.query(`update ${schema}.users 
             set "favorite_food" = $1 where user_id = $2;`,[user.favoriteFood, userId])
-            //console.log(updateResults.rows[0])
         }
 
         if(user.city){
-            console.log("in the city")
             await client.query(`update ${schema}.users 
             set "city" = $1 where user_id = $2;`,[user.city, userId])
-            //console.log(updateResults.rows[0])
         }
 
         let result:QueryResult = await client.query(`select u.user_id, 
@@ -163,7 +148,7 @@ export async function patchUser(user:User):Promise<User>{
         where u.user_id = $1;`,
         [userId])
         await client.query('COMMIT;')
-        console.log(result.rows[0])
+        logger.debug(`Here is the modifed user ${result.rows[0]}`)
         return UserDTOtoUserConvertor(result.rows[0])
     }
     catch(e){
@@ -174,7 +159,8 @@ export async function patchUser(user:User):Promise<User>{
         if(e.message === 'Role Not Found'){
             throw new Error('Rollback Error')
         }
-        console.log(e)
+        logger.error(e)
+        errorLogger.error(e)
         throw new Error('Unhandled Error Occured')
     }
     finally{
@@ -208,7 +194,8 @@ export async function getUsernameAndPassword(username:string, password:string):P
         if(e.message === 'User Not Found'){
             throw new BadCredentialsError()
         }
-        console.log(e)
+        logger.error(e)
+        errorLogger.error(e)
         throw new Error('Unhandled Error Occured')
     }
     finally{
@@ -245,7 +232,7 @@ export async function saveNewUser(newUser:User):Promise<User>{
         
         newUser.userId = results.rows[0].user_id
         await client.query('COMMIT;')
-        console.log(newUser)
+        logger.debug(`Save new user ${newUser}`)
         return newUser
 
     }catch(e){
@@ -253,7 +240,8 @@ export async function saveNewUser(newUser:User):Promise<User>{
         if(e.message === 'Role Not Found'){
             throw new NewUserInputError()
         }
-        console.log(e)
+        logger.error(e)
+        errorLogger.error(e)
         throw new Error('Unhandled Error Occured')
     }finally{
         client && client.release();

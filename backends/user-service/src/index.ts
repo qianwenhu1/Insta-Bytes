@@ -11,6 +11,7 @@ import './event-listeners/new-user'
 import { NoUserToLogoutError } from './errors/NoUserToLogoutError'
 import jwt from 'jsonwebtoken'
 import { JWTVerifyMiddleware } from './middleware/jwt-verify-middleware'
+import { logger, errorLogger } from './utils/loggers'
 
 const app = express()
 
@@ -41,7 +42,6 @@ app.post('/signUp', async (req:Request, res:Response, next:NextFunction) => {
             next(new NewUserInputError)
         }
         else{
-            console.log("in the else")
             let newUser: User = {
                 userId: 0,
                 username,
@@ -75,7 +75,7 @@ app.post('/login', async (req:any, res:Response, next:NextFunction) =>{
             let token = jwt.sign(user, 'SecretKey', {expiresIn: '1h'})//THE SECRET should be in an env var
             res.header('Authorization', `Bearer ${token}`)
             req.user = user
-            console.log(user)
+            //console.log(user)
             res.json(user)
         }
         catch(e){
@@ -103,14 +103,17 @@ app.delete('/logout', async (req:any, res:Response, next:NextFunction) => {
 
 app.use((err, req, res, next) => {
     if(err.statusCode){
+        logger.debug(err)
         res.status(err.statusCode).send(err.message)
     }
     else{
-        console.log(err)
+        logger.error(err)
+        errorLogger.error(err)  //print out to both location
         res.status(500).send("something went wrong")
     }
 })
 
 app.listen(2006, ()=>{
-    console.log('Server has started');
+    logger.info('Server has started');
 })
+

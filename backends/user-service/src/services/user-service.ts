@@ -3,6 +3,7 @@ import { getAllUsers, getUserById, saveNewUser, patchUser } from "../daos/SQL/us
 import { saveProfilePicture } from "../daos/Cloud-Storage/user-images";
 import { bucketBaseUrl } from "../daos/Cloud-Storage";
 import { expressEventEmitter, customExpressEvents } from "../event-listeners";
+import { errorLogger, logger } from "../utils/loggers";
 
 
 //calls the dao, easier to expand a function that already exists instead of inserting a new function
@@ -32,7 +33,8 @@ export async function saveNewUserService(newUser:User):Promise<User>{
     expressEventEmitter.emit(customExpressEvents.NEW_USER, newUser)
     return savedUser
 } catch(e){
-    console.log(e)
+    logger.error(e)
+    errorLogger.error(e)
     throw e
 }
 
@@ -40,22 +42,17 @@ export async function saveNewUserService(newUser:User):Promise<User>{
 
 export async function patchUserService(updateUser:User):Promise<User>{
     try{
-    console.log('in the user update')
-    console.log(updateUser.userId)
-    console.log(updateUser.username)
     let date = Date.now()
 
     let savedUser = undefined
     if(updateUser.image){
-        console.log("in the update image")
         let base64Image = updateUser.image
         let [dataType, imageBase64Data] = base64Image.split(';base64,')
         let contentType = dataType.split('/').pop()
 
         let userInfo = await getUserById(updateUser.userId)
 
-        console.log(userInfo.userId)
-        console.log(userInfo.username)
+        logger.info(`Start Changing ${userInfo.username} profile information`)
 
         updateUser.image = `${bucketBaseUrl}/users/${userInfo.username}/${date}/profile.${contentType}`
         savedUser = await patchUser(updateUser)
@@ -69,7 +66,8 @@ export async function patchUserService(updateUser:User):Promise<User>{
     //expressEventEmitter.emit(customExpressEvents.NEW_USER, updateUser)
     return savedUser
 } catch(e){
-    console.log(e)
+    logger.error(e)
+    errorLogger.error(e)
     throw e
 }
 
