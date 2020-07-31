@@ -1,16 +1,11 @@
 import express, { Request, Response, NextFunction } from 'express'
-import { userRouter } from './routers/user-router'
-import { loggingMiddleware } from './middleware/logging-middleware'
-import { BadCredentialsError } from './errors/BadCredentialsError'
-import { getUsernameAndPassword } from './daos/SQL/users-dao'
-import { corsFilter } from './middleware/cors-filter'
-import { NewUserInputError } from './errors/NewUserInputError'
-import { User } from './models/User'
-import { saveNewUserService } from './services/user-service'
-import './event-listeners/new-user'
-import { NoUserToLogoutError } from './errors/NoUserToLogoutError'
-import jwt from 'jsonwebtoken'
+//import jwt from 'jsonwebtoken'
 import { JWTVerifyMiddleware } from './middleware/jwt-verify-middleware'
+import { loggingMiddleware } from './middleware/logging-middleware'
+import { corsFilter } from './middleware/cors-filter'
+import { postRouter } from './routers/post-router'
+import { NewPostInputError } from './errors/NewPostInputError'
+import { Post } from './models/Post'
 
 const app = express()
 
@@ -20,86 +15,42 @@ app.use(loggingMiddleware);
 app.use(corsFilter);
 app.use(JWTVerifyMiddleware)
 
-app.use('/users', userRouter);
+app.use('/posts', postRouter);
 
 
 app.get('/health', (req:Request,res:Response)=>{
     res.sendStatus(200)
 })
 
-app.post('/signUp', async (req:Request, res:Response, next:NextFunction) => {
-    let {username,
-        password,
-        firstName,
-        lastName,
-        email, 
+app.post('/create', async (req:Request, res:Response, next:NextFunction) => {
+    let {
+        userId,
         image,
-        favoriteFood,
-        city} = req.body;
+        caption,
+        location,
+        date} = req.body;
         
-        if(!username|| !password || !firstName || !lastName || !email || !image || !favoriteFood || !city){
-            next(new NewUserInputError)
+        if(!userId|| !image || !date){
+            next(new NewPostInputError)
         }
         else{
             console.log("in the else")
-            let newUser: User = {
-                userId: 0,
-                username,
-                password,
-                firstName,
-                lastName,
-                email,
-                role: null, 
+            let newPost: Post = {
+                postId: 0,
+                userId,
                 image,
-                favoriteFood,
-                city}
+                caption,
+                location,
+                date}
             try{
-                let savedUser = await saveNewUserService(newUser)
+                let savedPost = await saveNewPost(newPost)
                 res.status(201).send("Created")
-                res.json(savedUser)
+                res.json(savedPost)
             } catch (e){
                 next(e)
             }   
         }
 })
-
-app.post('/login', async (req:any, res:Response, next:NextFunction) =>{
-    let username = req.body.username
-    let password = req.body.password
-
-    if(!username || !password){
-        next(new BadCredentialsError())
-    } else {
-        try{
-            let user = await getUsernameAndPassword(username, password)
-            let token = jwt.sign(user, 'SecretKey', {expiresIn: '1h'})//THE SECRET should be in an env var
-            res.header('Authorization', `Bearer ${token}`)
-            req.user = user
-            console.log(user)
-            res.json(user)
-        }
-        catch(e){
-            next(e)
-        }
-    }
-})
-
-app.delete('/logout', async (req:any, res:Response, next:NextFunction) => {
-    if (!req.user){
-        next(new NoUserToLogoutError())
-    }
-    else {
-        try{
-            req.user = null
-            res.json(req.user)
-        }
-        catch(e){
-            next(e)
-        }
-    }
-})
-
-//app.use(authenticationMiddleware);
 
 app.use((err, req, res, next) => {
     if(err.statusCode){
