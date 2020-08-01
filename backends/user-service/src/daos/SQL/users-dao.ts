@@ -6,6 +6,7 @@ import { User } from "../../models/User";
 import { BadCredentialsError } from "../../errors/BadCredentialsError";
 import { NewUserInputError } from "../../errors/NewUserInputError";
 import { logger, errorLogger } from "../../utils/loggers";
+
 const schema = process.env['LB_SCHEMA'] || 'instabytes_user_service'
 
 export async function getAllUsers():Promise<User[]>{
@@ -18,7 +19,7 @@ export async function getAllUsers():Promise<User[]>{
         u.first_name, 
         u.last_name, 
         u.email , 
-        r.role_id , 
+        r.role_id, 
         r."role",
         u."image",
         u."favorite_food",

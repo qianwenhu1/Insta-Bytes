@@ -5,6 +5,8 @@ import { NewPostInputError } from "../../errors/NewPostInputError";
 import { PostDTOtoPostConvertor } from "../../utils/postDTO-to-post-convertor";
 import { PostNotFoundError } from "../../errors/PostNotFoundError";
 
+export const schema = process.env['LB_SCHEMA'] || 'instabytes_post_service'
+
 export async function getAllPosts():Promise<Post[]>{
     let client:PoolClient;
     try{
@@ -14,7 +16,7 @@ export async function getAllPosts():Promise<Post[]>{
         p."image" , 
         p."caption", 
         p."location", 
-        p."date"  from posts p`)
+        p."date"  from ${schema}.posts p`)
         return results.rows.map(PostDTOtoPostConvertor);
     }
     catch(e){
@@ -35,7 +37,7 @@ export async function getPostById(id: number):Promise<Post>{
         p."image" , 
         p."caption", 
         p."location", 
-        p."date"  from posts p
+        p."date"  from ${schema}.posts p
         where p.post_id = $1;`,
         [id])
         console.log(results.rowCount)
@@ -54,77 +56,13 @@ export async function getPostById(id: number):Promise<Post>{
     }
 }
 
-export async function patchPost(post:Post):Promise<Post>{
-    console.log("in patch")
-    let client:PoolClient;
-    try{
-        client = await connectionPool.connect()
-        await client.query('BEGIN;')
-
-        //check if the post to update exists
-        let postId = await client.query(`select p.post_id from post p 
-        where p.post_id = $1`, [post.postId])
-
-        if(postId.rowCount === 0){
-            throw new Error('Post Not Found.')
-        }
-        postId = postId.rows[0].post_id
-        console.log(postId)
-
-        if(post.image){
-            console.log("in the image")
-            await client.query(`update posts 
-            set "image" = $1 where post_id = $2;`,[post.image, postId])
-            //console.log(updateResults.rows[0])
-        }
-        if(post.caption){
-            console.log("in the caption")
-            await client.query(`update post_reimbursement.posts 
-            set "caption" = $1 where post_id = $2;`,[post.caption, postId])
-            //console.log(updateResults.rows[0])
-        }
-        if(post.location){
-            console.log("in the location")
-            await client.query(`update posts 
-            set "location" = $1 where post_id = $2;`,[post.location, postId])
-            //console.log(updateResults.rows[0])
-        }
-
-        let results:QueryResult = await client.query(`select p.post_id, 
-        p.user_id , 
-        p."image" , 
-        p."caption", 
-        p."location", 
-        p."date"  from posts p
-        where p.post_id = $1;`,
-        [postId])
-        await client.query('COMMIT;')
-        console.log(results.rows[0])
-        return PostDTOtoPostConvertor(results.rows[0])
-    }
-    catch(e){
-        client && client.query('ROLLBACK;')
-        if(e.message === 'Post Not Found'){
-            throw new PostNotFoundError()
-        }
-        if(e.message === 'Role Not Found'){
-            throw new Error('Rollback Error')
-        }
-        console.log(e)
-        throw new Error('Unhandled Error Occured')
-    }
-    finally{
-        client && client.release()
-    }
-}
-
-export async function saveNewpost(newPost:Post):Promise<Post>{
+export async function saveNewPost(newPost:Post):Promise<Post>{
     let client:PoolClient
     try{
         client = await connectionPool.connect()
         await client.query('BEGIN;')
 
-        let results = await client.query(` insert into posts
+        let results = await client.query(` insert into ${schema}.posts
         ("user_id", "image", "caption", "location", "date")
         values($1,$2,$3,$4,$5) returning "post_id";`, 
         [newPost.userId, newPost.image, newPost.caption, newPost.location, newPost.date])
@@ -147,19 +85,22 @@ export async function saveNewpost(newPost:Post):Promise<Post>{
 }
 
 //Delete Post
-export async function deletePost(Post:Post):Promise<Post>{
+export async function deletePost(id: number):Promise<number>{
     let client:PoolClient
     try{
         client = await connectionPool.connect()
         await client.query('BEGIN;')
 
-        await client.query(` delete from posts p
+        await client.query(`delete from ${schema}.posts p
         where p."post_id" = $1`,
-        [Post.postId])
+        [id])
+
+
         await client.query('COMMIT;')
         //might keep just to verify post is now null
-        console.log(Post)
-        return Post
+        //console.log(post)
+        //returning this id might give an error, we shall see
+        return id
 
     }catch(e){
         client && client.query('ROLLBACK;')
@@ -169,3 +110,67 @@ export async function deletePost(Post:Post):Promise<Post>{
         client && client.release();
     }
 }
+
+//export async function patchPost(post:Post):Promise<Post>{
+    //     console.log("in patch")
+    //     let client:PoolClient;
+    //     try{
+    //         client = await connectionPool.connect()
+    //         await client.query('BEGIN;')
+    
+    //         //check if the post to update exists
+    //         let postId = await client.query(`select p.post_id from post p 
+    //         where p.post_id = $1`, [post.postId])
+    
+    //         if(postId.rowCount === 0){
+    //             throw new Error('Post Not Found.')
+    //         }
+    //         postId = postId.rows[0].post_id
+    //         console.log(postId)
+    
+    //         if(post.image){
+    //             console.log("in the image")
+    //             await client.query(`update posts 
+    //             set "image" = $1 where post_id = $2;`,[post.image, postId])
+    //             //console.log(updateResults.rows[0])
+    //         }
+    //         if(post.caption){
+    //             console.log("in the caption")
+    //             await client.query(`update post_reimbursement.posts 
+    //             set "caption" = $1 where post_id = $2;`,[post.caption, postId])
+    //             //console.log(updateResults.rows[0])
+    //         }
+    //         if(post.location){
+    //             console.log("in the location")
+    //             await client.query(`update posts 
+    //             set "location" = $1 where post_id = $2;`,[post.location, postId])
+    //             //console.log(updateResults.rows[0])
+    //         }
+    
+    //         let results:QueryResult = await client.query(`select p.post_id, 
+    //         p.user_id , 
+    //         p."image" , 
+    //         p."caption", 
+    //         p."location", 
+    //         p."date"  from posts p
+    //         where p.post_id = $1;`,
+    //         [postId])
+    //         await client.query('COMMIT;')
+    //         console.log(results.rows[0])
+    //         return PostDTOtoPostConvertor(results.rows[0])
+    //     }
+    //     catch(e){
+    //         client && client.query('ROLLBACK;')
+    //         if(e.message === 'Post Not Found'){
+    //             throw new PostNotFoundError()
+    //         }
+    //         if(e.message === 'Role Not Found'){
+    //             throw new Error('Rollback Error')
+    //         }
+    //         console.log(e)
+    //         throw new Error('Unhandled Error Occured')
+    //     }
+    //     finally{
+    //         client && client.release()
+    //     }
+    // }
