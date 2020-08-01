@@ -55,14 +55,15 @@ export const LoginComponent:FunctionComponent<ILoginProps> = (props) => {
         let res = await userLogin(username, password)
         if(res === undefined){
             toast.error('Incorrect Username or Password')
-            props.history.push('/login')
+            props.history.push('/login')            
         }
         else{
             props.changeCurrentUser(res)
             changePassword('')
             console.log(res)
             console.log(res.userId)
-            props.history.push(`/profile/${(res)?res.userId : '0' }`)
+            //props.history.push(`/profile/${(res)?res.userId : '0' }`)       
+            props.history.push(`/home`)      // after login go to home page
         }
     }
     

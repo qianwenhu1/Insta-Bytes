@@ -38,13 +38,14 @@ postRouter.get('/:id', async (req:any, res:Response, next:NextFunction) => {
 })
 
 postRouter.post('/create', async (req:Request, res:Response, next:NextFunction) => {
+    console.log("In backend post create");
+    
     let {
         userId,
         image,
         caption,
-        location,
-        date} = req.body;
-        if(!userId|| !image || !date){
+        location} = req.body;
+        if(!userId|| !image){
             next(new NewPostInputError)
         }
         else{
@@ -55,7 +56,7 @@ postRouter.post('/create', async (req:Request, res:Response, next:NextFunction) 
                 image,
                 caption,
                 location,
-                date}
+                date: BigInt(Date.now())}
             try{
                 let savedPost = await saveNewPostService(newPost)
                 res.status(201).send("Created")
