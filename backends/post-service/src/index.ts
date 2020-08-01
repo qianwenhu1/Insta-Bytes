@@ -1,4 +1,4 @@
-import express, { Request, Response, NextFunction } from 'express'
+import express, { Request, Response } from 'express'
 import { JWTVerifyMiddleware } from './middleware/jwt-verify-middleware'
 import { loggingMiddleware } from './middleware/logging-middleware'
 import { corsFilter } from './middleware/cors-filter'
@@ -61,6 +61,6 @@ app.use((err, req, res, next) => {
     }
 })
 
-app.listen(2006, ()=>{
+app.listen(2007, ()=>{
     console.log('Server has started');
 })

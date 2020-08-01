@@ -9,6 +9,8 @@ import { NewUserComponent } from './components/NewUserComponent/NewUserComponent
 import { EditUserComponent } from './components/EditUserComponent/EditUserComponent'
 import { ToastContainer } from 'react-toastify'
 import { LogoutComponent } from './components/LogoutComponent/LogoutComponent'
+import { HomeComponent } from './components/HomeComponent/HomeComponent';
+import { NewPostComponent } from './components/NewPostComponent/NewPostComponent';
 
 function App() {
   const [currentUser, changeCurrentUser] = useState<null | User>(null)
@@ -18,6 +20,8 @@ function App() {
         <NavBarComponent user={currentUser}/>
         <Route exact path="/"><Redirect to="/login"/></Route>
         <Route path='/login' render={(props) => (<LoginComponent changeCurrentUser={changeCurrentUser} {...props}/>)}/>
+        <Route path='/home' render={(props) => (<HomeComponent user={currentUser} {...props}/>)} />
+        <Route path='/newpost' render={(props) => (<NewPostComponent user={currentUser} {...props}/>)} />
         <Route exact path='/profile/:userId' component={ProfileComponent} user={currentUser}/>
         {/* <Route path='/profile/:userId' render={(props)=>(<ProfileComponent user={currentUser} {...props}/>)}/> */}
         <Route path='/new' component={NewUserComponent}/>
