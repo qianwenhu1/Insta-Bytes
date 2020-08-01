@@ -1,10 +1,14 @@
 import { Post } from "../models/Post"
 import { bucketBaseUrl } from "../daos/Cloud-Storage"
-import { saveNewPost, getAllPosts, getPostById, deletePost } from "../daos/SQL/posts-dao"
+import { saveNewPost, getAllPosts, getPostById, deletePost, getPostsByUserId } from "../daos/SQL/posts-dao"
 import { savePostPicture } from "../daos/Cloud-Storage/user-posts";
 
 export async function getAllPostsService():Promise<Post[]>{
     return await getAllPosts()
+}
+
+export async function getPostByUserIDService(id:number):Promise<Post[]>{
+    return await getPostsByUserId(id)
 }
 
 export async function getPostByIDService(id:number):Promise<Post>{

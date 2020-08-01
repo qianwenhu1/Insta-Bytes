@@ -1,0 +1,70 @@
+import React, { FunctionComponent, SyntheticEvent } from 'react'
+import Paper from '@material-ui/core/Paper'
+import Typography from '@material-ui/core/Typography'
+import { Theme, createStyles, makeStyles } from '@material-ui/core/styles';
+import Button from '@material-ui/core/Button'
+import { Post } from '../../models/Post';
+import { postDelete } from '../../remote/posts-api/post-delete';
+import { toast } from 'react-toastify';
+
+// interface IPostDisplayProps{
+//     post:Post
+// }
+
+
+const useStyles = makeStyles((theme: Theme) =>
+  createStyles({
+    root: {
+      display: 'flex',
+      flexWrap: 'wrap',
+      '& > *': {
+        margin: theme.spacing(5),
+        width: theme.spacing(40),
+        height: theme.spacing(30),
+      },
+    },
+    paper:{
+        backgroundColor:'white' 
+    }
+  }),
+);
+
+
+
+
+export const PostByUserDisplayComponent:FunctionComponent<any> = (props)=>{
+    let classes = useStyles()
+
+    const deleteSubmit = async (e:SyntheticEvent) => {
+        e.preventDefault()
+        let res = await postDelete(props.post.postId)
+        console.log(res)
+        toast.success('Deleted')
+        props.history.push(`/home`)
+        //props.history.push(`/posts/users/${props.post.userId}`)
+        //<Redirect to=`/posts/users/${props.post.userId}`/>
+    }
+
+    return(
+        <div className={classes.root}>
+            <form autoComplete="off" onSubmit={deleteSubmit}>
+                <Paper className={classes.paper}elevation={4}>
+                <Typography variant='body1'>
+                    User Id : {props.post.userId}
+                    </Typography>
+                    <Typography variant='body1'>
+                    Caption : {props.post.caption}
+                    </Typography>
+                    <Typography variant='body1'>
+                    Location : {props.post.location}
+                    </Typography>
+                    <Typography variant='body1'>
+                    Date : {props.post.date}
+                    </Typography>
+                    <img src={props.post?.image}/>
+                    <Button type= 'submit' variant='contained' color='inherit'>Delete</Button>
+                </Paper>
+            </form>
+        </div>
+    )
+}

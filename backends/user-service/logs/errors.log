@@ -1,0 +1,26 @@
+[2020-08-01T13:08:44.236] [ERROR] error - TokenExpiredError: jwt expired
+    at C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\user-service\node_modules\jsonwebtoken\verify.js:152:21
+    at getSecret (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\user-service\node_modules\jsonwebtoken\verify.js:90:14)
+    at Object.module.exports [as verify] (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\user-service\node_modules\jsonwebtoken\verify.js:94:10)
+    at exports.JWTVerifyMiddleware (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\user-service\src\middleware\jwt-verify-middleware.ts:9:28)
+    at Layer.handle [as handle_request] (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\user-service\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\user-service\node_modules\express\lib\router\index.js:317:13)
+    at C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\user-service\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\user-service\node_modules\express\lib\router\index.js:335:12)
+    at next (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\user-service\node_modules\express\lib\router\index.js:275:10)
+    at corsFilter (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\user-service\src\middleware\cors-filter.ts:16:9) {
+  expiredAt: 2020-08-01T17:06:18.000Z
+}
+[2020-08-01T13:08:44.252] [ERROR] error - TokenExpiredError: jwt expired
+    at C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\user-service\node_modules\jsonwebtoken\verify.js:152:21
+    at getSecret (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\user-service\node_modules\jsonwebtoken\verify.js:90:14)
+    at Object.module.exports [as verify] (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\user-service\node_modules\jsonwebtoken\verify.js:94:10)
+    at exports.JWTVerifyMiddleware (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\user-service\src\middleware\jwt-verify-middleware.ts:9:28)
+    at Layer.handle [as handle_request] (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\user-service\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\user-service\node_modules\express\lib\router\index.js:317:13)
+    at C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\user-service\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\user-service\node_modules\express\lib\router\index.js:335:12)
+    at next (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\user-service\node_modules\express\lib\router\index.js:275:10)
+    at corsFilter (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\user-service\src\middleware\cors-filter.ts:16:9) {
+  expiredAt: 2020-08-01T17:06:18.000Z
+}

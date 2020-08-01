@@ -2,7 +2,7 @@ import express, { Request, Response, NextFunction} from 'express'
 import { PostIdInputError } from '../errors/PostIdInputError';
 import { Post } from '../models/Post';
 import { NewPostInputError } from '../errors/NewPostInputError';
-import { getAllPostsService, getPostByIDService, saveNewPostService, deletePostService } from '../services/post-service';
+import { getAllPostsService, getPostByIDService, saveNewPostService, deletePostService, getPostByUserIDService } from '../services/post-service';
 
 export let postRouter = express.Router()
 
@@ -18,6 +18,22 @@ postRouter.get('/', async (req:Request, res:Response, next:NextFunction) => {
         next(e)
     }
 })
+
+postRouter.get('/users/:id', async (req:any, res:Response, next:NextFunction) => {
+    let {id} = req.params;
+    if(isNaN(+id)){
+        next(new PostIdInputError)
+    }
+    else{
+        try{
+            let post = await getPostByUserIDService(+id)
+            res.json(post)
+        } catch (e){
+            next(e)
+        }
+    }
+})
+
 
 postRouter.get('/:id', async (req:any, res:Response, next:NextFunction) => {
     let {id} = req.params;

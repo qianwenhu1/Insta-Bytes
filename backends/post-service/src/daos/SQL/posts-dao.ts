@@ -28,6 +28,33 @@ export async function getAllPosts():Promise<Post[]>{
     }
 }
 
+export async function getPostsByUserId(id: number):Promise<Post[]>{
+    let client:PoolClient;
+    try{
+        client = await connectionPool.connect()
+        let results:QueryResult = await client.query(`select p.post_id, 
+        p.user_id , 
+        p."image" , 
+        p."caption", 
+        p."location", 
+        p."date"  from ${schema}.posts p
+        where p.user_id = $1;`,[id])
+        // if(results.rowCount === 0){
+        //     throw new Error('No posts')
+        // }
+        return results.rows.map(PostDTOtoPostConvertor);
+    }
+    catch(e){
+        console.log(e);
+        throw new Error('Unhandeled Error Occured')
+    }
+    finally{
+        client && client.release();
+    }
+}
+
+
+
 export async function getPostById(id: number):Promise<Post>{
     let client:PoolClient;
     try{
@@ -174,3 +201,4 @@ export async function deletePost(id: number):Promise<number>{
     //         client && client.release()
     //     }
     // }
+
