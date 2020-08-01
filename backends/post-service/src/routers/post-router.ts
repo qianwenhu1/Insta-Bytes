@@ -1,8 +1,8 @@
 import express, { Request, Response, NextFunction} from 'express'
-import { getAllPosts, getPostById } from '../daos/SQL/posts-dao';
 import { PostIdInputError } from '../errors/PostIdInputError';
-import { Post } from '../models/post';
-import { patchUserService } from '../services/user-service';
+import { Post } from '../models/Post';
+import { NewPostInputError } from '../errors/NewPostInputError';
+import { getAllPostsService, getPostByIDService, saveNewPostService, deletePostService } from '../services/post-service';
 
 export let postRouter = express.Router()
 
@@ -11,7 +11,7 @@ export let postRouter = express.Router()
 
 postRouter.get('/', async (req:Request, res:Response, next:NextFunction) => {
     try{
-        let allPosts = await getAllPosts()
+        let allPosts = await getAllPostsService()
         res.json(allPosts)
     }
     catch(e){
@@ -24,12 +24,12 @@ postRouter.get('/:id', async (req:any, res:Response, next:NextFunction) => {
     if(isNaN(+id)){
         next(new PostIdInputError)
     }
-    /*else if(req.user.role === "user" && req.user.userId !== +id){
-        next(new UnauthorizedEndPointError)
-    }*/
+    // else if(req.user.role === "user" && req.user.userId !== +id){
+    //     next(new UnauthorizedEndPointError)
+    // }
     else{
         try{
-            let post = await getPostById(+id)
+            let post = await getPostByIDService(+id)
             res.json(post)
         } catch (e){
             next(e)
@@ -37,30 +37,74 @@ postRouter.get('/:id', async (req:any, res:Response, next:NextFunction) => {
     }
 })
 
-postRouter.patch('/', async (req:Request, res:Response, next:NextFunction) => {
-    let id = req.body.userId;
-    console.log(req.body);
-    console.log(id)
+postRouter.post('/create', async (req:Request, res:Response, next:NextFunction) => {
+    let {
+        userId,
+        image,
+        caption,
+        location,
+        date} = req.body;
+        if(!userId|| !image || !date){
+            next(new NewPostInputError)
+        }
+        else{
+            console.log("in the else")
+            let newPost: Post={
+                postId: 0,
+                userId,
+                image,
+                caption,
+                location,
+                date}
+            try{
+                let savedPost = await saveNewPostService(newPost)
+                res.status(201).send("Created")
+                res.json(savedPost)
+            } catch (e){
+                next(e)
+            }   
+        }
+})
+
+postRouter.delete('/:id', async (req:any, res:Response, next:NextFunction) => {
+    let {id} = req.params;
     if(isNaN(+id)){
         next(new PostIdInputError)
     }
     else{
-        let post: Post = {
-            postId: id,
-            userId: req.body.userId,
-            image: req.body.image,
-            caption: req.body.caption,
-            location: req.body.location,
-            date: req.body.date
-        }
-        console.log("in the router, just set the post")
-        console.log(post.postId)
-        console.log(post.userId)
         try{
-            let updatedPost = await patchUserService(post)
-            res.json(updatedPost)
+            await deletePostService(+id)
+            res.json(req.postId)
         } catch (e){
             next(e)
-        } 
+        }
     }
 })
+
+//postRouter.patch('/', async (req:Request, res:Response, next:NextFunction) => {
+    //     let id = req.body.userId;
+    //     console.log(req.body);
+    //     console.log(id)
+    //     if(isNaN(+id)){
+    //         next(new PostIdInputError)
+    //     }
+    //     else{
+    //         let post: Post = {
+    //             postId: id,
+    //             userId: req.body.userId,
+    //             image: req.body.image,
+    //             caption: req.body.caption,
+    //             location: req.body.location,
+    //             date: req.body.date
+    //         }
+    //         console.log("in the router, just set the post")
+    //         console.log(post.postId)
+    //         console.log(post.userId)
+    //         try{
+    //             let updatedPost = await patchUserService(post)
+    //             res.json(updatedPost)
+    //         } catch (e){
+    //             next(e)
+    //         } 
+    //     }
+    // })

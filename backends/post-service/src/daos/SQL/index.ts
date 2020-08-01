@@ -9,3 +9,5 @@ export const connectionPool:Pool = new Pool({
     port:5432, // the db port
     max:5 // max number of connections
 })
+
+export const schema = process.env['LB_SCHEMA'] || 'instabytes_post_service'
