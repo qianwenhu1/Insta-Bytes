@@ -2,25 +2,34 @@ import { FunctionComponent, SyntheticEvent } from 'react';
 import {Link} from 'react-router-dom'
 import React from 'react';
 import { Box, Button } from '@material-ui/core';
+import { AllPostsComponent } from '../AllPostsComponent/AllPostsComponent';
 
 
 
 
 export const HomeComponent:FunctionComponent<any> = (props) => {
-    const loginSubmit = async (e:SyntheticEvent) => {
+    const ProfileSubmit = async (e:SyntheticEvent) => {
         e.preventDefault()
         props.history.push(`/profile/${(props.user)?props.user.userId : '0' }`)         
     }
-
+    const MyPostSubmit = async (e:SyntheticEvent) => {
+        e.preventDefault()
+        props.history.push(`/posts/users/${props.user.userId}`)         
+    }
     return(
         <div>
             <Link to='/newpost'>Make a post</Link>
-            <form autoComplete="off" onSubmit={loginSubmit}>
-                
-                    <Box m={1} pt={1}>
-                        <Button type="submit" variant="contained"  style={{ background: '#4dd0e1' }}>Profile</Button>
-                    </Box>
+            <form autoComplete="off" onSubmit={ProfileSubmit}>
+                <Box m={1} pt={1}>
+                    <Button type="submit" variant="contained"  style={{ background: '#4dd0e1' }}>Profile</Button>
+                </Box>
             </form>
+            <form autoComplete="off" onSubmit={MyPostSubmit}>
+                <Box m={1} pt={1}>
+                    <Button type="submit" variant="contained"  style={{ background: '#4dd0e1' }}>My Posts</Button>
+                </Box>
+            </form>
+            <AllPostsComponent/>
         </div>
     );
 }
