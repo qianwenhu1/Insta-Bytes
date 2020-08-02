@@ -22,8 +22,14 @@ const useStyles = makeStyles((theme: Theme) =>
       },
     },
     paper:{
-        backgroundColor:'white' 
-    }
+        backgroundColor:'white'
+        // width: 300,
+        // margin:'auto'
+    },
+    // media: {
+    //   height: 550,
+    //   width: '100%'
+    // }
   }),
 );
 
