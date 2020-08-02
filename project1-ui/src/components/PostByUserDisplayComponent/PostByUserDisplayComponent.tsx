@@ -6,28 +6,67 @@ import Button from '@material-ui/core/Button'
 import { Post } from '../../models/Post';
 import { postDelete } from '../../remote/posts-api/post-delete';
 import { toast } from 'react-toastify';
+import { Card, CardContent, CardActions, IconButton, CardMedia, CardHeader, Avatar, Grid } from '@material-ui/core';
+import DeleteIcon from '@material-ui/icons/Delete';
+import FavoriteIcon from '@material-ui/icons/Favorite';
 
 // interface IPostDisplayProps{
 //     post:Post
 // }
 
 
-const useStyles = makeStyles((theme: Theme) =>
-  createStyles({
-    root: {
-      display: 'flex',
-      flexWrap: 'wrap',
-      '& > *': {
-        margin: theme.spacing(5),
-        width: theme.spacing(40),
-        height: theme.spacing(30),
-      },
-    },
-    paper:{
-        backgroundColor:'white' 
-    }
-  }),
-);
+// const useStyles = makeStyles((theme: Theme) =>
+//   createStyles({
+//     root: {
+//       display: 'flex',
+//       flexWrap: 'wrap',
+//       '& > *': {
+//         margin: theme.spacing(5),
+//         width: theme.spacing(40),
+//         height: theme.spacing(30),
+//       },
+//     },
+//     paper:{
+//         backgroundColor:'white' 
+//     }
+//   }),
+// );
+
+const useStyles = makeStyles((theme) => ({
+  root1: {
+    maxWidth: 400,
+  },
+  root: {
+          display: 'flex',
+          flexWrap: 'wrap',
+          '& > *': {
+            margin: theme.spacing(5),
+            width: theme.spacing(70),
+            height: theme.spacing(52),
+          },
+        },
+  media: {
+    height: 0,
+    paddingTop: '56.25%', // 16:9
+    width: '100%'
+  },
+  expand: {
+    transform: 'rotate(0deg)',
+    marginLeft: 'auto',
+    transition: theme.transitions.create('transform', {
+      duration: theme.transitions.duration.shortest,
+    }),
+  },
+  expandOpen: {
+    transform: 'rotate(180deg)',
+  },
+  header:{
+    background: '#4dd0e1'
+  },
+  paper:{
+    backgroundColor:'white' 
+}
+}));
 
 
 
@@ -46,8 +85,10 @@ export const PostByUserDisplayComponent:FunctionComponent<any> = (props)=>{
     }
 
     return(
-        <div className={classes.root}>
-            <form autoComplete="off" onSubmit={deleteSubmit}>
+          <Grid container direction="column" alignItems="center" justify="center">
+            <div className={classes.root}>
+            <Grid item xs={8} justify="center">
+            {/* <form autoComplete="off" onSubmit={deleteSubmit}>
                 <Paper className={classes.paper}elevation={4}>
                 <Typography variant='body1'>
                     User Id : {props.post.userId}
@@ -64,7 +105,35 @@ export const PostByUserDisplayComponent:FunctionComponent<any> = (props)=>{
                     <img src={props.post?.image}/>
                     <Button type= 'submit' variant='contained' color='inherit'>Delete</Button>
                 </Paper>
-            </form>
-        </div>
+            </form> */}
+            <Card className={classes.root1}>
+            <CardHeader className={classes.header}
+            avatar={
+              <Avatar/>
+            }
+              title={props.post.location}
+              subheader = {props.post.date}
+          />
+          <CardMedia
+            className={classes.media}
+            image={props.post?.image}
+          />
+          <CardContent>
+            <Typography variant="body1" color="textSecondary" component="p">
+            {props.post.caption}
+            </Typography>
+          </CardContent>
+          <CardActions disableSpacing>
+          <IconButton>
+            <FavoriteIcon />
+          </IconButton>
+          <IconButton onClick = {deleteSubmit}>
+            <DeleteIcon/>
+          </IconButton>
+          </CardActions>
+            </Card>
+          </Grid>
+          </div>
+          </Grid>
     )
 }

@@ -3,7 +3,7 @@ import {Link} from 'react-router-dom'
 import React from 'react';
 import { Box, Button } from '@material-ui/core';
 import { AllPostsComponent } from '../AllPostsComponent/AllPostsComponent';
-
+import AddCircleIcon from '@material-ui/icons/AddCircle';
 
 
 
@@ -18,8 +18,9 @@ export const HomeComponent:FunctionComponent<any> = (props) => {
     }
     return(
         <div>
-            <Link to='/newpost'>Make a post</Link>
-            <form autoComplete="off" onSubmit={ProfileSubmit}>
+            {/* <Link to='/newpost'>Make a post</Link> */}
+            <h2>Share your bites! <Link to='/newpost'><AddCircleIcon style={{fill:'#4dd0e1'}}/></Link></h2>
+            {/* <form autoComplete="off" onSubmit={ProfileSubmit}>
                 <Box m={1} pt={1}>
                     <Button type="submit" variant="contained"  style={{ background: '#4dd0e1' }}>Profile</Button>
                 </Box>
@@ -28,7 +29,7 @@ export const HomeComponent:FunctionComponent<any> = (props) => {
                 <Box m={1} pt={1}>
                     <Button type="submit" variant="contained"  style={{ background: '#4dd0e1' }}>My Posts</Button>
                 </Box>
-            </form>
+            </form> */}
             <AllPostsComponent/>
         </div>
     );
