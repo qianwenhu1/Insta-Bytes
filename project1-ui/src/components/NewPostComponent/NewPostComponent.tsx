@@ -6,8 +6,8 @@ import { postSavePost } from '../../remote/posts-api/post-save-post'
 
 const useStyles = makeStyles((theme) => ({
     paper:{
-        width: theme.spacing(42),
-        height: theme.spacing(80)
+        width: theme.spacing(60),
+        height: theme.spacing(50)
     },
 }));
 
@@ -82,26 +82,43 @@ export const NewPostComponent:FunctionComponent<any> = (props) => {
     return(
         <div>
             <Grid container direction="column" justify="flex-start" alignItems="center">
+            
             <Box m={1} pt={2}>
             <Paper className={classes.paper} elevation={10}>
             <form onSubmit={submitPost}>
                 <Box m={2} pt={2}>
                 <Typography variant='h4'>Make a Post</Typography>
                 </Box>
+                <Grid container direction="column" alignItems="center">
+                <Grid item xs={3}>
+                {/* <label htmlFor='file'>Picture: </label> */}
                 <Box m={1} pt={1}>
-                <TextField id="standard-basic" label="Caption" value={caption} onChange={updateCaption}/>
-                
+                <input type='file' name='file' accept='image/*' onChange={updateImage}/>
+                </Box>
+                {/* <img src={image}/> */}
+                </Grid>
+                {/* </Grid>
+                <Grid container direction="column" alignItems="flex-end"> */}
+                <Grid item xs={8}>
+                <Box m={1} pt={1}>
+                {/* <TextField id="standard-basic" label="Caption" value={caption} onChange={updateCaption}/> */}
+                <TextField id="outlined-basic" label="Caption" variant="outlined" value={caption} onChange={updateCaption}/>
+                </Box>
+                </Grid> 
+                <Grid item xs={8}>
+                <Box m={1} pt={1}>
                 <TextField id="standard-basic" label="Location" value={location} onChange={updateLocation}/>
                 </Box>
-                <label htmlFor='file'>Picture: </label>
-                <input type='file' name='file' accept='image/*' onChange={updateImage}/>
-                {/* <img src={image}/> */}
+                </Grid>
+                </Grid>
+                
                 <Grid item xs={12}>
                 <Box m = {2} pt= {2} pr={2}>
                 <Button variant="contained" onClick={goBack} style={{margin: "6px"}}>Cancel</Button>
                 <Button variant="contained" type="submit" style={{margin: "6px", background: '#4dd0e1'}}>Submit</Button>
                 </Box>
                 </Grid>
+                
             </form>
             </Paper>
             </Box>
