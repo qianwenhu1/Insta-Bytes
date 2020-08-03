@@ -76,3 +76,15 @@
     at corsFilter (C:\Users\inna.reznitchenko\OneDrive - Accenture\Documents\GCP Training\P2\Insta-Bytes\backends\user-service\src\middleware\cors-filter.ts:16:9) {
   expiredAt: 2020-08-02T22:37:07.000Z
 }
+[2020-08-03T15:30:35.008] [ERROR] error - Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+    at ServerResponse.setHeader (_http_outgoing.js:518:11)
+    at ServerResponse.header (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\user-service\node_modules\express\lib\response.js:771:10)
+    at ServerResponse.send (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\user-service\node_modules\express\lib\response.js:170:12)
+    at ServerResponse.json (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\user-service\node_modules\express\lib\response.js:267:15)
+    at C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\user-service\src\index.ts:59:21
+    at step (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\user-service\src\index.ts:33:23)
+    at Object.next (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\user-service\src\index.ts:14:53)
+    at fulfilled (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\user-service\src\index.ts:5:58)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5) {
+  code: 'ERR_HTTP_HEADERS_SENT'
+}

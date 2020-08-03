@@ -4,6 +4,7 @@ import { User } from '../models/User'
 import { authenticationMiddleware } from '../middleware/authentication-middleware'
 import { UnauthorizedEndPointError } from '../errors/UnathorizedEndPointError'
 import { getAllUsersService, getUserByIDService, patchUserService } from '../services/user-service'
+import { logger } from '../utils/loggers'
 
 export let userRouter = express.Router()
 
@@ -39,8 +40,7 @@ userRouter.get('/:id', async (req:any, res:Response, next:NextFunction) => {
 
 userRouter.patch('/', async (req:Request, res:Response, next:NextFunction) => {
     let id = req.body.userId;
-    console.log(req.body);
-    console.log(id)
+    logger.debug(`Modify User Id ${id} profile`)
     if(isNaN(+id)){
         next(new UserIdInputError)
     }
@@ -58,9 +58,7 @@ userRouter.patch('/', async (req:Request, res:Response, next:NextFunction) => {
             city:req.body.city
 
         }
-        console.log("in the router, just set the user")
-        console.log(user.userId )
-        console.log(user.username)
+
         try{
             let updatedUser = await patchUserService(user)
             res.json(updatedUser)
