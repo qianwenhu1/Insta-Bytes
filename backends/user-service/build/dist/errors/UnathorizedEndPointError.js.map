@@ -1,0 +1,1 @@
+{"version":3,"file":"UnathorizedEndPointError.js","sourceRoot":"","sources":["../../../src/errors/UnathorizedEndPointError.ts"],"names":[],"mappings":";;;;;;;;;;;;;;;;AAAA,yCAAuC;AAEvC;IAA+C,6CAAS;IACpD;eACI,kBAAM,GAAG,EAAE,gCAAgC,CAAC;IAChD,CAAC;IACL,gCAAC;AAAD,CAAC,AAJD,CAA+C,qBAAS,GAIvD;AAJY,8DAAyB"}
