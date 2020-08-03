@@ -2,6 +2,7 @@ import { Post } from "../models/Post"
 import { bucketBaseUrl } from "../daos/Cloud-Storage"
 import { saveNewPost, getAllPosts, getPostById, deletePost, getPostsByUserId } from "../daos/SQL/posts-dao"
 import { savePostPicture } from "../daos/Cloud-Storage/user-posts";
+import { logger, errorLogger } from "../utils/loggers";
 
 export async function getAllPostsService():Promise<Post[]>{
     return await getAllPosts()
@@ -34,7 +35,8 @@ export async function saveNewPostService(newPost:Post):Promise<Post>{
 } catch(e){
     // logger.error(e)
     // errorLogger.error(e)
-    console.log(e)
+    logger.error(e)
+    errorLogger.error(e)
     throw e
 }
 

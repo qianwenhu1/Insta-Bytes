@@ -1,5 +1,5 @@
 import { expressEventEmitter, customExpressEvents } from "../event-listeners"
-import { User } from "../models/Post"
+import {  Post } from "../models/Post"
 import { userTopic } from "../messaging"
 
 expressEventEmitter.on(customExpressEvents.NEW_POST, (newPost:Post)=>{

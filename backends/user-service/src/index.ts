@@ -75,7 +75,6 @@ app.post('/login', async (req:any, res:Response, next:NextFunction) =>{
             let token = jwt.sign(user, 'SecretKey', {expiresIn: '1h'})//THE SECRET should be in an env var
             res.header('Authorization', `Bearer ${token}`)
             req.user = user
-            //console.log(user)
             res.json(user)
         }
         catch(e){

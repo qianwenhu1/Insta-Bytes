@@ -54,7 +54,6 @@ postRouter.get('/:id', async (req:any, res:Response, next:NextFunction) => {
 })
 
 postRouter.post('/create', async (req:Request, res:Response, next:NextFunction) => {
-    console.log("In backend post create");
     
     let {
         userId,
@@ -65,7 +64,6 @@ postRouter.post('/create', async (req:Request, res:Response, next:NextFunction) 
             next(new NewPostInputError)
         }
         else{
-            console.log("in the else")
             let newPost: Post={
                 postId: 0,
                 userId,
