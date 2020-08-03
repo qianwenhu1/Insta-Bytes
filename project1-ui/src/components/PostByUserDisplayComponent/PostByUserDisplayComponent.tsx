@@ -73,6 +73,9 @@ const useStyles = makeStyles((theme) => ({
 
 export const PostByUserDisplayComponent:FunctionComponent<any> = (props)=>{
     let classes = useStyles()
+    let oldDate = Number(props.post.date)
+    let dateObject = new Date(oldDate)
+    const humanDateFormat = dateObject.toLocaleString("en-US", {timeZoneName: "short"})
 
     const deleteSubmit = async (e:SyntheticEvent) => {
         e.preventDefault()
@@ -112,7 +115,7 @@ export const PostByUserDisplayComponent:FunctionComponent<any> = (props)=>{
               <Avatar/>
             }
               title={props.post.location}
-              subheader = {props.post.date}
+              subheader = {humanDateFormat}
           />
           <CardMedia
             className={classes.media}

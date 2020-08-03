@@ -77,15 +77,10 @@ const useStyles = makeStyles((theme) => ({
 export const PostDisplayComponent:FunctionComponent<IPostDisplayProps> = (props)=>{
     let classes = useStyles()
 
-    // let date = new Date(tostring({props.post.date}))
-    //console.log(typeof(`{props.post.date}`))
-    let oldDate = Number(props.post.date)
-    let date = new Date(oldDate)
-    console.log(date)
 
-    // let date = formatDate(({props.post.date}) => ({
-      
-    // })
+    let oldDate = Number(props.post.date)
+    let dateObject = new Date(oldDate)
+    const humanDateFormat = dateObject.toLocaleString("en-US", {timeZoneName: "short"})
 
     return(
         
@@ -99,7 +94,7 @@ export const PostDisplayComponent:FunctionComponent<IPostDisplayProps> = (props)
               <Avatar/>
             }
               title={props.post.location}
-              subheader = {props.post.date}
+              subheader = {humanDateFormat}
           />
           <CardMedia
             className={classes.media}
