@@ -3,6 +3,7 @@ import { JWTVerifyMiddleware } from './middleware/jwt-verify-middleware'
 import { loggingMiddleware } from './middleware/logging-middleware'
 import { corsFilter } from './middleware/cors-filter'
 import { postRouter } from './routers/post-router'
+import { logger, errorLogger } from './utils/loggers'
 // import { NewPostInputError } from './errors/NewPostInputError'
 // import { Post } from './models/Post'
 
@@ -53,14 +54,16 @@ app.get('/health', (req:Request,res:Response)=>{
 
 app.use((err, req, res, next) => {
     if(err.statusCode){
+        logger.debug(err)
         res.status(err.statusCode).send(err.message)
     }
     else{
-        console.log(err)
+        logger.error(err)
+        errorLogger.error(err)  //print out to both location
         res.status(500).send("something went wrong")
     }
 })
 
 app.listen(2007, ()=>{
-    console.log('Server has started');
+    logger.info('Server has started');
 })

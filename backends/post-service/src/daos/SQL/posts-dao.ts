@@ -4,6 +4,7 @@ import { Post } from "../../models/Post";
 import { NewPostInputError } from "../../errors/NewPostInputError";
 import { PostDTOtoPostConvertor } from "../../utils/postDTO-to-post-convertor";
 import { PostNotFoundError } from "../../errors/PostNotFoundError";
+import { logger, errorLogger } from "../../utils/loggers";
 
 export const schema = process.env['LB_SCHEMA'] || 'instabytes_post_service'
 
@@ -20,7 +21,8 @@ export async function getAllPosts():Promise<Post[]>{
         return results.rows.map(PostDTOtoPostConvertor);
     }
     catch(e){
-        console.log(e);
+        logger.error(e)
+        errorLogger.error(e)
         throw new Error('Unhandeled Error Occured')
     }
     finally{
@@ -45,7 +47,8 @@ export async function getPostsByUserId(id: number):Promise<Post[]>{
         return results.rows.map(PostDTOtoPostConvertor);
     }
     catch(e){
-        console.log(e);
+        logger.error(e)
+        errorLogger.error(e)
         throw new Error('Unhandeled Error Occured')
     }
     finally{
@@ -67,7 +70,6 @@ export async function getPostById(id: number):Promise<Post>{
         p."date"  from ${schema}.posts p
         where p.post_id = $1;`,
         [id])
-        console.log(results.rowCount)
         if(results.rowCount === 0){
             throw new Error('post Not Found')
         }
@@ -76,7 +78,8 @@ export async function getPostById(id: number):Promise<Post>{
         if(e.message === 'Post Not Found'){
             throw new PostNotFoundError()
         }
-        console.log(e);
+        logger.error(e)
+        errorLogger.error(e)
         throw new Error('Unhandled Error Occured')
     } finally {
         client && client.release()
@@ -96,7 +99,7 @@ export async function saveNewPost(newPost:Post):Promise<Post>{
         
         newPost.postId = results.rows[0].post_id
         await client.query('COMMIT;')
-        console.log(newPost)
+        logger.debug(`Save new post ${newPost}`)
         return newPost
 
     }catch(e){
@@ -104,7 +107,8 @@ export async function saveNewPost(newPost:Post):Promise<Post>{
         if(e.message === 'Role Not Found'){
             throw new NewPostInputError()
         }
-        console.log(e)
+        logger.error(e)
+        errorLogger.error(e)
         throw new Error('Unhandled Error Occured')
     }finally{
         client && client.release();
@@ -131,7 +135,8 @@ export async function deletePost(id: number):Promise<number>{
 
     }catch(e){
         client && client.query('ROLLBACK;')
-        console.log(e)
+        logger.error(e)
+        errorLogger.error(e)
         throw new Error('Unhandled Error Occured')
     }finally{
         client && client.release();
