@@ -1,4 +1,4 @@
-import React, { FunctionComponent, SyntheticEvent } from 'react'
+import React, { FunctionComponent, SyntheticEvent, useState } from 'react'
 import Paper from '@material-ui/core/Paper'
 import Typography from '@material-ui/core/Typography'
 import { Theme, createStyles, makeStyles } from '@material-ui/core/styles';
@@ -9,7 +9,7 @@ import { toast } from 'react-toastify';
 import { Card, CardContent, CardActions, IconButton, CardMedia, CardHeader, Avatar, Grid } from '@material-ui/core';
 import DeleteIcon from '@material-ui/icons/Delete';
 import FavoriteIcon from '@material-ui/icons/Favorite';
-
+import FavoriteBorderIcon from '@material-ui/icons/FavoriteBorder';
 // interface IPostDisplayProps{
 //     post:Post
 // }
@@ -77,6 +77,20 @@ export const PostByUserDisplayComponent:FunctionComponent<any> = (props)=>{
     let dateObject = new Date(oldDate)
     const humanDateFormat = dateObject.toLocaleString("en-US", {timeZoneName: "short"})
 
+    const [clicks, changeClick] = useState(0)
+    const [favorite, changeFavorite] = useState(<FavoriteBorderIcon color="secondary"/>)
+
+    const updateFavorite = (event:any) => {
+      event.preventDefault()
+      changeClick(clicks+1) 
+      if (clicks%2 == 1){
+        changeFavorite(<FavoriteIcon color="secondary" />)
+      }
+      else{
+        changeFavorite(<FavoriteBorderIcon color="secondary"/>)
+      }
+    }
+
     const deleteSubmit = async (e:SyntheticEvent) => {
         e.preventDefault()
         let res = await postDelete(props.post.postId)
@@ -127,8 +141,8 @@ export const PostByUserDisplayComponent:FunctionComponent<any> = (props)=>{
             </Typography>
           </CardContent>
           <CardActions disableSpacing>
-          <IconButton>
-            <FavoriteIcon />
+          <IconButton onClick={updateFavorite}>
+            {favorite}
           </IconButton>
           <IconButton onClick = {deleteSubmit}>
             <DeleteIcon/>
