@@ -1,4 +1,4 @@
-import React, { FunctionComponent } from 'react'
+import React, { FunctionComponent, useState } from 'react'
 import Paper from '@material-ui/core/Paper'
 import Typography from '@material-ui/core/Typography'
 import { Theme, createStyles, makeStyles } from '@material-ui/core/styles';
@@ -7,6 +7,7 @@ import { Post } from '../../models/Post';
 import { Card, Avatar, CardHeader, IconButton, CardMedia, CardContent, Grid, Box, CardActions } from '@material-ui/core';
 import { User } from '../../models/User';
 import FavoriteIcon from '@material-ui/icons/Favorite';
+import FavoriteBorderIcon from '@material-ui/icons/FavoriteBorder';
 
 interface IPostDisplayProps{
     post:Post
@@ -82,6 +83,20 @@ export const PostDisplayComponent:FunctionComponent<IPostDisplayProps> = (props)
     let dateObject = new Date(oldDate)
     const humanDateFormat = dateObject.toLocaleString("en-US", {timeZoneName: "short"})
 
+    const [clicks, changeClick] = useState(0)
+    const [favorite, changeFavorite] = useState(<FavoriteBorderIcon color="secondary"/>)
+
+    const updateFavorite = (event:any) => {
+      event.preventDefault()
+      changeClick(clicks+1) 
+      if (clicks%2 == 1){
+        changeFavorite(<FavoriteIcon color="secondary" />)
+      }
+      else{
+        changeFavorite(<FavoriteBorderIcon color="secondary"/>)
+      }
+    }
+
     return(
         
           <Grid container direction="column" alignItems="center" justify="center">
@@ -106,9 +121,11 @@ export const PostDisplayComponent:FunctionComponent<IPostDisplayProps> = (props)
             </Typography>
           </CardContent>
           <CardActions disableSpacing>
-          <IconButton aria-label="add to favorites">
-            <FavoriteIcon />
+          {/* <IconButton aria-label="add to favorites"> */}
+          <IconButton onClick={updateFavorite}>
+            {favorite}
           </IconButton>
+          {/* </IconButton> */}
           </CardActions>
             {/* <Typography variant='body1'>
                    User Id : {props.post.userId}
