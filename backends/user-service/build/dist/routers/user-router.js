@@ -45,6 +45,7 @@ var UserIdInputError_1 = require("../errors/UserIdInputError");
 var authentication_middleware_1 = require("../middleware/authentication-middleware");
 var UnathorizedEndPointError_1 = require("../errors/UnathorizedEndPointError");
 var user_service_1 = require("../services/user-service");
+var loggers_1 = require("../utils/loggers");
 exports.userRouter = express_1.default.Router();
 exports.userRouter.use(authentication_middleware_1.authenticationMiddleware);
 exports.userRouter.get('/', function (req, res, next) { return __awaiter(void 0, void 0, void 0, function () {
@@ -100,8 +101,7 @@ exports.userRouter.patch('/', function (req, res, next) { return __awaiter(void 
         switch (_a.label) {
             case 0:
                 id = req.body.userId;
-                console.log(req.body);
-                console.log(id);
+                loggers_1.logger.debug("Modify User Id " + id + " profile");
                 if (!isNaN(+id)) return [3 /*break*/, 1];
                 next(new UserIdInputError_1.UserIdInputError);
                 return [3 /*break*/, 5];
@@ -118,9 +118,6 @@ exports.userRouter.patch('/', function (req, res, next) { return __awaiter(void 
                     favoriteFood: req.body.favoriteFood,
                     city: req.body.city
                 };
-                console.log("in the router, just set the user");
-                console.log(user.userId);
-                console.log(user.username);
                 _a.label = 2;
             case 2:
                 _a.trys.push([2, 4, , 5]);
