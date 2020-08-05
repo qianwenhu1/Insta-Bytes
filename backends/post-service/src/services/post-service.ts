@@ -3,6 +3,8 @@ import { bucketBaseUrl } from "../daos/Cloud-Storage"
 import { saveNewPost, getAllPosts, getPostById, deletePost, getPostsByUserId } from "../daos/SQL/posts-dao"
 import { savePostPicture } from "../daos/Cloud-Storage/user-posts";
 import { logger, errorLogger } from "../utils/loggers";
+import { User } from "../models/User";
+import { userServiceGetUserById } from "../remote/user-service/user-service-get-user-by-id";
 
 export async function getAllPostsService():Promise<Post[]>{
     return await getAllPosts()
@@ -14,6 +16,10 @@ export async function getPostByUserIDService(id:number):Promise<Post[]>{
 
 export async function getPostByIDService(id:number):Promise<Post>{
     return await getPostById(id)
+}
+
+export async function getUserByPostIDService(id:number, token:string):Promise<User>{
+    return await userServiceGetUserById(id, token)
 }
 
 export async function saveNewPostService(newPost:Post):Promise<Post>{

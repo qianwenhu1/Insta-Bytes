@@ -5,7 +5,8 @@ import { PostDisplayComponent } from '../PostDisplayComponent/PostDisplayCompone
 
 
 export const AllPostsComponent:FunctionComponent<any> = (props) => {
-
+    console.log("All post");
+    
     let [allPosts, changeAllPosts] = useState<Post[]>([])
     useEffect(()=>{
 
@@ -18,7 +19,8 @@ export const AllPostsComponent:FunctionComponent<any> = (props) => {
             getPosts()
         }
     })
-
+    console.log(allPosts);
+    
     let postDisplays = allPosts.map((post)=>{
         // react agressively suggests you give them unqie keys so it can tell them apart
         return <PostDisplayComponent key={'post-key-' + post.postId} post={post}/>

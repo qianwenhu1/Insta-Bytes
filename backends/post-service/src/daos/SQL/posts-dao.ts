@@ -17,7 +17,8 @@ export async function getAllPosts():Promise<Post[]>{
         p."image" , 
         p."caption", 
         p."location", 
-        p."date"  from ${schema}.posts p`)
+        p."date"  from ${schema}.posts p
+        order by p."date" DESC`)
         return results.rows.map(PostDTOtoPostConvertor);
     }
     catch(e){
@@ -40,7 +41,8 @@ export async function getPostsByUserId(id: number):Promise<Post[]>{
         p."caption", 
         p."location", 
         p."date"  from ${schema}.posts p
-        where p.user_id = $1;`,[id])
+        where p.user_id = $1
+        order by p."date" DESC;`,[id])
         // if(results.rowCount === 0){
         //     throw new Error('No posts')
         // }

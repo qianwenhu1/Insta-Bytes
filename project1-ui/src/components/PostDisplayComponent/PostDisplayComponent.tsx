@@ -1,4 +1,4 @@
-import React, { FunctionComponent, useState } from 'react'
+import React, { FunctionComponent, useState, useEffect } from 'react'
 import Paper from '@material-ui/core/Paper'
 import Typography from '@material-ui/core/Typography'
 import { Theme, createStyles, makeStyles } from '@material-ui/core/styles';
@@ -8,6 +8,7 @@ import { Card, Avatar, CardHeader, IconButton, CardMedia, CardContent, Grid, Box
 import { User } from '../../models/User';
 import FavoriteIcon from '@material-ui/icons/Favorite';
 import FavoriteBorderIcon from '@material-ui/icons/FavoriteBorder';
+import { postGetUserByUserId } from '../../remote/posts-api/post-get-user-by-userId';
 
 interface IPostDisplayProps{
     post:Post
@@ -82,14 +83,24 @@ export const PostDisplayComponent:FunctionComponent<IPostDisplayProps> = (props)
     let oldDate = Number(props.post.date)
     let dateObject = new Date(oldDate)
     const humanDateFormat = dateObject.toLocaleString("en-US", {timeZoneName: "short"})
-
     const [clicks, changeClick] = useState(0)
     const [favorite, changeFavorite] = useState(<FavoriteBorderIcon color="secondary"/>)
+    const [userMadePost, changeUserMadePost] = useState<User>(null)
+    useEffect(()=>{
 
+        const getUser = async ()=>{
+            let response = await postGetUserByUserId(props.post.userId)
+            changeUserMadePost(response)
+        }
+
+        if(userMadePost == null){
+          getUser()
+        }
+    })
     const updateFavorite = (event:any) => {
       event.preventDefault()
       changeClick(clicks+1) 
-      if (clicks%2 == 1){
+      if (clicks%2 == 0){
         changeFavorite(<FavoriteIcon color="secondary" />)
       }
       else{
@@ -106,7 +117,7 @@ export const PostDisplayComponent:FunctionComponent<IPostDisplayProps> = (props)
             <Card className={classes.root1}>
             <CardHeader className={classes.header}
             avatar={
-              <Avatar/>
+              <Avatar src={userMadePost?.image}/>
             }
               title={props.post.location}
               subheader = {humanDateFormat}
@@ -115,11 +126,32 @@ export const PostDisplayComponent:FunctionComponent<IPostDisplayProps> = (props)
             className={classes.media}
             image={props.post?.image}
           />
-          <CardContent>
-            <Typography variant="body1" color="textSecondary" component="p">
-            {props.post.caption}
+          <Grid container alignItems="flex-start">
+          <CardContent >
+            <Grid item alignItems="flex-start" justify="flex-start">
+            <Typography variant="body1" color="textPrimary" component="p">
+              {userMadePost?.username} 
             </Typography>
-          </CardContent>
+            <Typography variant="body1" color="textSecondary" component="p">
+              {props.post.caption}
+            </Typography>
+            </Grid>
+          </CardContent> 
+          </Grid>
+          {/* <CardActions>
+            <Box fontWeight="fontWeightMedium">
+                {userMadePost?.username}: <Typography variant="body2" color="textSecondary" component="p" >{props.post.caption} </Typography>
+            </Box>
+          </CardActions> */}
+          
+          {/* <CardContent >
+            <Grid alignItems="flex-start">
+            <Typography variant="body2" color="textPrimary" component="p" >
+              {userMadePost?.username}: 
+            </Typography> {props.post.caption}
+            </Grid>
+          </CardContent> */}
+          
           <CardActions disableSpacing>
           {/* <IconButton aria-label="add to favorites"> */}
           <IconButton onClick={updateFavorite}>
@@ -127,19 +159,6 @@ export const PostDisplayComponent:FunctionComponent<IPostDisplayProps> = (props)
           </IconButton>
           {/* </IconButton> */}
           </CardActions>
-            {/* <Typography variant='body1'>
-                   User Id : {props.post.userId}
-                </Typography>
-                <Typography variant='body1'>
-                   Caption : {props.post.caption}
-                </Typography>
-                <Typography variant='body1'>
-                   Location : {props.post.location}
-                </Typography>
-                <Typography variant='body1'>
-                   Date : {props.post.date}
-                </Typography> */}
-                {/* <img src={props.post?.image}/> */}
             </Card>
             {/* </Box> */}
             </Grid>

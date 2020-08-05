@@ -2,12 +2,12 @@ import express, { Request, Response, NextFunction} from 'express'
 import { PostIdInputError } from '../errors/PostIdInputError';
 import { Post } from '../models/Post';
 import { NewPostInputError } from '../errors/NewPostInputError';
-import { getAllPostsService, getPostByIDService, saveNewPostService, deletePostService, getPostByUserIDService } from '../services/post-service';
+import { getAllPostsService, getPostByIDService, saveNewPostService, deletePostService, getPostByUserIDService, getUserByPostIDService } from '../services/post-service';
 
 export let postRouter = express.Router()
 
 //Is this needed?
-//postRouter.use(authenticationMiddleware);
+// postRouter.use(authenticationMiddleware);
 
 postRouter.get('/', async (req:Request, res:Response, next:NextFunction) => {
     try{
@@ -52,6 +52,22 @@ postRouter.get('/:id', async (req:any, res:Response, next:NextFunction) => {
         }
     }
 })
+
+postRouter.get('/user/made/:id', async (req:any, res:Response, next:NextFunction) => {
+    let {id} = req.params;
+    if(isNaN(+id)){
+        next(new PostIdInputError)
+    }
+    else{
+        try{
+            let user = await getUserByPostIDService(+id, req.headers.authorization)
+            res.json(user)
+        } catch (e){
+            next(e)
+        }
+    }
+})
+
 
 postRouter.post('/create', async (req:Request, res:Response, next:NextFunction) => {
     

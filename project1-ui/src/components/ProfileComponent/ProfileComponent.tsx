@@ -2,7 +2,7 @@ import React, { FunctionComponent, useState, useEffect } from 'react'
 import { UserDisplayComponent } from '../UserDisplayComponent/UserDisplayComponent'
 import { User } from '../../models/User'
 import { useParams } from 'react-router-dom'
-import { getUserById } from '../../remote/users-api/get-user-by-id'
+import { getUserById } from '../../remote/users-api/user-get-user-by-id'
 
 export const ProfileComponent:FunctionComponent<any> = (props)=>{
     
