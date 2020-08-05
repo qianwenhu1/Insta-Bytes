@@ -3,8 +3,10 @@ import { Button, TextField, Grid, Box, makeStyles, Typography, Paper } from '@ma
 import { User } from '../../models/User'
 import { userUpdateUser } from '../../remote/users-api/user-update-user'
 import { RouteComponentProps } from 'react-router'
-import { toast, ToastContainer } from 'react-toastify'
+import { toast } from 'react-toastify'
 import 'react-toastify/dist/ReactToastify.css'
+import GooglePlacesAutocomplete from 'react-google-places-autocomplete';
+import 'react-google-places-autocomplete/dist/index.min.css';
 
 interface IUserDisplayProps extends RouteComponentProps{
     user:User
@@ -162,6 +164,17 @@ export const EditUserComponent:FunctionComponent<any> = (props) => {
             <Grid container direction="column" justify="flex-start" alignItems="center">
             <Box m={1} pt={2}>
             <Paper className={classes.paper} elevation={10}>
+            <GooglePlacesAutocomplete
+                onSelect={console.log}
+                autocompletionRequest={{
+                    componentRestrictions: {
+                      country: ['us', 'ca', 'uy'],
+                    }
+                  }}
+                  displayFromSuggestionSelected={({ structured_formatting }) => (
+                    structured_formatting.main_text
+                  )}
+                  placeholder="City"/>
             <form onSubmit={updateUser}>
                 <Box m={2} pt={2}>
                 <Typography variant='h4'>Edit Info</Typography>
