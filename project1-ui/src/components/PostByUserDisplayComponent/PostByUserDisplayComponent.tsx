@@ -1,4 +1,4 @@
-import React, { FunctionComponent, SyntheticEvent, useState } from 'react'
+import React, { FunctionComponent, SyntheticEvent, useState, useEffect } from 'react'
 import Paper from '@material-ui/core/Paper'
 import Typography from '@material-ui/core/Typography'
 import { Theme, createStyles, makeStyles } from '@material-ui/core/styles';
@@ -10,6 +10,8 @@ import { Card, CardContent, CardActions, IconButton, CardMedia, CardHeader, Avat
 import DeleteIcon from '@material-ui/icons/Delete';
 import FavoriteIcon from '@material-ui/icons/Favorite';
 import FavoriteBorderIcon from '@material-ui/icons/FavoriteBorder';
+import { User } from '../../models/User';
+import { postGetUserByUserId } from '../../remote/posts-api/post-get-user-by-userId';
 // interface IPostDisplayProps{
 //     post:Post
 // }
@@ -79,11 +81,23 @@ export const PostByUserDisplayComponent:FunctionComponent<any> = (props)=>{
 
     const [clicks, changeClick] = useState(0)
     const [favorite, changeFavorite] = useState(<FavoriteBorderIcon color="secondary"/>)
+    const [userMadePost, changeUserMadePost] = useState<User>(null)
+    
+    useEffect(()=>{
 
+        const getUser = async ()=>{
+            let response = await postGetUserByUserId(props.post.userId)
+            changeUserMadePost(response)
+        }
+
+        if(userMadePost == null){
+          getUser()
+        }
+    })
     const updateFavorite = (event:any) => {
       event.preventDefault()
       changeClick(clicks+1) 
-      if (clicks%2 == 1){
+      if (clicks%2 == 0){
         changeFavorite(<FavoriteIcon color="secondary" />)
       }
       else{
@@ -126,7 +140,7 @@ export const PostByUserDisplayComponent:FunctionComponent<any> = (props)=>{
             <Card className={classes.root1}>
             <CardHeader className={classes.header}
             avatar={
-              <Avatar/>
+              <Avatar src={userMadePost?.image}/>
             }
               title={props.post.location}
               subheader = {humanDateFormat}

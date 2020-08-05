@@ -2,7 +2,7 @@ import express, { Request, Response, NextFunction} from 'express'
 import { UserIdInputError } from '../errors/UserIdInputError'
 import { User } from '../models/User'
 import { authenticationMiddleware } from '../middleware/authentication-middleware'
-import { UnauthorizedEndPointError } from '../errors/UnathorizedEndPointError'
+//import { UnauthorizedEndPointError } from '../errors/UnathorizedEndPointError'
 import { getAllUsersService, getUserByIDService, patchUserService } from '../services/user-service'
 import { logger } from '../utils/loggers'
 
@@ -25,9 +25,9 @@ userRouter.get('/:id', async (req:any, res:Response, next:NextFunction) => {
     if(isNaN(+id)){
         next(new UserIdInputError)
     }
-    else if(req.user.role === "user" && req.user.userId !== +id){
-        next(new UnauthorizedEndPointError)
-    }
+    // else if(req.user.role === "user" && req.user.userId !== +id){
+    //     next(new UnauthorizedEndPointError)
+    // }
     else{
         try{
             let user = await getUserByIDService(+id)
