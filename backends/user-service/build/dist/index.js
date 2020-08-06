@@ -48,6 +48,7 @@ var cors_filter_1 = require("./middleware/cors-filter");
 var NewUserInputError_1 = require("./errors/NewUserInputError");
 var user_service_1 = require("./services/user-service");
 require("./event-listeners/new-user");
+require("./messaging/index");
 var NoUserToLogoutError_1 = require("./errors/NoUserToLogoutError");
 var jsonwebtoken_1 = __importDefault(require("jsonwebtoken"));
 var jwt_verify_middleware_1 = require("./middleware/jwt-verify-middleware");
