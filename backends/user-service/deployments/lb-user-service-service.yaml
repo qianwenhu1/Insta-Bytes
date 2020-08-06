@@ -3,7 +3,7 @@ kind: Service
 metadata:
   name: lb-user-service-service
 spec:
-  type: ClusterIP
+  type: NodePort
   selector:
     app: lb
     service: user-service
