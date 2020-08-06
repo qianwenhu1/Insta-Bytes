@@ -43,7 +43,7 @@ exports.userRouter = void 0;
 var express_1 = __importDefault(require("express"));
 var UserIdInputError_1 = require("../errors/UserIdInputError");
 var authentication_middleware_1 = require("../middleware/authentication-middleware");
-var UnathorizedEndPointError_1 = require("../errors/UnathorizedEndPointError");
+//import { UnauthorizedEndPointError } from '../errors/UnathorizedEndPointError'
 var user_service_1 = require("../services/user-service");
 var loggers_1 = require("../utils/loggers");
 exports.userRouter = express_1.default.Router();
@@ -75,23 +75,19 @@ exports.userRouter.get('/:id', function (req, res, next) { return __awaiter(void
                 id = req.params.id;
                 if (!isNaN(+id)) return [3 /*break*/, 1];
                 next(new UserIdInputError_1.UserIdInputError);
-                return [3 /*break*/, 5];
+                return [3 /*break*/, 4];
             case 1:
-                if (!(req.user.role === "user" && req.user.userId !== +id)) return [3 /*break*/, 2];
-                next(new UnathorizedEndPointError_1.UnauthorizedEndPointError);
-                return [3 /*break*/, 5];
-            case 2:
-                _a.trys.push([2, 4, , 5]);
+                _a.trys.push([1, 3, , 4]);
                 return [4 /*yield*/, user_service_1.getUserByIDService(+id)];
-            case 3:
+            case 2:
                 user = _a.sent();
                 res.json(user);
-                return [3 /*break*/, 5];
-            case 4:
+                return [3 /*break*/, 4];
+            case 3:
                 e_2 = _a.sent();
                 next(e_2);
-                return [3 /*break*/, 5];
-            case 5: return [2 /*return*/];
+                return [3 /*break*/, 4];
+            case 4: return [2 /*return*/];
         }
     });
 }); });
