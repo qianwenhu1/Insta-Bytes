@@ -7,6 +7,7 @@ import { toast } from 'react-toastify'
 import 'react-toastify/dist/ReactToastify.css'
 import GooglePlacesAutocomplete from 'react-google-places-autocomplete';
 import 'react-google-places-autocomplete/dist/index.min.css';
+import PlacesAutocomplete, { geocodeByAddress} from "react-places-autocomplete";
 
 interface IUserDisplayProps extends RouteComponentProps{
     user:User
@@ -14,15 +15,14 @@ interface IUserDisplayProps extends RouteComponentProps{
 
 const useStyles = makeStyles((theme) => ({
     paper:{
-        width: theme.spacing(42),
-        height: theme.spacing(80)
+        width: theme.spacing(43),
+        height: theme.spacing(100)
     },
 }));
 
 
 export const EditUserComponent:FunctionComponent<any> = (props) => {
     const classes = useStyles();
-    console.log(props.user)
     let currUserId = props.user.userId
     
     let [username, changeUsername] = useState('')
@@ -34,6 +34,11 @@ export const EditUserComponent:FunctionComponent<any> = (props) => {
     let [city, changeCity] = useState('')
     let [email, changeEmail] = useState('')
     let [image, changeImage] = useState(null)
+    //let [address, setAddress] = React.useState("")
+  
+    const updateCity = async (value:any) => {
+        changeCity(value);
+    }
 
     const updateUsername = (e:any) => {
         e.preventDefault()
@@ -95,15 +100,15 @@ export const EditUserComponent:FunctionComponent<any> = (props) => {
         }
     }
 
-    const updateCity = (e:any) => {
-        e.preventDefault()
-        if(e.currentTarget.value !== undefined){
-            changeCity(e.currentTarget.value)
-        }
-        else{
-            changeCity(props.user.city)
-        }
-    }
+    // const updateCity = (e:any) => {
+    //     e.preventDefault()
+    //     if(e.currentTarget.value !== undefined){
+    //         changeCity(e.currentTarget.value)
+    //     }
+    //     else{
+    //         changeCity(props.user.city)
+    //     }
+    // }
 
     const updateEmail = (e:any) => {
         e.preventDefault()
@@ -164,22 +169,43 @@ export const EditUserComponent:FunctionComponent<any> = (props) => {
             <Grid container direction="column" justify="flex-start" alignItems="center">
             <Box m={1} pt={2}>
             <Paper className={classes.paper} elevation={10}>
-            <GooglePlacesAutocomplete
-                onSelect={console.log}
-                autocompletionRequest={{
-                    componentRestrictions: {
-                      country: ['us', 'ca', 'uy'],
-                    }
-                  }}
-                  displayFromSuggestionSelected={({ structured_formatting }) => (
-                    structured_formatting.main_text
-                  )}
-                  placeholder="City"/>
+
+                    
+            {/* <PlacesAutocomplete
+            value={address}
+            onChange={setAddress}
+            onSelect={handleSelect}
+            >
+            {({ getInputProps, suggestions, getSuggestionItemProps, loading }) => (
+                <div>
+                <input {...getInputProps({ placeholder: "Type address" })} />
+    
+                <div>
+                    {loading ? <div>...loading</div> : null}
+    
+                    {suggestions.map(suggestion => {
+                    const style = {
+                        backgroundColor: suggestion.active ? "#41b6e6" : "#fff"
+                    };
+    
+                    return (
+                        <div {...getSuggestionItemProps(suggestion, { style })}>
+                        {suggestion.description}
+                        </div>
+                    );
+                    })}
+                </div>
+                </div>
+            )}
+            </PlacesAutocomplete> */}
             <form onSubmit={updateUser}>
+                
                 <Box m={2} pt={2}>
                 <Typography variant='h4'>Edit Info</Typography>
                 </Box>
-                <Box m={1} pt={2}>
+                <label htmlFor='file'>Profile Picture: </label>
+                <input type='file' name='file' accept='image/*' onChange={updateImage}/>
+                <Box m={1} pt={1}>
                 <TextField id="standard-basic" label="Username" value={username} onChange={updateUsername}/>
                 <TextField id="standard-basic" type="password" label="Password" value={password} onChange={updatePassword}/>
                 <TextField id="standard-basic" type="password" label="Confirm Password" value={confirmPassword} onChange={updateConfirmPassword}/>
@@ -190,12 +216,40 @@ export const EditUserComponent:FunctionComponent<any> = (props) => {
                 <TextField id="standard-basic" type="email" label="Email" value={email} onChange={updateEmail}/>
                 {/* </Box> 
                 <Box m={1} pt={2}> */}
-                <TextField id="standard-basic" label="Favorite Food" value={favoriteFood} onChange={updateFavoriteFood}/>              
-                <TextField id="standard-basic" label="City" value={city} onChange={updateCity}/>
+                <TextField id="standard-basic" label="Favorite Food" value={favoriteFood} onChange={updateFavoriteFood}/>   
+                {/* <TextField id="standard-basic" label="City" value={city} onChange={updateCity}/> */}
                 </Box>
-                <label htmlFor='file'>Profile Picture: </label>
-                <input type='file' name='file' accept='image/*' onChange={updateImage}/>
+                
                 {/* <img src={image}/> */}
+                <Box m={1} >
+                <PlacesAutocomplete
+                value={city}
+                onChange={changeCity}
+                onSelect={updateCity}
+                >
+                {({ getInputProps, suggestions, getSuggestionItemProps, loading }) => (
+                    <div>
+                    <TextField {...getInputProps({ placeholder: "City" })} />
+        
+                    <div>
+                        {loading ? <div>...loading</div> : null}
+        
+                        {suggestions.map(suggestion => {
+                        const style = {
+                            backgroundColor: suggestion.active ? "#41b6e6" : "#fff"
+                        };
+        
+                        return (
+                            <div {...getSuggestionItemProps(suggestion, { style })}>
+                            {suggestion.description}
+                            </div>
+                        );
+                        })}
+                    </div>
+                    </div>
+                )}
+                </PlacesAutocomplete>
+                </Box>
                 <Grid item xs={12}>
                 <Box m = {2} pt= {2} pr={2}>
 
