@@ -42,4 +42,10 @@ spec:
             port: 2006
           initialDelaySeconds: 3
           periodSeconds: 3
+        readinessProbe:
+          httpGet:
+            path: /health
+            port: 2006
+          initialDelaySeconds: 3
+          periodSeconds: 3
 
