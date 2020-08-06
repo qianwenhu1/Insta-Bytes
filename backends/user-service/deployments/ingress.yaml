@@ -6,7 +6,7 @@ spec:
   rules:
   - http:
       paths:
-      - path: /user-service
+      - path: /user-service/*
         backend:
           serviceName: lb-user-service-service
           servicePort: 80
