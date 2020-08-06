@@ -20333,3 +20333,101 @@
     at dispatchRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\core\dispatchRequest.js:52:10) {
   code: 'ERR_HTTP_INVALID_HEADER_VALUE'
 }
+[2020-08-05T21:06:00.051] [ERROR] error - TypeError: Do not know how to serialize a BigInt
+    at JSON.stringify (<anonymous>)
+    at stringify (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\express\lib\response.js:1123:12)
+    at ServerResponse.json (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\express\lib\response.js:260:14)
+    at C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\src\routers\post-router.ts:93:21
+    at step (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\src\routers\post-router.ts:33:23)
+    at Object.next (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\src\routers\post-router.ts:14:53)
+    at fulfilled (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\src\routers\post-router.ts:5:58)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+[2020-08-05T21:16:20.444] [ERROR] error - TypeError: Do not know how to serialize a BigInt
+    at JSON.stringify (<anonymous>)
+    at stringify (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\express\lib\response.js:1123:12)
+    at ServerResponse.json (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\express\lib\response.js:260:14)
+    at C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\src\routers\post-router.ts:93:21
+    at step (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\src\routers\post-router.ts:33:23)
+    at Object.next (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\src\routers\post-router.ts:14:53)
+    at fulfilled (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\src\routers\post-router.ts:5:58)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+[2020-08-05T21:16:20.496] [ERROR] error - TypeError: Do not know how to serialize a BigInt
+    at JSON.stringify (<anonymous>)
+    at Topic.publishMessage (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\@google-cloud\pubsub\src\topic.ts:792:39)
+    at Topic.publishJSON (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\@google-cloud\pubsub\src\topic.ts:729:17)
+    at C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\src\event-listeners\new-post.ts:9:39
+    at step (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\src\event-listeners\new-post.ts:33:23)
+    at Object.next (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\src\event-listeners\new-post.ts:14:53)
+    at C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\src\event-listeners\new-post.ts:8:71
+    at new Promise (<anonymous>)
+    at __awaiter (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\src\event-listeners\new-post.ts:4:12)
+    at Immediate._onImmediate (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\src\event-listeners\new-post.ts:7:19)
+[2020-08-05T21:18:59.791] [ERROR] error - TypeError: Do not know how to serialize a BigInt
+    at JSON.stringify (<anonymous>)
+    at stringify (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\express\lib\response.js:1123:12)
+    at ServerResponse.json (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\express\lib\response.js:260:14)
+    at C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\src\routers\post-router.ts:93:21
+    at step (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\src\routers\post-router.ts:33:23)
+    at Object.next (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\src\routers\post-router.ts:14:53)
+    at fulfilled (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\src\routers\post-router.ts:5:58)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+[2020-08-05T21:18:59.814] [ERROR] error - TypeError: Do not know how to serialize a BigInt
+    at JSON.stringify (<anonymous>)
+    at Topic.publishMessage (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\@google-cloud\pubsub\src\topic.ts:792:39)
+    at Topic.publishJSON (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\@google-cloud\pubsub\src\topic.ts:729:17)
+    at C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\src\event-listeners\new-post.ts:9:39
+    at step (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\src\event-listeners\new-post.ts:33:23)
+    at Object.next (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\src\event-listeners\new-post.ts:14:53)
+    at C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\src\event-listeners\new-post.ts:8:71
+    at new Promise (<anonymous>)
+    at __awaiter (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\src\event-listeners\new-post.ts:4:12)
+    at Immediate._onImmediate (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\src\event-listeners\new-post.ts:7:19)
+[2020-08-05T21:27:46.105] [ERROR] error - TypeError: Do not know how to serialize a BigInt
+    at JSON.stringify (<anonymous>)
+    at stringify (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\express\lib\response.js:1123:12)
+    at ServerResponse.json (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\express\lib\response.js:260:14)
+    at C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\src\routers\post-router.ts:93:21
+    at step (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\src\routers\post-router.ts:33:23)
+    at Object.next (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\src\routers\post-router.ts:14:53)
+    at fulfilled (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\src\routers\post-router.ts:5:58)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+[2020-08-05T21:27:46.133] [ERROR] error - TypeError: Do not know how to serialize a BigInt
+    at JSON.stringify (<anonymous>)
+    at Topic.publishMessage (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\@google-cloud\pubsub\src\topic.ts:792:39)
+    at Topic.publishJSON (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\@google-cloud\pubsub\src\topic.ts:729:17)
+    at C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\src\event-listeners\new-post.ts:9:39
+    at step (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\src\event-listeners\new-post.ts:33:23)
+    at Object.next (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\src\event-listeners\new-post.ts:14:53)
+    at C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\src\event-listeners\new-post.ts:8:71
+    at new Promise (<anonymous>)
+    at __awaiter (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\src\event-listeners\new-post.ts:4:12)
+    at Immediate._onImmediate (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\src\event-listeners\new-post.ts:7:19)
+[2020-08-05T21:35:59.448] [ERROR] error - TypeError: Do not know how to serialize a BigInt
+    at JSON.stringify (<anonymous>)
+    at stringify (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\express\lib\response.js:1123:12)
+    at ServerResponse.json (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\express\lib\response.js:260:14)
+    at C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\src\routers\post-router.ts:93:21
+    at step (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\src\routers\post-router.ts:33:23)
+    at Object.next (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\src\routers\post-router.ts:14:53)
+    at fulfilled (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\src\routers\post-router.ts:5:58)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+[2020-08-05T21:35:59.471] [ERROR] error - TypeError: Do not know how to serialize a BigInt
+    at JSON.stringify (<anonymous>)
+    at Topic.publishMessage (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\@google-cloud\pubsub\src\topic.ts:792:39)
+    at Topic.publishJSON (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\@google-cloud\pubsub\src\topic.ts:729:17)
+    at C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\src\event-listeners\new-post.ts:9:39
+    at step (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\src\event-listeners\new-post.ts:33:23)
+    at Object.next (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\src\event-listeners\new-post.ts:14:53)
+    at C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\src\event-listeners\new-post.ts:8:71
+    at new Promise (<anonymous>)
+    at __awaiter (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\src\event-listeners\new-post.ts:4:12)
+    at Immediate._onImmediate (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\src\event-listeners\new-post.ts:7:19)
+[2020-08-05T21:43:06.843] [ERROR] error - TypeError: Do not know how to serialize a BigInt
+    at JSON.stringify (<anonymous>)
+    at stringify (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\express\lib\response.js:1123:12)
+    at ServerResponse.json (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\express\lib\response.js:260:14)
+    at C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\src\routers\post-router.ts:93:21
+    at step (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\src\routers\post-router.ts:33:23)
+    at Object.next (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\src\routers\post-router.ts:14:53)
+    at fulfilled (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\src\routers\post-router.ts:5:58)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)

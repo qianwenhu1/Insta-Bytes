@@ -5,6 +5,7 @@ import { savePostPicture } from "../daos/Cloud-Storage/user-posts";
 import { logger, errorLogger } from "../utils/loggers";
 import { User } from "../models/User";
 import { userServiceGetUserById } from "../remote/user-service/user-service-get-user-by-id";
+import { expressEventEmitter, customExpressEvents } from "../event-listeners";
 
 export async function getAllPostsService():Promise<Post[]>{
     return await getAllPosts()
@@ -33,11 +34,14 @@ export async function saveNewPostService(newPost:Post):Promise<Post>{
         newPost.image = `${bucketBaseUrl}/posts/${newPost.userId}/${newPost.date}/new_post.${contentType}`
     }
 
-    let savedUser = await saveNewPost(newPost)
+    let savedPost = await saveNewPost(newPost)
 
     await savePostPicture(contentType, imageBase64Data, `posts/${newPost.userId}/${newPost.date}/new_post.${contentType}`)
-    // expressEventEmitter.emit(customExpressEvents.NEW_USER, newUser)
-    return savedUser
+    console.log("start emit")
+    expressEventEmitter.emit(customExpressEvents.NEW_POST, newPost)
+    console.log("finish emit")
+
+    return savedPost
 } catch(e){
     // logger.error(e)
     // errorLogger.error(e)
