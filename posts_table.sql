@@ -11,7 +11,7 @@ create table posts(
 );
 
 
-
-ALTER TABLE instabytes_post_service.posts
-  ADD CONSTRAINT fk_user FOREIGN KEY (user_id) REFERENCES instabytes_user_service.users("user_id" );
+--
+--ALTER TABLE instabytes_post_service.posts
+--  ADD CONSTRAINT fk_user FOREIGN KEY (user_id) REFERENCES instabytes_user_service.users("user_id" );
   

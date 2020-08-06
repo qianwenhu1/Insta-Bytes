@@ -3,11 +3,12 @@ import { Button, TextField, Grid, Box, makeStyles, Paper, Typography } from '@ma
 import { toast } from 'react-toastify'
 import { Post } from '../../models/Post'
 import { postSavePost } from '../../remote/posts-api/post-save-post'
+import PlacesAutocomplete from 'react-places-autocomplete'
 
 const useStyles = makeStyles((theme) => ({
     paper:{
         width: theme.spacing(60),
-        height: theme.spacing(50)
+        height: theme.spacing(70)
     },
 }));
 
@@ -26,9 +27,12 @@ export const NewPostComponent:FunctionComponent<any> = (props) => {
         changeCaption(e.currentTarget.value)
     }
 
-    const updateLocation = (e:any) => {
-        e.preventDefault()
-        changeLocation(e.currentTarget.value)
+    // const updateLocation = (e:any) => {
+    //     e.preventDefault()
+    //     changeLocation(e.currentTarget.value)
+    // }
+    const updateLocation = async (value:any) => {
+        changeLocation(value);
     }
 
     const updateDate= (e:any) => {
@@ -106,8 +110,37 @@ export const NewPostComponent:FunctionComponent<any> = (props) => {
                 </Box>
                 </Grid> 
                 <Grid item xs={8}>
-                <Box m={1} pt={1}>
+                {/* <Box m={1} pt={1}>
                 <TextField id="standard-basic" label="Location" value={location} onChange={updateLocation}/>
+                </Box> */}
+                <Box m={1} >
+                <PlacesAutocomplete
+                value={location}
+                onChange={changeLocation}
+                onSelect={updateLocation}
+                >
+                {({ getInputProps, suggestions, getSuggestionItemProps, loading }) => (
+                    <div>
+                    <TextField {...getInputProps({ placeholder: "Location" })} />
+        
+                    <div>
+                        {loading ? <div>...loading</div> : null}
+        
+                        {suggestions.map(suggestion => {
+                        const style = {
+                            backgroundColor: suggestion.active ? "#41b6e6" : "#fff"
+                        };
+        
+                        return (
+                            <div {...getSuggestionItemProps(suggestion, { style })}>
+                            {suggestion.description}
+                            </div>
+                        );
+                        })}
+                    </div>
+                    </div>
+                )}
+                </PlacesAutocomplete>
                 </Box>
                 </Grid>
                 </Grid>

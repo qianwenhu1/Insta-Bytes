@@ -3,11 +3,12 @@ import { Button, TextField, Grid, Box, makeStyles, Paper, Typography } from '@ma
 import { toast } from 'react-toastify'
 import { User } from '../../models/User'
 import { userSaveUser } from '../../remote/users-api/user-save-user'
+import PlacesAutocomplete from 'react-places-autocomplete'
 
 const useStyles = makeStyles((theme) => ({
     paper:{
-        width: theme.spacing(42),
-        height: theme.spacing(80)
+        width: theme.spacing(43),
+        height: theme.spacing(100)
     },
 }));
 
@@ -24,7 +25,7 @@ export const NewUserComponent:FunctionComponent<any> = (props) => {
     let [city, changeCity] = useState('')
     let [email, changeEmail] = useState('')
     let [image, changeImage] = useState(null)
-
+    
     const updateUsername = (e:any) => {
         e.preventDefault()
         changeUsername(e.currentTarget.value)
@@ -60,9 +61,12 @@ export const NewUserComponent:FunctionComponent<any> = (props) => {
         changeFavoriteFood(e.currentTarget.value)
     }
 
-    const updateCity = (e:any) => {
-        e.preventDefault()
-        changeCity(e.currentTarget.value)
+    // const updateCity = (e:any) => {
+    //     e.preventDefault()
+    //     changeCity(e.currentTarget.value)
+    // }
+    const updateCity = async (value:any) => {
+        changeCity(value);
     }
 
     const updateImage = (e:any) => {
@@ -124,6 +128,8 @@ export const NewUserComponent:FunctionComponent<any> = (props) => {
                 <Box m={2} pt={2}>
                 <Typography variant='h4'>Sign up</Typography>
                 </Box>
+                <label htmlFor='file'>Profile Picture: </label>
+                <input type='file' name='file' accept='image/*' onChange={updateImage}/>
                 <Box m={1} pt={1}>
                 <TextField id="standard-basic" label="Username" value={username} onChange={updateUsername}/>
                 <TextField id="standard-basic" type="password" label="Password" value={password} onChange={updatePassword}/>
@@ -136,10 +142,37 @@ export const NewUserComponent:FunctionComponent<any> = (props) => {
                 {/* </Box>  */}
                 {/* <Box m={1} pt={2}> */}
                 <TextField id="standard-basic" label="Favorite Food" value={favoriteFood} onChange={updateFavoriteFood}/>
-                <TextField id="standard-basic" label="City" value={city} onChange={updateCity}/>
+                {/* <TextField id="standard-basic" label="City" value={city} onChange={updateCity}/> */}
                 </Box>
-                <label htmlFor='file'>Profile Picture: </label>
-                <input type='file' name='file' accept='image/*' onChange={updateImage}/>
+                <Box m={1} >
+                <PlacesAutocomplete
+                value={city}
+                onChange={changeCity}
+                onSelect={updateCity}
+                >
+                {({ getInputProps, suggestions, getSuggestionItemProps, loading }) => (
+                    <div>
+                    <TextField {...getInputProps({ placeholder: "City" })} />
+        
+                    <div>
+                        {loading ? <div>...loading</div> : null}
+        
+                        {suggestions.map(suggestion => {
+                        const style = {
+                            backgroundColor: suggestion.active ? "#41b6e6" : "#fff"
+                        };
+        
+                        return (
+                            <div {...getSuggestionItemProps(suggestion, { style })}>
+                            {suggestion.description}
+                            </div>
+                        );
+                        })}
+                    </div>
+                    </div>
+                )}
+                </PlacesAutocomplete>
+                </Box>
                 {/* <img src={image}/> */}
                 <Grid item xs={12}>
                 <Box m = {2} pt= {2} pr={2}>
