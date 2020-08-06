@@ -1,15 +1,15 @@
 apiVersion: apps/v1
-kind: Deployment 
-metadate: 
+kind: Deployment
+metadata:
   name: lb-user-service-deployment
-  labels: 
+  labels:
     app: lb
     service: user-service
     deployment: uat
 spec:
   replicas: 2
   selector: 
-    matchLabels: 
+    matchLabels:
       app: lb
       service: user-service
   template:
@@ -18,7 +18,7 @@ spec:
         app: lb
         service:  user-service
     spec:
-      containers: 
+      containers:
       - name: lb-user-service
         image: grc.io/PROJECT_ID/IMAGENAME:tag
         imagePullPolicy: Always
@@ -29,14 +29,17 @@ spec:
           value: "instabytes-microservices"
         - name: LB_USER
           value: "postgres"
-        - name: LB_PASSWORD 
-          value: "Pink123!"
+        - name: LB_PASSWORD
+          valueFrom: 
+            secretKeyRef:
+              name: lb-user-service-secrets
+              key: password
         ports:
         - containerPort: 2006
         livenessProbe:
           httpGet:
-          path: /health
-          port: 2006
-        initialDelaySeconds: 3
-        periodSeconds: 3
+            path: /health
+            port: 2006
+          initialDelaySeconds: 3
+          periodSeconds: 3
 
