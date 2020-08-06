@@ -20,7 +20,7 @@ spec:
     spec:
       containers:
       - name: lb-user-service
-        image: grc.io/PROJECT_ID/IMAGENAME:tag
+        image: grc.io/pacific-destiny/lb-user-service
         imagePullPolicy: Always
         env:
         - name: LB_HOST
