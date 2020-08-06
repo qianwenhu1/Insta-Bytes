@@ -6,7 +6,10 @@ import { postRouter } from './routers/post-router'
 import { logger, errorLogger } from './utils/loggers'
 // import { NewPostInputError } from './errors/NewPostInputError'
 // import { Post } from './models/Post'
+import './event-listeners/new-post'
+//import { postTopic } from './messaging/index'
 
+//console.log(postTopic)
 const app = express()
 
 app.use(express.json({limit:'50mb'}))
