@@ -16,7 +16,7 @@ spec:
     metadata:
       labels:
         app: lb
-        service:  user-service
+        service: user-service
     spec:
       containers:
       - name: lb-user-service
