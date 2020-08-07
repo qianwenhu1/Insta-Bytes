@@ -62,6 +62,7 @@ app.use(function (err, req, res, next) {
     }
 });
 app.listen(2007, function () {
+    //app.listen(2006, ()=>{
     loggers_1.logger.info('Server has started');
 });
 //# sourceMappingURL=index.js.map
