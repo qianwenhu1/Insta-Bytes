@@ -1,0 +1,55 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: lb-post-service-deployment
+  labels:
+    app: lb
+    service: post-service
+    deployment: uat
+spec:
+  replicas: 2
+  selector: 
+    matchLabels:
+      app: lb
+      service: post-service
+  template:
+    metadata:
+      labels:
+        app: lb
+        service: post-service
+    spec:
+      containers:
+      - name: lb-post-service
+        image: gcr.io/pacific-destiny-281218/lb-post-service
+        imagePullPolicy: Always
+        env:
+        - name: LB_HOST
+          value: "10.46.0.3"
+        - name: LB_DATABASE
+          value: "instabytes-microservices"
+        - name: LB_USER
+          value: "postgres"
+        - name: LB_BASE_PATH
+          value: "/post-service"
+        - name: LB_USER_SERVICE_HOST
+          value: "http://lb-user-service-service:2006/user-service"
+        - name: LB_PASSWORD
+          valueFrom:
+            secretKeyRef:
+              name: lb-post-service-secrets
+              key: password
+        ports:
+        - containerPort: 2006
+        livenessProbe:
+          httpGet:
+            path: /health
+            port: 2006
+          initialDelaySeconds: 3
+          periodSeconds: 3
+        readinessProbe:
+          httpGet:
+            path: /health
+            port: 2006
+          initialDelaySeconds: 3
+          periodSeconds: 3
+
