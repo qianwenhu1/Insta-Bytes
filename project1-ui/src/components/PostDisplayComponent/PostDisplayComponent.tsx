@@ -126,7 +126,7 @@ export const PostDisplayComponent:FunctionComponent<IPostDisplayProps> = (props)
             className={classes.media}
             image={props.post?.image}
           />
-          <Grid container alignItems="flex-start">
+          {/* <Grid container alignItems="flex-start">
           <CardContent >
             <Grid item alignItems="flex-start" justify="flex-start">
             <Typography variant="body1" color="textPrimary" component="p">
@@ -137,12 +137,15 @@ export const PostDisplayComponent:FunctionComponent<IPostDisplayProps> = (props)
             </Typography>
             </Grid>
           </CardContent> 
-          </Grid>
-          {/* <CardActions>
-            <Box fontWeight="fontWeightMedium">
-                {userMadePost?.username}: <Typography variant="body2" color="textSecondary" component="p" >{props.post.caption} </Typography>
-            </Box>
-          </CardActions> */}
+          </Grid> */}
+          <CardActions>
+            <Grid >
+            <Typography variant="body2" color="textPrimary" >{userMadePost?.username}: </Typography>
+            </Grid>
+            <Grid >
+                <Typography variant="body2" color="textSecondary" >{props.post.caption} </Typography>
+            </Grid>
+          </CardActions>
           
           {/* <CardContent >
             <Grid alignItems="flex-start">

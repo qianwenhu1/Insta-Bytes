@@ -49,20 +49,24 @@ var NewUserInputError_1 = require("./errors/NewUserInputError");
 var user_service_1 = require("./services/user-service");
 require("./event-listeners/new-user");
 require("./messaging/index");
+require("./messaging/user-service-event-listener");
 var NoUserToLogoutError_1 = require("./errors/NoUserToLogoutError");
 var jsonwebtoken_1 = __importDefault(require("jsonwebtoken"));
 var jwt_verify_middleware_1 = require("./middleware/jwt-verify-middleware");
 var loggers_1 = require("./utils/loggers");
+var basePath = process.env['LB_BASE_PATH'] || '';
 var app = express_1.default();
 app.use(express_1.default.json({ limit: '50mb' }));
 app.use(logging_middleware_1.loggingMiddleware);
 app.use(cors_filter_1.corsFilter);
 app.use(jwt_verify_middleware_1.JWTVerifyMiddleware);
-app.use('/users', user_router_1.userRouter);
+var basePathRouter = express_1.default.Router();
+app.use(basePath, basePathRouter);
+basePathRouter.use('/users', user_router_1.userRouter);
 app.get('/health', function (req, res) {
     res.sendStatus(200);
 });
-app.post('/signUp', function (req, res, next) { return __awaiter(void 0, void 0, void 0, function () {
+basePathRouter.post('/signUp', function (req, res, next) { return __awaiter(void 0, void 0, void 0, function () {
     var _a, username, password, firstName, lastName, email, image, favoriteFood, city, newUser, savedUser, e_1;
     return __generator(this, function (_b) {
         switch (_b.label) {
@@ -101,7 +105,7 @@ app.post('/signUp', function (req, res, next) { return __awaiter(void 0, void 0,
         }
     });
 }); });
-app.post('/login', function (req, res, next) { return __awaiter(void 0, void 0, void 0, function () {
+basePathRouter.post('/login', function (req, res, next) { return __awaiter(void 0, void 0, void 0, function () {
     var username, password, user, token, e_2;
     return __generator(this, function (_a) {
         switch (_a.label) {
@@ -130,7 +134,7 @@ app.post('/login', function (req, res, next) { return __awaiter(void 0, void 0, 
         }
     });
 }); });
-app.delete('/logout', function (req, res, next) { return __awaiter(void 0, void 0, void 0, function () {
+basePathRouter.delete('/logout', function (req, res, next) { return __awaiter(void 0, void 0, void 0, function () {
     return __generator(this, function (_a) {
         if (!req.user) {
             next(new NoUserToLogoutError_1.NoUserToLogoutError());

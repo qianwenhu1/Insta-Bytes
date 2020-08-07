@@ -8,8 +8,6 @@ expressEventEmitter.on(customExpressEvents.NEW_POST, (newPost:Post)=>{
         try{
             newPost.date=null
             let res = await postTopic.publishJSON(newPost)
-
-            console.log(`Pub Sub message id: ${res}`)
             logger.debug(`Pub Sub message id: ${res}`)
         } catch(e) {
             logger.error(e)

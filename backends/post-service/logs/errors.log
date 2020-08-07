@@ -20431,3 +20431,2014 @@
     at Object.next (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\src\routers\post-router.ts:14:53)
     at fulfilled (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\src\routers\post-router.ts:5:58)
     at processTicksAndRejections (internal/process/task_queues.js:97:5)
+[2020-08-06T17:50:59.330] [ERROR] error - TypeError: Do not know how to serialize a BigInt
+    at JSON.stringify (<anonymous>)
+    at stringify (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\express\lib\response.js:1123:12)
+    at ServerResponse.json (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\express\lib\response.js:260:14)
+    at C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\src\routers\post-router.ts:93:21
+    at step (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\src\routers\post-router.ts:33:23)
+    at Object.next (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\src\routers\post-router.ts:14:53)
+    at fulfilled (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\src\routers\post-router.ts:5:58)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+[2020-08-06T17:59:31.662] [ERROR] error - TypeError [ERR_HTTP_INVALID_HEADER_VALUE]: Invalid value "undefined" for header "Authorization"
+    at ClientRequest.setHeader (_http_outgoing.js:521:3)
+    at new ClientRequest (_http_client.js:241:14)
+    at Object.request (http.js:46:10)
+    at RedirectableRequest._performRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:169:24)
+    at new RedirectableRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:66:8)
+    at Object.wrappedProtocol.request (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:307:14)
+    at dispatchHttpRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\adapters\http.js:179:25)
+    at new Promise (<anonymous>)
+    at httpAdapter (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\adapters\http.js:21:10)
+    at dispatchRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\core\dispatchRequest.js:52:10) {
+  code: 'ERR_HTTP_INVALID_HEADER_VALUE'
+}
+[2020-08-06T17:59:31.670] [ERROR] error - TypeError [ERR_HTTP_INVALID_HEADER_VALUE]: Invalid value "undefined" for header "Authorization"
+    at ClientRequest.setHeader (_http_outgoing.js:521:3)
+    at new ClientRequest (_http_client.js:241:14)
+    at Object.request (http.js:46:10)
+    at RedirectableRequest._performRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:169:24)
+    at new RedirectableRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:66:8)
+    at Object.wrappedProtocol.request (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:307:14)
+    at dispatchHttpRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\adapters\http.js:179:25)
+    at new Promise (<anonymous>)
+    at httpAdapter (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\adapters\http.js:21:10)
+    at dispatchRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\core\dispatchRequest.js:52:10) {
+  code: 'ERR_HTTP_INVALID_HEADER_VALUE'
+}
+[2020-08-06T17:59:31.689] [ERROR] error - TypeError [ERR_HTTP_INVALID_HEADER_VALUE]: Invalid value "undefined" for header "Authorization"
+    at ClientRequest.setHeader (_http_outgoing.js:521:3)
+    at new ClientRequest (_http_client.js:241:14)
+    at Object.request (http.js:46:10)
+    at RedirectableRequest._performRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:169:24)
+    at new RedirectableRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:66:8)
+    at Object.wrappedProtocol.request (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:307:14)
+    at dispatchHttpRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\adapters\http.js:179:25)
+    at new Promise (<anonymous>)
+    at httpAdapter (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\adapters\http.js:21:10)
+    at dispatchRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\core\dispatchRequest.js:52:10) {
+  code: 'ERR_HTTP_INVALID_HEADER_VALUE'
+}
+[2020-08-06T18:00:27.377] [ERROR] error - TypeError [ERR_HTTP_INVALID_HEADER_VALUE]: Invalid value "undefined" for header "Authorization"
+    at ClientRequest.setHeader (_http_outgoing.js:521:3)
+    at new ClientRequest (_http_client.js:241:14)
+    at Object.request (http.js:46:10)
+    at RedirectableRequest._performRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:169:24)
+    at new RedirectableRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:66:8)
+    at Object.wrappedProtocol.request (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:307:14)
+    at dispatchHttpRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\adapters\http.js:179:25)
+    at new Promise (<anonymous>)
+    at httpAdapter (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\adapters\http.js:21:10)
+    at dispatchRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\core\dispatchRequest.js:52:10) {
+  code: 'ERR_HTTP_INVALID_HEADER_VALUE'
+}
+[2020-08-06T18:00:27.386] [ERROR] error - TypeError [ERR_HTTP_INVALID_HEADER_VALUE]: Invalid value "undefined" for header "Authorization"
+    at ClientRequest.setHeader (_http_outgoing.js:521:3)
+    at new ClientRequest (_http_client.js:241:14)
+    at Object.request (http.js:46:10)
+    at RedirectableRequest._performRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:169:24)
+    at new RedirectableRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:66:8)
+    at Object.wrappedProtocol.request (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:307:14)
+    at dispatchHttpRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\adapters\http.js:179:25)
+    at new Promise (<anonymous>)
+    at httpAdapter (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\adapters\http.js:21:10)
+    at dispatchRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\core\dispatchRequest.js:52:10) {
+  code: 'ERR_HTTP_INVALID_HEADER_VALUE'
+}
+[2020-08-06T18:00:27.393] [ERROR] error - TypeError [ERR_HTTP_INVALID_HEADER_VALUE]: Invalid value "undefined" for header "Authorization"
+    at ClientRequest.setHeader (_http_outgoing.js:521:3)
+    at new ClientRequest (_http_client.js:241:14)
+    at Object.request (http.js:46:10)
+    at RedirectableRequest._performRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:169:24)
+    at new RedirectableRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:66:8)
+    at Object.wrappedProtocol.request (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:307:14)
+    at dispatchHttpRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\adapters\http.js:179:25)
+    at new Promise (<anonymous>)
+    at httpAdapter (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\adapters\http.js:21:10)
+    at dispatchRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\core\dispatchRequest.js:52:10) {
+  code: 'ERR_HTTP_INVALID_HEADER_VALUE'
+}
+[2020-08-06T18:00:59.256] [ERROR] error - TypeError [ERR_HTTP_INVALID_HEADER_VALUE]: Invalid value "undefined" for header "Authorization"
+    at ClientRequest.setHeader (_http_outgoing.js:521:3)
+    at new ClientRequest (_http_client.js:241:14)
+    at Object.request (http.js:46:10)
+    at RedirectableRequest._performRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:169:24)
+    at new RedirectableRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:66:8)
+    at Object.wrappedProtocol.request (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:307:14)
+    at dispatchHttpRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\adapters\http.js:179:25)
+    at new Promise (<anonymous>)
+    at httpAdapter (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\adapters\http.js:21:10)
+    at dispatchRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\core\dispatchRequest.js:52:10) {
+  code: 'ERR_HTTP_INVALID_HEADER_VALUE'
+}
+[2020-08-06T18:00:59.265] [ERROR] error - TypeError [ERR_HTTP_INVALID_HEADER_VALUE]: Invalid value "undefined" for header "Authorization"
+    at ClientRequest.setHeader (_http_outgoing.js:521:3)
+    at new ClientRequest (_http_client.js:241:14)
+    at Object.request (http.js:46:10)
+    at RedirectableRequest._performRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:169:24)
+    at new RedirectableRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:66:8)
+    at Object.wrappedProtocol.request (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:307:14)
+    at dispatchHttpRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\adapters\http.js:179:25)
+    at new Promise (<anonymous>)
+    at httpAdapter (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\adapters\http.js:21:10)
+    at dispatchRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\core\dispatchRequest.js:52:10) {
+  code: 'ERR_HTTP_INVALID_HEADER_VALUE'
+}
+[2020-08-06T18:00:59.274] [ERROR] error - TypeError [ERR_HTTP_INVALID_HEADER_VALUE]: Invalid value "undefined" for header "Authorization"
+    at ClientRequest.setHeader (_http_outgoing.js:521:3)
+    at new ClientRequest (_http_client.js:241:14)
+    at Object.request (http.js:46:10)
+    at RedirectableRequest._performRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:169:24)
+    at new RedirectableRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:66:8)
+    at Object.wrappedProtocol.request (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:307:14)
+    at dispatchHttpRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\adapters\http.js:179:25)
+    at new Promise (<anonymous>)
+    at httpAdapter (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\adapters\http.js:21:10)
+    at dispatchRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\core\dispatchRequest.js:52:10) {
+  code: 'ERR_HTTP_INVALID_HEADER_VALUE'
+}
+[2020-08-06T18:01:20.475] [ERROR] error - TypeError [ERR_HTTP_INVALID_HEADER_VALUE]: Invalid value "undefined" for header "Authorization"
+    at ClientRequest.setHeader (_http_outgoing.js:521:3)
+    at new ClientRequest (_http_client.js:241:14)
+    at Object.request (http.js:46:10)
+    at RedirectableRequest._performRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:169:24)
+    at new RedirectableRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:66:8)
+    at Object.wrappedProtocol.request (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:307:14)
+    at dispatchHttpRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\adapters\http.js:179:25)
+    at new Promise (<anonymous>)
+    at httpAdapter (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\adapters\http.js:21:10)
+    at dispatchRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\core\dispatchRequest.js:52:10) {
+  code: 'ERR_HTTP_INVALID_HEADER_VALUE'
+}
+[2020-08-06T18:01:20.482] [ERROR] error - TypeError [ERR_HTTP_INVALID_HEADER_VALUE]: Invalid value "undefined" for header "Authorization"
+    at ClientRequest.setHeader (_http_outgoing.js:521:3)
+    at new ClientRequest (_http_client.js:241:14)
+    at Object.request (http.js:46:10)
+    at RedirectableRequest._performRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:169:24)
+    at new RedirectableRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:66:8)
+    at Object.wrappedProtocol.request (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:307:14)
+    at dispatchHttpRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\adapters\http.js:179:25)
+    at new Promise (<anonymous>)
+    at httpAdapter (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\adapters\http.js:21:10)
+    at dispatchRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\core\dispatchRequest.js:52:10) {
+  code: 'ERR_HTTP_INVALID_HEADER_VALUE'
+}
+[2020-08-06T18:01:20.493] [ERROR] error - TypeError [ERR_HTTP_INVALID_HEADER_VALUE]: Invalid value "undefined" for header "Authorization"
+    at ClientRequest.setHeader (_http_outgoing.js:521:3)
+    at new ClientRequest (_http_client.js:241:14)
+    at Object.request (http.js:46:10)
+    at RedirectableRequest._performRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:169:24)
+    at new RedirectableRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:66:8)
+    at Object.wrappedProtocol.request (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:307:14)
+    at dispatchHttpRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\adapters\http.js:179:25)
+    at new Promise (<anonymous>)
+    at httpAdapter (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\adapters\http.js:21:10)
+    at dispatchRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\core\dispatchRequest.js:52:10) {
+  code: 'ERR_HTTP_INVALID_HEADER_VALUE'
+}
+[2020-08-06T18:01:51.430] [ERROR] error - TypeError [ERR_HTTP_INVALID_HEADER_VALUE]: Invalid value "undefined" for header "Authorization"
+    at ClientRequest.setHeader (_http_outgoing.js:521:3)
+    at new ClientRequest (_http_client.js:241:14)
+    at Object.request (http.js:46:10)
+    at RedirectableRequest._performRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:169:24)
+    at new RedirectableRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:66:8)
+    at Object.wrappedProtocol.request (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:307:14)
+    at dispatchHttpRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\adapters\http.js:179:25)
+    at new Promise (<anonymous>)
+    at httpAdapter (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\adapters\http.js:21:10)
+    at dispatchRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\core\dispatchRequest.js:52:10) {
+  code: 'ERR_HTTP_INVALID_HEADER_VALUE'
+}
+[2020-08-06T18:01:51.439] [ERROR] error - TypeError [ERR_HTTP_INVALID_HEADER_VALUE]: Invalid value "undefined" for header "Authorization"
+    at ClientRequest.setHeader (_http_outgoing.js:521:3)
+    at new ClientRequest (_http_client.js:241:14)
+    at Object.request (http.js:46:10)
+    at RedirectableRequest._performRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:169:24)
+    at new RedirectableRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:66:8)
+    at Object.wrappedProtocol.request (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:307:14)
+    at dispatchHttpRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\adapters\http.js:179:25)
+    at new Promise (<anonymous>)
+    at httpAdapter (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\adapters\http.js:21:10)
+    at dispatchRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\core\dispatchRequest.js:52:10) {
+  code: 'ERR_HTTP_INVALID_HEADER_VALUE'
+}
+[2020-08-06T18:01:51.446] [ERROR] error - TypeError [ERR_HTTP_INVALID_HEADER_VALUE]: Invalid value "undefined" for header "Authorization"
+    at ClientRequest.setHeader (_http_outgoing.js:521:3)
+    at new ClientRequest (_http_client.js:241:14)
+    at Object.request (http.js:46:10)
+    at RedirectableRequest._performRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:169:24)
+    at new RedirectableRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:66:8)
+    at Object.wrappedProtocol.request (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:307:14)
+    at dispatchHttpRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\adapters\http.js:179:25)
+    at new Promise (<anonymous>)
+    at httpAdapter (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\adapters\http.js:21:10)
+    at dispatchRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\core\dispatchRequest.js:52:10) {
+  code: 'ERR_HTTP_INVALID_HEADER_VALUE'
+}
+[2020-08-06T18:02:08.548] [ERROR] error - TypeError [ERR_HTTP_INVALID_HEADER_VALUE]: Invalid value "undefined" for header "Authorization"
+    at ClientRequest.setHeader (_http_outgoing.js:521:3)
+    at new ClientRequest (_http_client.js:241:14)
+    at Object.request (http.js:46:10)
+    at RedirectableRequest._performRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:169:24)
+    at new RedirectableRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:66:8)
+    at Object.wrappedProtocol.request (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:307:14)
+    at dispatchHttpRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\adapters\http.js:179:25)
+    at new Promise (<anonymous>)
+    at httpAdapter (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\adapters\http.js:21:10)
+    at dispatchRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\core\dispatchRequest.js:52:10) {
+  code: 'ERR_HTTP_INVALID_HEADER_VALUE'
+}
+[2020-08-06T18:02:08.556] [ERROR] error - TypeError [ERR_HTTP_INVALID_HEADER_VALUE]: Invalid value "undefined" for header "Authorization"
+    at ClientRequest.setHeader (_http_outgoing.js:521:3)
+    at new ClientRequest (_http_client.js:241:14)
+    at Object.request (http.js:46:10)
+    at RedirectableRequest._performRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:169:24)
+    at new RedirectableRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:66:8)
+    at Object.wrappedProtocol.request (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:307:14)
+    at dispatchHttpRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\adapters\http.js:179:25)
+    at new Promise (<anonymous>)
+    at httpAdapter (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\adapters\http.js:21:10)
+    at dispatchRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\core\dispatchRequest.js:52:10) {
+  code: 'ERR_HTTP_INVALID_HEADER_VALUE'
+}
+[2020-08-06T18:02:08.563] [ERROR] error - TypeError [ERR_HTTP_INVALID_HEADER_VALUE]: Invalid value "undefined" for header "Authorization"
+    at ClientRequest.setHeader (_http_outgoing.js:521:3)
+    at new ClientRequest (_http_client.js:241:14)
+    at Object.request (http.js:46:10)
+    at RedirectableRequest._performRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:169:24)
+    at new RedirectableRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:66:8)
+    at Object.wrappedProtocol.request (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:307:14)
+    at dispatchHttpRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\adapters\http.js:179:25)
+    at new Promise (<anonymous>)
+    at httpAdapter (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\adapters\http.js:21:10)
+    at dispatchRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\core\dispatchRequest.js:52:10) {
+  code: 'ERR_HTTP_INVALID_HEADER_VALUE'
+}
+[2020-08-06T18:02:35.966] [ERROR] error - TypeError [ERR_HTTP_INVALID_HEADER_VALUE]: Invalid value "undefined" for header "Authorization"
+    at ClientRequest.setHeader (_http_outgoing.js:521:3)
+    at new ClientRequest (_http_client.js:241:14)
+    at Object.request (http.js:46:10)
+    at RedirectableRequest._performRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:169:24)
+    at new RedirectableRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:66:8)
+    at Object.wrappedProtocol.request (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:307:14)
+    at dispatchHttpRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\adapters\http.js:179:25)
+    at new Promise (<anonymous>)
+    at httpAdapter (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\adapters\http.js:21:10)
+    at dispatchRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\core\dispatchRequest.js:52:10) {
+  code: 'ERR_HTTP_INVALID_HEADER_VALUE'
+}
+[2020-08-06T18:02:35.973] [ERROR] error - TypeError [ERR_HTTP_INVALID_HEADER_VALUE]: Invalid value "undefined" for header "Authorization"
+    at ClientRequest.setHeader (_http_outgoing.js:521:3)
+    at new ClientRequest (_http_client.js:241:14)
+    at Object.request (http.js:46:10)
+    at RedirectableRequest._performRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:169:24)
+    at new RedirectableRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:66:8)
+    at Object.wrappedProtocol.request (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:307:14)
+    at dispatchHttpRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\adapters\http.js:179:25)
+    at new Promise (<anonymous>)
+    at httpAdapter (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\adapters\http.js:21:10)
+    at dispatchRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\core\dispatchRequest.js:52:10) {
+  code: 'ERR_HTTP_INVALID_HEADER_VALUE'
+}
+[2020-08-06T18:02:35.979] [ERROR] error - TypeError [ERR_HTTP_INVALID_HEADER_VALUE]: Invalid value "undefined" for header "Authorization"
+    at ClientRequest.setHeader (_http_outgoing.js:521:3)
+    at new ClientRequest (_http_client.js:241:14)
+    at Object.request (http.js:46:10)
+    at RedirectableRequest._performRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:169:24)
+    at new RedirectableRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:66:8)
+    at Object.wrappedProtocol.request (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:307:14)
+    at dispatchHttpRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\adapters\http.js:179:25)
+    at new Promise (<anonymous>)
+    at httpAdapter (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\adapters\http.js:21:10)
+    at dispatchRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\core\dispatchRequest.js:52:10) {
+  code: 'ERR_HTTP_INVALID_HEADER_VALUE'
+}
+[2020-08-06T18:03:17.537] [ERROR] error - TypeError: Do not know how to serialize a BigInt
+    at JSON.stringify (<anonymous>)
+    at stringify (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\express\lib\response.js:1123:12)
+    at ServerResponse.json (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\express\lib\response.js:260:14)
+    at C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\src\routers\post-router.ts:93:21
+    at step (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\src\routers\post-router.ts:33:23)
+    at Object.next (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\src\routers\post-router.ts:14:53)
+    at fulfilled (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\src\routers\post-router.ts:5:58)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+[2020-08-06T18:04:03.489] [ERROR] error - TypeError [ERR_HTTP_INVALID_HEADER_VALUE]: Invalid value "undefined" for header "Authorization"
+    at ClientRequest.setHeader (_http_outgoing.js:521:3)
+    at new ClientRequest (_http_client.js:241:14)
+    at Object.request (http.js:46:10)
+    at RedirectableRequest._performRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:169:24)
+    at new RedirectableRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:66:8)
+    at Object.wrappedProtocol.request (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:307:14)
+    at dispatchHttpRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\adapters\http.js:179:25)
+    at new Promise (<anonymous>)
+    at httpAdapter (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\adapters\http.js:21:10)
+    at dispatchRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\core\dispatchRequest.js:52:10) {
+  code: 'ERR_HTTP_INVALID_HEADER_VALUE'
+}
+[2020-08-06T18:04:03.498] [ERROR] error - TypeError [ERR_HTTP_INVALID_HEADER_VALUE]: Invalid value "undefined" for header "Authorization"
+    at ClientRequest.setHeader (_http_outgoing.js:521:3)
+    at new ClientRequest (_http_client.js:241:14)
+    at Object.request (http.js:46:10)
+    at RedirectableRequest._performRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:169:24)
+    at new RedirectableRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:66:8)
+    at Object.wrappedProtocol.request (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:307:14)
+    at dispatchHttpRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\adapters\http.js:179:25)
+    at new Promise (<anonymous>)
+    at httpAdapter (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\adapters\http.js:21:10)
+    at dispatchRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\core\dispatchRequest.js:52:10) {
+  code: 'ERR_HTTP_INVALID_HEADER_VALUE'
+}
+[2020-08-06T18:04:03.507] [ERROR] error - TypeError [ERR_HTTP_INVALID_HEADER_VALUE]: Invalid value "undefined" for header "Authorization"
+    at ClientRequest.setHeader (_http_outgoing.js:521:3)
+    at new ClientRequest (_http_client.js:241:14)
+    at Object.request (http.js:46:10)
+    at RedirectableRequest._performRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:169:24)
+    at new RedirectableRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:66:8)
+    at Object.wrappedProtocol.request (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:307:14)
+    at dispatchHttpRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\adapters\http.js:179:25)
+    at new Promise (<anonymous>)
+    at httpAdapter (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\adapters\http.js:21:10)
+    at dispatchRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\core\dispatchRequest.js:52:10) {
+  code: 'ERR_HTTP_INVALID_HEADER_VALUE'
+}
+[2020-08-06T18:04:03.517] [ERROR] error - TypeError [ERR_HTTP_INVALID_HEADER_VALUE]: Invalid value "undefined" for header "Authorization"
+    at ClientRequest.setHeader (_http_outgoing.js:521:3)
+    at new ClientRequest (_http_client.js:241:14)
+    at Object.request (http.js:46:10)
+    at RedirectableRequest._performRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:169:24)
+    at new RedirectableRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:66:8)
+    at Object.wrappedProtocol.request (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:307:14)
+    at dispatchHttpRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\adapters\http.js:179:25)
+    at new Promise (<anonymous>)
+    at httpAdapter (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\adapters\http.js:21:10)
+    at dispatchRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\core\dispatchRequest.js:52:10) {
+  code: 'ERR_HTTP_INVALID_HEADER_VALUE'
+}
+[2020-08-06T18:04:21.124] [ERROR] error - TypeError [ERR_HTTP_INVALID_HEADER_VALUE]: Invalid value "undefined" for header "Authorization"
+    at ClientRequest.setHeader (_http_outgoing.js:521:3)
+    at new ClientRequest (_http_client.js:241:14)
+    at Object.request (http.js:46:10)
+    at RedirectableRequest._performRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:169:24)
+    at new RedirectableRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:66:8)
+    at Object.wrappedProtocol.request (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:307:14)
+    at dispatchHttpRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\adapters\http.js:179:25)
+    at new Promise (<anonymous>)
+    at httpAdapter (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\adapters\http.js:21:10)
+    at dispatchRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\core\dispatchRequest.js:52:10) {
+  code: 'ERR_HTTP_INVALID_HEADER_VALUE'
+}
+[2020-08-06T18:04:21.136] [ERROR] error - TypeError [ERR_HTTP_INVALID_HEADER_VALUE]: Invalid value "undefined" for header "Authorization"
+    at ClientRequest.setHeader (_http_outgoing.js:521:3)
+    at new ClientRequest (_http_client.js:241:14)
+    at Object.request (http.js:46:10)
+    at RedirectableRequest._performRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:169:24)
+    at new RedirectableRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:66:8)
+    at Object.wrappedProtocol.request (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:307:14)
+    at dispatchHttpRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\adapters\http.js:179:25)
+    at new Promise (<anonymous>)
+    at httpAdapter (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\adapters\http.js:21:10)
+    at dispatchRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\core\dispatchRequest.js:52:10) {
+  code: 'ERR_HTTP_INVALID_HEADER_VALUE'
+}
+[2020-08-06T18:04:21.145] [ERROR] error - TypeError [ERR_HTTP_INVALID_HEADER_VALUE]: Invalid value "undefined" for header "Authorization"
+    at ClientRequest.setHeader (_http_outgoing.js:521:3)
+    at new ClientRequest (_http_client.js:241:14)
+    at Object.request (http.js:46:10)
+    at RedirectableRequest._performRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:169:24)
+    at new RedirectableRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:66:8)
+    at Object.wrappedProtocol.request (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:307:14)
+    at dispatchHttpRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\adapters\http.js:179:25)
+    at new Promise (<anonymous>)
+    at httpAdapter (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\adapters\http.js:21:10)
+    at dispatchRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\core\dispatchRequest.js:52:10) {
+  code: 'ERR_HTTP_INVALID_HEADER_VALUE'
+}
+[2020-08-06T18:04:21.154] [ERROR] error - TypeError [ERR_HTTP_INVALID_HEADER_VALUE]: Invalid value "undefined" for header "Authorization"
+    at ClientRequest.setHeader (_http_outgoing.js:521:3)
+    at new ClientRequest (_http_client.js:241:14)
+    at Object.request (http.js:46:10)
+    at RedirectableRequest._performRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:169:24)
+    at new RedirectableRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:66:8)
+    at Object.wrappedProtocol.request (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:307:14)
+    at dispatchHttpRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\adapters\http.js:179:25)
+    at new Promise (<anonymous>)
+    at httpAdapter (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\adapters\http.js:21:10)
+    at dispatchRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\core\dispatchRequest.js:52:10) {
+  code: 'ERR_HTTP_INVALID_HEADER_VALUE'
+}
+[2020-08-06T18:05:06.421] [ERROR] error - TypeError [ERR_HTTP_INVALID_HEADER_VALUE]: Invalid value "undefined" for header "Authorization"
+    at ClientRequest.setHeader (_http_outgoing.js:521:3)
+    at new ClientRequest (_http_client.js:241:14)
+    at Object.request (http.js:46:10)
+    at RedirectableRequest._performRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:169:24)
+    at new RedirectableRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:66:8)
+    at Object.wrappedProtocol.request (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:307:14)
+    at dispatchHttpRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\adapters\http.js:179:25)
+    at new Promise (<anonymous>)
+    at httpAdapter (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\adapters\http.js:21:10)
+    at dispatchRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\core\dispatchRequest.js:52:10) {
+  code: 'ERR_HTTP_INVALID_HEADER_VALUE'
+}
+[2020-08-06T18:05:06.439] [ERROR] error - TypeError [ERR_HTTP_INVALID_HEADER_VALUE]: Invalid value "undefined" for header "Authorization"
+    at ClientRequest.setHeader (_http_outgoing.js:521:3)
+    at new ClientRequest (_http_client.js:241:14)
+    at Object.request (http.js:46:10)
+    at RedirectableRequest._performRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:169:24)
+    at new RedirectableRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:66:8)
+    at Object.wrappedProtocol.request (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:307:14)
+    at dispatchHttpRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\adapters\http.js:179:25)
+    at new Promise (<anonymous>)
+    at httpAdapter (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\adapters\http.js:21:10)
+    at dispatchRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\core\dispatchRequest.js:52:10) {
+  code: 'ERR_HTTP_INVALID_HEADER_VALUE'
+}
+[2020-08-06T18:05:06.454] [ERROR] error - TypeError [ERR_HTTP_INVALID_HEADER_VALUE]: Invalid value "undefined" for header "Authorization"
+    at ClientRequest.setHeader (_http_outgoing.js:521:3)
+    at new ClientRequest (_http_client.js:241:14)
+    at Object.request (http.js:46:10)
+    at RedirectableRequest._performRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:169:24)
+    at new RedirectableRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:66:8)
+    at Object.wrappedProtocol.request (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:307:14)
+    at dispatchHttpRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\adapters\http.js:179:25)
+    at new Promise (<anonymous>)
+    at httpAdapter (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\adapters\http.js:21:10)
+    at dispatchRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\core\dispatchRequest.js:52:10) {
+  code: 'ERR_HTTP_INVALID_HEADER_VALUE'
+}
+[2020-08-06T18:05:06.464] [ERROR] error - TypeError [ERR_HTTP_INVALID_HEADER_VALUE]: Invalid value "undefined" for header "Authorization"
+    at ClientRequest.setHeader (_http_outgoing.js:521:3)
+    at new ClientRequest (_http_client.js:241:14)
+    at Object.request (http.js:46:10)
+    at RedirectableRequest._performRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:169:24)
+    at new RedirectableRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:66:8)
+    at Object.wrappedProtocol.request (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:307:14)
+    at dispatchHttpRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\adapters\http.js:179:25)
+    at new Promise (<anonymous>)
+    at httpAdapter (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\adapters\http.js:21:10)
+    at dispatchRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\core\dispatchRequest.js:52:10) {
+  code: 'ERR_HTTP_INVALID_HEADER_VALUE'
+}
+[2020-08-06T18:06:08.335] [ERROR] error - TypeError [ERR_HTTP_INVALID_HEADER_VALUE]: Invalid value "undefined" for header "Authorization"
+    at ClientRequest.setHeader (_http_outgoing.js:521:3)
+    at new ClientRequest (_http_client.js:241:14)
+    at Object.request (http.js:46:10)
+    at RedirectableRequest._performRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:169:24)
+    at new RedirectableRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:66:8)
+    at Object.wrappedProtocol.request (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:307:14)
+    at dispatchHttpRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\adapters\http.js:179:25)
+    at new Promise (<anonymous>)
+    at httpAdapter (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\adapters\http.js:21:10)
+    at dispatchRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\core\dispatchRequest.js:52:10) {
+  code: 'ERR_HTTP_INVALID_HEADER_VALUE'
+}
+[2020-08-06T18:06:08.343] [ERROR] error - TypeError [ERR_HTTP_INVALID_HEADER_VALUE]: Invalid value "undefined" for header "Authorization"
+    at ClientRequest.setHeader (_http_outgoing.js:521:3)
+    at new ClientRequest (_http_client.js:241:14)
+    at Object.request (http.js:46:10)
+    at RedirectableRequest._performRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:169:24)
+    at new RedirectableRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:66:8)
+    at Object.wrappedProtocol.request (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:307:14)
+    at dispatchHttpRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\adapters\http.js:179:25)
+    at new Promise (<anonymous>)
+    at httpAdapter (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\adapters\http.js:21:10)
+    at dispatchRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\core\dispatchRequest.js:52:10) {
+  code: 'ERR_HTTP_INVALID_HEADER_VALUE'
+}
+[2020-08-06T18:06:08.350] [ERROR] error - TypeError [ERR_HTTP_INVALID_HEADER_VALUE]: Invalid value "undefined" for header "Authorization"
+    at ClientRequest.setHeader (_http_outgoing.js:521:3)
+    at new ClientRequest (_http_client.js:241:14)
+    at Object.request (http.js:46:10)
+    at RedirectableRequest._performRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:169:24)
+    at new RedirectableRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:66:8)
+    at Object.wrappedProtocol.request (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:307:14)
+    at dispatchHttpRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\adapters\http.js:179:25)
+    at new Promise (<anonymous>)
+    at httpAdapter (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\adapters\http.js:21:10)
+    at dispatchRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\core\dispatchRequest.js:52:10) {
+  code: 'ERR_HTTP_INVALID_HEADER_VALUE'
+}
+[2020-08-06T18:06:08.360] [ERROR] error - TypeError [ERR_HTTP_INVALID_HEADER_VALUE]: Invalid value "undefined" for header "Authorization"
+    at ClientRequest.setHeader (_http_outgoing.js:521:3)
+    at new ClientRequest (_http_client.js:241:14)
+    at Object.request (http.js:46:10)
+    at RedirectableRequest._performRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:169:24)
+    at new RedirectableRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:66:8)
+    at Object.wrappedProtocol.request (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:307:14)
+    at dispatchHttpRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\adapters\http.js:179:25)
+    at new Promise (<anonymous>)
+    at httpAdapter (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\adapters\http.js:21:10)
+    at dispatchRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\core\dispatchRequest.js:52:10) {
+  code: 'ERR_HTTP_INVALID_HEADER_VALUE'
+}
+[2020-08-06T18:06:12.873] [ERROR] error - TypeError [ERR_HTTP_INVALID_HEADER_VALUE]: Invalid value "undefined" for header "Authorization"
+    at ClientRequest.setHeader (_http_outgoing.js:521:3)
+    at new ClientRequest (_http_client.js:241:14)
+    at Object.request (http.js:46:10)
+    at RedirectableRequest._performRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:169:24)
+    at new RedirectableRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:66:8)
+    at Object.wrappedProtocol.request (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:307:14)
+    at dispatchHttpRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\adapters\http.js:179:25)
+    at new Promise (<anonymous>)
+    at httpAdapter (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\adapters\http.js:21:10)
+    at dispatchRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\core\dispatchRequest.js:52:10) {
+  code: 'ERR_HTTP_INVALID_HEADER_VALUE'
+}
+[2020-08-06T18:06:12.880] [ERROR] error - TypeError [ERR_HTTP_INVALID_HEADER_VALUE]: Invalid value "undefined" for header "Authorization"
+    at ClientRequest.setHeader (_http_outgoing.js:521:3)
+    at new ClientRequest (_http_client.js:241:14)
+    at Object.request (http.js:46:10)
+    at RedirectableRequest._performRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:169:24)
+    at new RedirectableRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:66:8)
+    at Object.wrappedProtocol.request (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:307:14)
+    at dispatchHttpRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\adapters\http.js:179:25)
+    at new Promise (<anonymous>)
+    at httpAdapter (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\adapters\http.js:21:10)
+    at dispatchRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\core\dispatchRequest.js:52:10) {
+  code: 'ERR_HTTP_INVALID_HEADER_VALUE'
+}
+[2020-08-06T18:06:12.889] [ERROR] error - TypeError [ERR_HTTP_INVALID_HEADER_VALUE]: Invalid value "undefined" for header "Authorization"
+    at ClientRequest.setHeader (_http_outgoing.js:521:3)
+    at new ClientRequest (_http_client.js:241:14)
+    at Object.request (http.js:46:10)
+    at RedirectableRequest._performRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:169:24)
+    at new RedirectableRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:66:8)
+    at Object.wrappedProtocol.request (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:307:14)
+    at dispatchHttpRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\adapters\http.js:179:25)
+    at new Promise (<anonymous>)
+    at httpAdapter (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\adapters\http.js:21:10)
+    at dispatchRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\core\dispatchRequest.js:52:10) {
+  code: 'ERR_HTTP_INVALID_HEADER_VALUE'
+}
+[2020-08-06T18:06:12.897] [ERROR] error - TypeError [ERR_HTTP_INVALID_HEADER_VALUE]: Invalid value "undefined" for header "Authorization"
+    at ClientRequest.setHeader (_http_outgoing.js:521:3)
+    at new ClientRequest (_http_client.js:241:14)
+    at Object.request (http.js:46:10)
+    at RedirectableRequest._performRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:169:24)
+    at new RedirectableRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:66:8)
+    at Object.wrappedProtocol.request (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:307:14)
+    at dispatchHttpRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\adapters\http.js:179:25)
+    at new Promise (<anonymous>)
+    at httpAdapter (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\adapters\http.js:21:10)
+    at dispatchRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\core\dispatchRequest.js:52:10) {
+  code: 'ERR_HTTP_INVALID_HEADER_VALUE'
+}
+[2020-08-06T18:06:15.265] [ERROR] error - TypeError [ERR_HTTP_INVALID_HEADER_VALUE]: Invalid value "undefined" for header "Authorization"
+    at ClientRequest.setHeader (_http_outgoing.js:521:3)
+    at new ClientRequest (_http_client.js:241:14)
+    at Object.request (http.js:46:10)
+    at RedirectableRequest._performRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:169:24)
+    at new RedirectableRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:66:8)
+    at Object.wrappedProtocol.request (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:307:14)
+    at dispatchHttpRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\adapters\http.js:179:25)
+    at new Promise (<anonymous>)
+    at httpAdapter (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\adapters\http.js:21:10)
+    at dispatchRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\core\dispatchRequest.js:52:10) {
+  code: 'ERR_HTTP_INVALID_HEADER_VALUE'
+}
+[2020-08-06T18:06:15.277] [ERROR] error - TypeError [ERR_HTTP_INVALID_HEADER_VALUE]: Invalid value "undefined" for header "Authorization"
+    at ClientRequest.setHeader (_http_outgoing.js:521:3)
+    at new ClientRequest (_http_client.js:241:14)
+    at Object.request (http.js:46:10)
+    at RedirectableRequest._performRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:169:24)
+    at new RedirectableRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:66:8)
+    at Object.wrappedProtocol.request (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:307:14)
+    at dispatchHttpRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\adapters\http.js:179:25)
+    at new Promise (<anonymous>)
+    at httpAdapter (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\adapters\http.js:21:10)
+    at dispatchRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\core\dispatchRequest.js:52:10) {
+  code: 'ERR_HTTP_INVALID_HEADER_VALUE'
+}
+[2020-08-06T18:06:15.285] [ERROR] error - TypeError [ERR_HTTP_INVALID_HEADER_VALUE]: Invalid value "undefined" for header "Authorization"
+    at ClientRequest.setHeader (_http_outgoing.js:521:3)
+    at new ClientRequest (_http_client.js:241:14)
+    at Object.request (http.js:46:10)
+    at RedirectableRequest._performRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:169:24)
+    at new RedirectableRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:66:8)
+    at Object.wrappedProtocol.request (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:307:14)
+    at dispatchHttpRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\adapters\http.js:179:25)
+    at new Promise (<anonymous>)
+    at httpAdapter (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\adapters\http.js:21:10)
+    at dispatchRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\core\dispatchRequest.js:52:10) {
+  code: 'ERR_HTTP_INVALID_HEADER_VALUE'
+}
+[2020-08-06T18:06:15.294] [ERROR] error - TypeError [ERR_HTTP_INVALID_HEADER_VALUE]: Invalid value "undefined" for header "Authorization"
+    at ClientRequest.setHeader (_http_outgoing.js:521:3)
+    at new ClientRequest (_http_client.js:241:14)
+    at Object.request (http.js:46:10)
+    at RedirectableRequest._performRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:169:24)
+    at new RedirectableRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:66:8)
+    at Object.wrappedProtocol.request (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:307:14)
+    at dispatchHttpRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\adapters\http.js:179:25)
+    at new Promise (<anonymous>)
+    at httpAdapter (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\adapters\http.js:21:10)
+    at dispatchRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\core\dispatchRequest.js:52:10) {
+  code: 'ERR_HTTP_INVALID_HEADER_VALUE'
+}
+[2020-08-06T18:06:15.959] [ERROR] error - TypeError [ERR_HTTP_INVALID_HEADER_VALUE]: Invalid value "undefined" for header "Authorization"
+    at ClientRequest.setHeader (_http_outgoing.js:521:3)
+    at new ClientRequest (_http_client.js:241:14)
+    at Object.request (http.js:46:10)
+    at RedirectableRequest._performRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:169:24)
+    at new RedirectableRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:66:8)
+    at Object.wrappedProtocol.request (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:307:14)
+    at dispatchHttpRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\adapters\http.js:179:25)
+    at new Promise (<anonymous>)
+    at httpAdapter (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\adapters\http.js:21:10)
+    at dispatchRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\core\dispatchRequest.js:52:10) {
+  code: 'ERR_HTTP_INVALID_HEADER_VALUE'
+}
+[2020-08-06T18:06:15.996] [ERROR] error - TypeError [ERR_HTTP_INVALID_HEADER_VALUE]: Invalid value "undefined" for header "Authorization"
+    at ClientRequest.setHeader (_http_outgoing.js:521:3)
+    at new ClientRequest (_http_client.js:241:14)
+    at Object.request (http.js:46:10)
+    at RedirectableRequest._performRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:169:24)
+    at new RedirectableRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:66:8)
+    at Object.wrappedProtocol.request (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:307:14)
+    at dispatchHttpRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\adapters\http.js:179:25)
+    at new Promise (<anonymous>)
+    at httpAdapter (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\adapters\http.js:21:10)
+    at dispatchRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\core\dispatchRequest.js:52:10) {
+  code: 'ERR_HTTP_INVALID_HEADER_VALUE'
+}
+[2020-08-06T18:06:16.003] [ERROR] error - TypeError [ERR_HTTP_INVALID_HEADER_VALUE]: Invalid value "undefined" for header "Authorization"
+    at ClientRequest.setHeader (_http_outgoing.js:521:3)
+    at new ClientRequest (_http_client.js:241:14)
+    at Object.request (http.js:46:10)
+    at RedirectableRequest._performRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:169:24)
+    at new RedirectableRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:66:8)
+    at Object.wrappedProtocol.request (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:307:14)
+    at dispatchHttpRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\adapters\http.js:179:25)
+    at new Promise (<anonymous>)
+    at httpAdapter (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\adapters\http.js:21:10)
+    at dispatchRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\core\dispatchRequest.js:52:10) {
+  code: 'ERR_HTTP_INVALID_HEADER_VALUE'
+}
+[2020-08-06T18:06:16.014] [ERROR] error - TypeError [ERR_HTTP_INVALID_HEADER_VALUE]: Invalid value "undefined" for header "Authorization"
+    at ClientRequest.setHeader (_http_outgoing.js:521:3)
+    at new ClientRequest (_http_client.js:241:14)
+    at Object.request (http.js:46:10)
+    at RedirectableRequest._performRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:169:24)
+    at new RedirectableRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:66:8)
+    at Object.wrappedProtocol.request (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:307:14)
+    at dispatchHttpRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\adapters\http.js:179:25)
+    at new Promise (<anonymous>)
+    at httpAdapter (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\adapters\http.js:21:10)
+    at dispatchRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\core\dispatchRequest.js:52:10) {
+  code: 'ERR_HTTP_INVALID_HEADER_VALUE'
+}
+[2020-08-06T18:06:19.719] [ERROR] error - TypeError [ERR_HTTP_INVALID_HEADER_VALUE]: Invalid value "undefined" for header "Authorization"
+    at ClientRequest.setHeader (_http_outgoing.js:521:3)
+    at new ClientRequest (_http_client.js:241:14)
+    at Object.request (http.js:46:10)
+    at RedirectableRequest._performRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:169:24)
+    at new RedirectableRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:66:8)
+    at Object.wrappedProtocol.request (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:307:14)
+    at dispatchHttpRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\adapters\http.js:179:25)
+    at new Promise (<anonymous>)
+    at httpAdapter (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\adapters\http.js:21:10)
+    at dispatchRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\core\dispatchRequest.js:52:10) {
+  code: 'ERR_HTTP_INVALID_HEADER_VALUE'
+}
+[2020-08-06T18:06:19.726] [ERROR] error - TypeError [ERR_HTTP_INVALID_HEADER_VALUE]: Invalid value "undefined" for header "Authorization"
+    at ClientRequest.setHeader (_http_outgoing.js:521:3)
+    at new ClientRequest (_http_client.js:241:14)
+    at Object.request (http.js:46:10)
+    at RedirectableRequest._performRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:169:24)
+    at new RedirectableRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:66:8)
+    at Object.wrappedProtocol.request (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:307:14)
+    at dispatchHttpRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\adapters\http.js:179:25)
+    at new Promise (<anonymous>)
+    at httpAdapter (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\adapters\http.js:21:10)
+    at dispatchRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\core\dispatchRequest.js:52:10) {
+  code: 'ERR_HTTP_INVALID_HEADER_VALUE'
+}
+[2020-08-06T18:06:19.734] [ERROR] error - TypeError [ERR_HTTP_INVALID_HEADER_VALUE]: Invalid value "undefined" for header "Authorization"
+    at ClientRequest.setHeader (_http_outgoing.js:521:3)
+    at new ClientRequest (_http_client.js:241:14)
+    at Object.request (http.js:46:10)
+    at RedirectableRequest._performRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:169:24)
+    at new RedirectableRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:66:8)
+    at Object.wrappedProtocol.request (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:307:14)
+    at dispatchHttpRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\adapters\http.js:179:25)
+    at new Promise (<anonymous>)
+    at httpAdapter (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\adapters\http.js:21:10)
+    at dispatchRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\core\dispatchRequest.js:52:10) {
+  code: 'ERR_HTTP_INVALID_HEADER_VALUE'
+}
+[2020-08-06T18:06:19.741] [ERROR] error - TypeError [ERR_HTTP_INVALID_HEADER_VALUE]: Invalid value "undefined" for header "Authorization"
+    at ClientRequest.setHeader (_http_outgoing.js:521:3)
+    at new ClientRequest (_http_client.js:241:14)
+    at Object.request (http.js:46:10)
+    at RedirectableRequest._performRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:169:24)
+    at new RedirectableRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:66:8)
+    at Object.wrappedProtocol.request (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:307:14)
+    at dispatchHttpRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\adapters\http.js:179:25)
+    at new Promise (<anonymous>)
+    at httpAdapter (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\adapters\http.js:21:10)
+    at dispatchRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\core\dispatchRequest.js:52:10) {
+  code: 'ERR_HTTP_INVALID_HEADER_VALUE'
+}
+[2020-08-06T18:07:30.079] [ERROR] error - TypeError [ERR_HTTP_INVALID_HEADER_VALUE]: Invalid value "undefined" for header "Authorization"
+    at ClientRequest.setHeader (_http_outgoing.js:521:3)
+    at new ClientRequest (_http_client.js:241:14)
+    at Object.request (http.js:46:10)
+    at RedirectableRequest._performRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:169:24)
+    at new RedirectableRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:66:8)
+    at Object.wrappedProtocol.request (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:307:14)
+    at dispatchHttpRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\adapters\http.js:179:25)
+    at new Promise (<anonymous>)
+    at httpAdapter (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\adapters\http.js:21:10)
+    at dispatchRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\core\dispatchRequest.js:52:10) {
+  code: 'ERR_HTTP_INVALID_HEADER_VALUE'
+}
+[2020-08-06T18:07:30.088] [ERROR] error - TypeError [ERR_HTTP_INVALID_HEADER_VALUE]: Invalid value "undefined" for header "Authorization"
+    at ClientRequest.setHeader (_http_outgoing.js:521:3)
+    at new ClientRequest (_http_client.js:241:14)
+    at Object.request (http.js:46:10)
+    at RedirectableRequest._performRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:169:24)
+    at new RedirectableRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:66:8)
+    at Object.wrappedProtocol.request (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:307:14)
+    at dispatchHttpRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\adapters\http.js:179:25)
+    at new Promise (<anonymous>)
+    at httpAdapter (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\adapters\http.js:21:10)
+    at dispatchRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\core\dispatchRequest.js:52:10) {
+  code: 'ERR_HTTP_INVALID_HEADER_VALUE'
+}
+[2020-08-06T18:07:30.095] [ERROR] error - TypeError [ERR_HTTP_INVALID_HEADER_VALUE]: Invalid value "undefined" for header "Authorization"
+    at ClientRequest.setHeader (_http_outgoing.js:521:3)
+    at new ClientRequest (_http_client.js:241:14)
+    at Object.request (http.js:46:10)
+    at RedirectableRequest._performRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:169:24)
+    at new RedirectableRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:66:8)
+    at Object.wrappedProtocol.request (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:307:14)
+    at dispatchHttpRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\adapters\http.js:179:25)
+    at new Promise (<anonymous>)
+    at httpAdapter (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\adapters\http.js:21:10)
+    at dispatchRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\core\dispatchRequest.js:52:10) {
+  code: 'ERR_HTTP_INVALID_HEADER_VALUE'
+}
+[2020-08-06T18:07:30.103] [ERROR] error - TypeError [ERR_HTTP_INVALID_HEADER_VALUE]: Invalid value "undefined" for header "Authorization"
+    at ClientRequest.setHeader (_http_outgoing.js:521:3)
+    at new ClientRequest (_http_client.js:241:14)
+    at Object.request (http.js:46:10)
+    at RedirectableRequest._performRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:169:24)
+    at new RedirectableRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:66:8)
+    at Object.wrappedProtocol.request (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:307:14)
+    at dispatchHttpRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\adapters\http.js:179:25)
+    at new Promise (<anonymous>)
+    at httpAdapter (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\adapters\http.js:21:10)
+    at dispatchRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\core\dispatchRequest.js:52:10) {
+  code: 'ERR_HTTP_INVALID_HEADER_VALUE'
+}
+[2020-08-06T18:07:33.018] [ERROR] error - TypeError [ERR_HTTP_INVALID_HEADER_VALUE]: Invalid value "undefined" for header "Authorization"
+    at ClientRequest.setHeader (_http_outgoing.js:521:3)
+    at new ClientRequest (_http_client.js:241:14)
+    at Object.request (http.js:46:10)
+    at RedirectableRequest._performRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:169:24)
+    at new RedirectableRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:66:8)
+    at Object.wrappedProtocol.request (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:307:14)
+    at dispatchHttpRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\adapters\http.js:179:25)
+    at new Promise (<anonymous>)
+    at httpAdapter (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\adapters\http.js:21:10)
+    at dispatchRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\core\dispatchRequest.js:52:10) {
+  code: 'ERR_HTTP_INVALID_HEADER_VALUE'
+}
+[2020-08-06T18:07:33.028] [ERROR] error - TypeError [ERR_HTTP_INVALID_HEADER_VALUE]: Invalid value "undefined" for header "Authorization"
+    at ClientRequest.setHeader (_http_outgoing.js:521:3)
+    at new ClientRequest (_http_client.js:241:14)
+    at Object.request (http.js:46:10)
+    at RedirectableRequest._performRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:169:24)
+    at new RedirectableRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:66:8)
+    at Object.wrappedProtocol.request (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:307:14)
+    at dispatchHttpRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\adapters\http.js:179:25)
+    at new Promise (<anonymous>)
+    at httpAdapter (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\adapters\http.js:21:10)
+    at dispatchRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\core\dispatchRequest.js:52:10) {
+  code: 'ERR_HTTP_INVALID_HEADER_VALUE'
+}
+[2020-08-06T18:07:33.035] [ERROR] error - TypeError [ERR_HTTP_INVALID_HEADER_VALUE]: Invalid value "undefined" for header "Authorization"
+    at ClientRequest.setHeader (_http_outgoing.js:521:3)
+    at new ClientRequest (_http_client.js:241:14)
+    at Object.request (http.js:46:10)
+    at RedirectableRequest._performRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:169:24)
+    at new RedirectableRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:66:8)
+    at Object.wrappedProtocol.request (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:307:14)
+    at dispatchHttpRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\adapters\http.js:179:25)
+    at new Promise (<anonymous>)
+    at httpAdapter (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\adapters\http.js:21:10)
+    at dispatchRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\core\dispatchRequest.js:52:10) {
+  code: 'ERR_HTTP_INVALID_HEADER_VALUE'
+}
+[2020-08-06T18:07:33.043] [ERROR] error - TypeError [ERR_HTTP_INVALID_HEADER_VALUE]: Invalid value "undefined" for header "Authorization"
+    at ClientRequest.setHeader (_http_outgoing.js:521:3)
+    at new ClientRequest (_http_client.js:241:14)
+    at Object.request (http.js:46:10)
+    at RedirectableRequest._performRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:169:24)
+    at new RedirectableRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:66:8)
+    at Object.wrappedProtocol.request (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:307:14)
+    at dispatchHttpRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\adapters\http.js:179:25)
+    at new Promise (<anonymous>)
+    at httpAdapter (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\adapters\http.js:21:10)
+    at dispatchRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\core\dispatchRequest.js:52:10) {
+  code: 'ERR_HTTP_INVALID_HEADER_VALUE'
+}
+[2020-08-06T18:07:33.873] [ERROR] error - TypeError [ERR_HTTP_INVALID_HEADER_VALUE]: Invalid value "undefined" for header "Authorization"
+    at ClientRequest.setHeader (_http_outgoing.js:521:3)
+    at new ClientRequest (_http_client.js:241:14)
+    at Object.request (http.js:46:10)
+    at RedirectableRequest._performRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:169:24)
+    at new RedirectableRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:66:8)
+    at Object.wrappedProtocol.request (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:307:14)
+    at dispatchHttpRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\adapters\http.js:179:25)
+    at new Promise (<anonymous>)
+    at httpAdapter (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\adapters\http.js:21:10)
+    at dispatchRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\core\dispatchRequest.js:52:10) {
+  code: 'ERR_HTTP_INVALID_HEADER_VALUE'
+}
+[2020-08-06T18:07:33.879] [ERROR] error - TypeError [ERR_HTTP_INVALID_HEADER_VALUE]: Invalid value "undefined" for header "Authorization"
+    at ClientRequest.setHeader (_http_outgoing.js:521:3)
+    at new ClientRequest (_http_client.js:241:14)
+    at Object.request (http.js:46:10)
+    at RedirectableRequest._performRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:169:24)
+    at new RedirectableRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:66:8)
+    at Object.wrappedProtocol.request (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:307:14)
+    at dispatchHttpRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\adapters\http.js:179:25)
+    at new Promise (<anonymous>)
+    at httpAdapter (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\adapters\http.js:21:10)
+    at dispatchRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\core\dispatchRequest.js:52:10) {
+  code: 'ERR_HTTP_INVALID_HEADER_VALUE'
+}
+[2020-08-06T18:07:33.887] [ERROR] error - TypeError [ERR_HTTP_INVALID_HEADER_VALUE]: Invalid value "undefined" for header "Authorization"
+    at ClientRequest.setHeader (_http_outgoing.js:521:3)
+    at new ClientRequest (_http_client.js:241:14)
+    at Object.request (http.js:46:10)
+    at RedirectableRequest._performRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:169:24)
+    at new RedirectableRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:66:8)
+    at Object.wrappedProtocol.request (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:307:14)
+    at dispatchHttpRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\adapters\http.js:179:25)
+    at new Promise (<anonymous>)
+    at httpAdapter (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\adapters\http.js:21:10)
+    at dispatchRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\core\dispatchRequest.js:52:10) {
+  code: 'ERR_HTTP_INVALID_HEADER_VALUE'
+}
+[2020-08-06T18:07:33.896] [ERROR] error - TypeError [ERR_HTTP_INVALID_HEADER_VALUE]: Invalid value "undefined" for header "Authorization"
+    at ClientRequest.setHeader (_http_outgoing.js:521:3)
+    at new ClientRequest (_http_client.js:241:14)
+    at Object.request (http.js:46:10)
+    at RedirectableRequest._performRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:169:24)
+    at new RedirectableRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:66:8)
+    at Object.wrappedProtocol.request (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:307:14)
+    at dispatchHttpRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\adapters\http.js:179:25)
+    at new Promise (<anonymous>)
+    at httpAdapter (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\adapters\http.js:21:10)
+    at dispatchRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\core\dispatchRequest.js:52:10) {
+  code: 'ERR_HTTP_INVALID_HEADER_VALUE'
+}
+[2020-08-06T18:07:34.473] [ERROR] error - TypeError [ERR_HTTP_INVALID_HEADER_VALUE]: Invalid value "undefined" for header "Authorization"
+    at ClientRequest.setHeader (_http_outgoing.js:521:3)
+    at new ClientRequest (_http_client.js:241:14)
+    at Object.request (http.js:46:10)
+    at RedirectableRequest._performRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:169:24)
+    at new RedirectableRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:66:8)
+    at Object.wrappedProtocol.request (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:307:14)
+    at dispatchHttpRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\adapters\http.js:179:25)
+    at new Promise (<anonymous>)
+    at httpAdapter (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\adapters\http.js:21:10)
+    at dispatchRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\core\dispatchRequest.js:52:10) {
+  code: 'ERR_HTTP_INVALID_HEADER_VALUE'
+}
+[2020-08-06T18:07:34.482] [ERROR] error - TypeError [ERR_HTTP_INVALID_HEADER_VALUE]: Invalid value "undefined" for header "Authorization"
+    at ClientRequest.setHeader (_http_outgoing.js:521:3)
+    at new ClientRequest (_http_client.js:241:14)
+    at Object.request (http.js:46:10)
+    at RedirectableRequest._performRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:169:24)
+    at new RedirectableRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:66:8)
+    at Object.wrappedProtocol.request (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:307:14)
+    at dispatchHttpRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\adapters\http.js:179:25)
+    at new Promise (<anonymous>)
+    at httpAdapter (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\adapters\http.js:21:10)
+    at dispatchRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\core\dispatchRequest.js:52:10) {
+  code: 'ERR_HTTP_INVALID_HEADER_VALUE'
+}
+[2020-08-06T18:07:34.488] [ERROR] error - TypeError [ERR_HTTP_INVALID_HEADER_VALUE]: Invalid value "undefined" for header "Authorization"
+    at ClientRequest.setHeader (_http_outgoing.js:521:3)
+    at new ClientRequest (_http_client.js:241:14)
+    at Object.request (http.js:46:10)
+    at RedirectableRequest._performRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:169:24)
+    at new RedirectableRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:66:8)
+    at Object.wrappedProtocol.request (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:307:14)
+    at dispatchHttpRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\adapters\http.js:179:25)
+    at new Promise (<anonymous>)
+    at httpAdapter (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\adapters\http.js:21:10)
+    at dispatchRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\core\dispatchRequest.js:52:10) {
+  code: 'ERR_HTTP_INVALID_HEADER_VALUE'
+}
+[2020-08-06T18:07:34.496] [ERROR] error - TypeError [ERR_HTTP_INVALID_HEADER_VALUE]: Invalid value "undefined" for header "Authorization"
+    at ClientRequest.setHeader (_http_outgoing.js:521:3)
+    at new ClientRequest (_http_client.js:241:14)
+    at Object.request (http.js:46:10)
+    at RedirectableRequest._performRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:169:24)
+    at new RedirectableRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:66:8)
+    at Object.wrappedProtocol.request (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:307:14)
+    at dispatchHttpRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\adapters\http.js:179:25)
+    at new Promise (<anonymous>)
+    at httpAdapter (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\adapters\http.js:21:10)
+    at dispatchRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\core\dispatchRequest.js:52:10) {
+  code: 'ERR_HTTP_INVALID_HEADER_VALUE'
+}
+[2020-08-06T18:07:34.924] [ERROR] error - TypeError [ERR_HTTP_INVALID_HEADER_VALUE]: Invalid value "undefined" for header "Authorization"
+    at ClientRequest.setHeader (_http_outgoing.js:521:3)
+    at new ClientRequest (_http_client.js:241:14)
+    at Object.request (http.js:46:10)
+    at RedirectableRequest._performRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:169:24)
+    at new RedirectableRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:66:8)
+    at Object.wrappedProtocol.request (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:307:14)
+    at dispatchHttpRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\adapters\http.js:179:25)
+    at new Promise (<anonymous>)
+    at httpAdapter (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\adapters\http.js:21:10)
+    at dispatchRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\core\dispatchRequest.js:52:10) {
+  code: 'ERR_HTTP_INVALID_HEADER_VALUE'
+}
+[2020-08-06T18:07:34.930] [ERROR] error - TypeError [ERR_HTTP_INVALID_HEADER_VALUE]: Invalid value "undefined" for header "Authorization"
+    at ClientRequest.setHeader (_http_outgoing.js:521:3)
+    at new ClientRequest (_http_client.js:241:14)
+    at Object.request (http.js:46:10)
+    at RedirectableRequest._performRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:169:24)
+    at new RedirectableRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:66:8)
+    at Object.wrappedProtocol.request (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:307:14)
+    at dispatchHttpRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\adapters\http.js:179:25)
+    at new Promise (<anonymous>)
+    at httpAdapter (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\adapters\http.js:21:10)
+    at dispatchRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\core\dispatchRequest.js:52:10) {
+  code: 'ERR_HTTP_INVALID_HEADER_VALUE'
+}
+[2020-08-06T18:07:34.935] [ERROR] error - TypeError [ERR_HTTP_INVALID_HEADER_VALUE]: Invalid value "undefined" for header "Authorization"
+    at ClientRequest.setHeader (_http_outgoing.js:521:3)
+    at new ClientRequest (_http_client.js:241:14)
+    at Object.request (http.js:46:10)
+    at RedirectableRequest._performRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:169:24)
+    at new RedirectableRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:66:8)
+    at Object.wrappedProtocol.request (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:307:14)
+    at dispatchHttpRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\adapters\http.js:179:25)
+    at new Promise (<anonymous>)
+    at httpAdapter (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\adapters\http.js:21:10)
+    at dispatchRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\core\dispatchRequest.js:52:10) {
+  code: 'ERR_HTTP_INVALID_HEADER_VALUE'
+}
+[2020-08-06T18:07:34.943] [ERROR] error - TypeError [ERR_HTTP_INVALID_HEADER_VALUE]: Invalid value "undefined" for header "Authorization"
+    at ClientRequest.setHeader (_http_outgoing.js:521:3)
+    at new ClientRequest (_http_client.js:241:14)
+    at Object.request (http.js:46:10)
+    at RedirectableRequest._performRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:169:24)
+    at new RedirectableRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:66:8)
+    at Object.wrappedProtocol.request (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:307:14)
+    at dispatchHttpRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\adapters\http.js:179:25)
+    at new Promise (<anonymous>)
+    at httpAdapter (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\adapters\http.js:21:10)
+    at dispatchRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\core\dispatchRequest.js:52:10) {
+  code: 'ERR_HTTP_INVALID_HEADER_VALUE'
+}
+[2020-08-06T18:07:35.418] [ERROR] error - TypeError [ERR_HTTP_INVALID_HEADER_VALUE]: Invalid value "undefined" for header "Authorization"
+    at ClientRequest.setHeader (_http_outgoing.js:521:3)
+    at new ClientRequest (_http_client.js:241:14)
+    at Object.request (http.js:46:10)
+    at RedirectableRequest._performRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:169:24)
+    at new RedirectableRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:66:8)
+    at Object.wrappedProtocol.request (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:307:14)
+    at dispatchHttpRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\adapters\http.js:179:25)
+    at new Promise (<anonymous>)
+    at httpAdapter (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\adapters\http.js:21:10)
+    at dispatchRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\core\dispatchRequest.js:52:10) {
+  code: 'ERR_HTTP_INVALID_HEADER_VALUE'
+}
+[2020-08-06T18:07:35.424] [ERROR] error - TypeError [ERR_HTTP_INVALID_HEADER_VALUE]: Invalid value "undefined" for header "Authorization"
+    at ClientRequest.setHeader (_http_outgoing.js:521:3)
+    at new ClientRequest (_http_client.js:241:14)
+    at Object.request (http.js:46:10)
+    at RedirectableRequest._performRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:169:24)
+    at new RedirectableRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:66:8)
+    at Object.wrappedProtocol.request (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:307:14)
+    at dispatchHttpRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\adapters\http.js:179:25)
+    at new Promise (<anonymous>)
+    at httpAdapter (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\adapters\http.js:21:10)
+    at dispatchRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\core\dispatchRequest.js:52:10) {
+  code: 'ERR_HTTP_INVALID_HEADER_VALUE'
+}
+[2020-08-06T18:07:35.430] [ERROR] error - TypeError [ERR_HTTP_INVALID_HEADER_VALUE]: Invalid value "undefined" for header "Authorization"
+    at ClientRequest.setHeader (_http_outgoing.js:521:3)
+    at new ClientRequest (_http_client.js:241:14)
+    at Object.request (http.js:46:10)
+    at RedirectableRequest._performRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:169:24)
+    at new RedirectableRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:66:8)
+    at Object.wrappedProtocol.request (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:307:14)
+    at dispatchHttpRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\adapters\http.js:179:25)
+    at new Promise (<anonymous>)
+    at httpAdapter (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\adapters\http.js:21:10)
+    at dispatchRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\core\dispatchRequest.js:52:10) {
+  code: 'ERR_HTTP_INVALID_HEADER_VALUE'
+}
+[2020-08-06T18:07:35.437] [ERROR] error - TypeError [ERR_HTTP_INVALID_HEADER_VALUE]: Invalid value "undefined" for header "Authorization"
+    at ClientRequest.setHeader (_http_outgoing.js:521:3)
+    at new ClientRequest (_http_client.js:241:14)
+    at Object.request (http.js:46:10)
+    at RedirectableRequest._performRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:169:24)
+    at new RedirectableRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:66:8)
+    at Object.wrappedProtocol.request (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:307:14)
+    at dispatchHttpRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\adapters\http.js:179:25)
+    at new Promise (<anonymous>)
+    at httpAdapter (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\adapters\http.js:21:10)
+    at dispatchRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\core\dispatchRequest.js:52:10) {
+  code: 'ERR_HTTP_INVALID_HEADER_VALUE'
+}
+[2020-08-06T19:54:43.737] [ERROR] error - TypeError [ERR_HTTP_INVALID_HEADER_VALUE]: Invalid value "undefined" for header "Authorization"
+    at ClientRequest.setHeader (_http_outgoing.js:521:3)
+    at new ClientRequest (_http_client.js:241:14)
+    at Object.request (http.js:46:10)
+    at RedirectableRequest._performRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:169:24)
+    at new RedirectableRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:66:8)
+    at Object.wrappedProtocol.request (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:307:14)
+    at dispatchHttpRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\adapters\http.js:179:25)
+    at new Promise (<anonymous>)
+    at httpAdapter (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\adapters\http.js:21:10)
+    at dispatchRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\core\dispatchRequest.js:52:10) {
+  code: 'ERR_HTTP_INVALID_HEADER_VALUE'
+}
+[2020-08-06T19:54:43.745] [ERROR] error - TypeError [ERR_HTTP_INVALID_HEADER_VALUE]: Invalid value "undefined" for header "Authorization"
+    at ClientRequest.setHeader (_http_outgoing.js:521:3)
+    at new ClientRequest (_http_client.js:241:14)
+    at Object.request (http.js:46:10)
+    at RedirectableRequest._performRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:169:24)
+    at new RedirectableRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:66:8)
+    at Object.wrappedProtocol.request (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:307:14)
+    at dispatchHttpRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\adapters\http.js:179:25)
+    at new Promise (<anonymous>)
+    at httpAdapter (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\adapters\http.js:21:10)
+    at dispatchRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\core\dispatchRequest.js:52:10) {
+  code: 'ERR_HTTP_INVALID_HEADER_VALUE'
+}
+[2020-08-06T19:54:43.753] [ERROR] error - TypeError [ERR_HTTP_INVALID_HEADER_VALUE]: Invalid value "undefined" for header "Authorization"
+    at ClientRequest.setHeader (_http_outgoing.js:521:3)
+    at new ClientRequest (_http_client.js:241:14)
+    at Object.request (http.js:46:10)
+    at RedirectableRequest._performRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:169:24)
+    at new RedirectableRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:66:8)
+    at Object.wrappedProtocol.request (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:307:14)
+    at dispatchHttpRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\adapters\http.js:179:25)
+    at new Promise (<anonymous>)
+    at httpAdapter (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\adapters\http.js:21:10)
+    at dispatchRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\core\dispatchRequest.js:52:10) {
+  code: 'ERR_HTTP_INVALID_HEADER_VALUE'
+}
+[2020-08-06T19:54:43.763] [ERROR] error - TypeError [ERR_HTTP_INVALID_HEADER_VALUE]: Invalid value "undefined" for header "Authorization"
+    at ClientRequest.setHeader (_http_outgoing.js:521:3)
+    at new ClientRequest (_http_client.js:241:14)
+    at Object.request (http.js:46:10)
+    at RedirectableRequest._performRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:169:24)
+    at new RedirectableRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:66:8)
+    at Object.wrappedProtocol.request (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:307:14)
+    at dispatchHttpRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\adapters\http.js:179:25)
+    at new Promise (<anonymous>)
+    at httpAdapter (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\adapters\http.js:21:10)
+    at dispatchRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\core\dispatchRequest.js:52:10) {
+  code: 'ERR_HTTP_INVALID_HEADER_VALUE'
+}
+[2020-08-06T19:57:38.094] [ERROR] error - TypeError [ERR_HTTP_INVALID_HEADER_VALUE]: Invalid value "undefined" for header "Authorization"
+    at ClientRequest.setHeader (_http_outgoing.js:521:3)
+    at new ClientRequest (_http_client.js:241:14)
+    at Object.request (http.js:46:10)
+    at RedirectableRequest._performRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:169:24)
+    at new RedirectableRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:66:8)
+    at Object.wrappedProtocol.request (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:307:14)
+    at dispatchHttpRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\adapters\http.js:179:25)
+    at new Promise (<anonymous>)
+    at httpAdapter (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\adapters\http.js:21:10)
+    at dispatchRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\core\dispatchRequest.js:52:10) {
+  code: 'ERR_HTTP_INVALID_HEADER_VALUE'
+}
+[2020-08-06T19:57:38.100] [ERROR] error - TypeError [ERR_HTTP_INVALID_HEADER_VALUE]: Invalid value "undefined" for header "Authorization"
+    at ClientRequest.setHeader (_http_outgoing.js:521:3)
+    at new ClientRequest (_http_client.js:241:14)
+    at Object.request (http.js:46:10)
+    at RedirectableRequest._performRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:169:24)
+    at new RedirectableRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:66:8)
+    at Object.wrappedProtocol.request (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:307:14)
+    at dispatchHttpRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\adapters\http.js:179:25)
+    at new Promise (<anonymous>)
+    at httpAdapter (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\adapters\http.js:21:10)
+    at dispatchRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\core\dispatchRequest.js:52:10) {
+  code: 'ERR_HTTP_INVALID_HEADER_VALUE'
+}
+[2020-08-06T19:57:38.107] [ERROR] error - TypeError [ERR_HTTP_INVALID_HEADER_VALUE]: Invalid value "undefined" for header "Authorization"
+    at ClientRequest.setHeader (_http_outgoing.js:521:3)
+    at new ClientRequest (_http_client.js:241:14)
+    at Object.request (http.js:46:10)
+    at RedirectableRequest._performRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:169:24)
+    at new RedirectableRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:66:8)
+    at Object.wrappedProtocol.request (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:307:14)
+    at dispatchHttpRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\adapters\http.js:179:25)
+    at new Promise (<anonymous>)
+    at httpAdapter (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\adapters\http.js:21:10)
+    at dispatchRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\core\dispatchRequest.js:52:10) {
+  code: 'ERR_HTTP_INVALID_HEADER_VALUE'
+}
+[2020-08-06T19:57:38.116] [ERROR] error - TypeError [ERR_HTTP_INVALID_HEADER_VALUE]: Invalid value "undefined" for header "Authorization"
+    at ClientRequest.setHeader (_http_outgoing.js:521:3)
+    at new ClientRequest (_http_client.js:241:14)
+    at Object.request (http.js:46:10)
+    at RedirectableRequest._performRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:169:24)
+    at new RedirectableRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:66:8)
+    at Object.wrappedProtocol.request (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:307:14)
+    at dispatchHttpRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\adapters\http.js:179:25)
+    at new Promise (<anonymous>)
+    at httpAdapter (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\adapters\http.js:21:10)
+    at dispatchRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\core\dispatchRequest.js:52:10) {
+  code: 'ERR_HTTP_INVALID_HEADER_VALUE'
+}
+[2020-08-06T19:58:21.248] [ERROR] error - TypeError [ERR_HTTP_INVALID_HEADER_VALUE]: Invalid value "undefined" for header "Authorization"
+    at ClientRequest.setHeader (_http_outgoing.js:521:3)
+    at new ClientRequest (_http_client.js:241:14)
+    at Object.request (http.js:46:10)
+    at RedirectableRequest._performRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:169:24)
+    at new RedirectableRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:66:8)
+    at Object.wrappedProtocol.request (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:307:14)
+    at dispatchHttpRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\adapters\http.js:179:25)
+    at new Promise (<anonymous>)
+    at httpAdapter (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\adapters\http.js:21:10)
+    at dispatchRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\core\dispatchRequest.js:52:10) {
+  code: 'ERR_HTTP_INVALID_HEADER_VALUE'
+}
+[2020-08-06T19:58:21.256] [ERROR] error - TypeError [ERR_HTTP_INVALID_HEADER_VALUE]: Invalid value "undefined" for header "Authorization"
+    at ClientRequest.setHeader (_http_outgoing.js:521:3)
+    at new ClientRequest (_http_client.js:241:14)
+    at Object.request (http.js:46:10)
+    at RedirectableRequest._performRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:169:24)
+    at new RedirectableRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:66:8)
+    at Object.wrappedProtocol.request (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:307:14)
+    at dispatchHttpRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\adapters\http.js:179:25)
+    at new Promise (<anonymous>)
+    at httpAdapter (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\adapters\http.js:21:10)
+    at dispatchRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\core\dispatchRequest.js:52:10) {
+  code: 'ERR_HTTP_INVALID_HEADER_VALUE'
+}
+[2020-08-06T19:58:21.265] [ERROR] error - TypeError [ERR_HTTP_INVALID_HEADER_VALUE]: Invalid value "undefined" for header "Authorization"
+    at ClientRequest.setHeader (_http_outgoing.js:521:3)
+    at new ClientRequest (_http_client.js:241:14)
+    at Object.request (http.js:46:10)
+    at RedirectableRequest._performRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:169:24)
+    at new RedirectableRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:66:8)
+    at Object.wrappedProtocol.request (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:307:14)
+    at dispatchHttpRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\adapters\http.js:179:25)
+    at new Promise (<anonymous>)
+    at httpAdapter (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\adapters\http.js:21:10)
+    at dispatchRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\core\dispatchRequest.js:52:10) {
+  code: 'ERR_HTTP_INVALID_HEADER_VALUE'
+}
+[2020-08-06T19:58:21.275] [ERROR] error - TypeError [ERR_HTTP_INVALID_HEADER_VALUE]: Invalid value "undefined" for header "Authorization"
+    at ClientRequest.setHeader (_http_outgoing.js:521:3)
+    at new ClientRequest (_http_client.js:241:14)
+    at Object.request (http.js:46:10)
+    at RedirectableRequest._performRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:169:24)
+    at new RedirectableRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:66:8)
+    at Object.wrappedProtocol.request (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:307:14)
+    at dispatchHttpRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\adapters\http.js:179:25)
+    at new Promise (<anonymous>)
+    at httpAdapter (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\adapters\http.js:21:10)
+    at dispatchRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\core\dispatchRequest.js:52:10) {
+  code: 'ERR_HTTP_INVALID_HEADER_VALUE'
+}
+[2020-08-06T19:59:36.986] [ERROR] error - TypeError [ERR_HTTP_INVALID_HEADER_VALUE]: Invalid value "undefined" for header "Authorization"
+    at ClientRequest.setHeader (_http_outgoing.js:521:3)
+    at new ClientRequest (_http_client.js:241:14)
+    at Object.request (http.js:46:10)
+    at RedirectableRequest._performRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:169:24)
+    at new RedirectableRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:66:8)
+    at Object.wrappedProtocol.request (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:307:14)
+    at dispatchHttpRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\adapters\http.js:179:25)
+    at new Promise (<anonymous>)
+    at httpAdapter (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\adapters\http.js:21:10)
+    at dispatchRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\core\dispatchRequest.js:52:10) {
+  code: 'ERR_HTTP_INVALID_HEADER_VALUE'
+}
+[2020-08-06T19:59:36.993] [ERROR] error - TypeError [ERR_HTTP_INVALID_HEADER_VALUE]: Invalid value "undefined" for header "Authorization"
+    at ClientRequest.setHeader (_http_outgoing.js:521:3)
+    at new ClientRequest (_http_client.js:241:14)
+    at Object.request (http.js:46:10)
+    at RedirectableRequest._performRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:169:24)
+    at new RedirectableRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:66:8)
+    at Object.wrappedProtocol.request (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:307:14)
+    at dispatchHttpRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\adapters\http.js:179:25)
+    at new Promise (<anonymous>)
+    at httpAdapter (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\adapters\http.js:21:10)
+    at dispatchRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\core\dispatchRequest.js:52:10) {
+  code: 'ERR_HTTP_INVALID_HEADER_VALUE'
+}
+[2020-08-06T19:59:37.002] [ERROR] error - TypeError [ERR_HTTP_INVALID_HEADER_VALUE]: Invalid value "undefined" for header "Authorization"
+    at ClientRequest.setHeader (_http_outgoing.js:521:3)
+    at new ClientRequest (_http_client.js:241:14)
+    at Object.request (http.js:46:10)
+    at RedirectableRequest._performRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:169:24)
+    at new RedirectableRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:66:8)
+    at Object.wrappedProtocol.request (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:307:14)
+    at dispatchHttpRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\adapters\http.js:179:25)
+    at new Promise (<anonymous>)
+    at httpAdapter (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\adapters\http.js:21:10)
+    at dispatchRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\core\dispatchRequest.js:52:10) {
+  code: 'ERR_HTTP_INVALID_HEADER_VALUE'
+}
+[2020-08-06T19:59:37.011] [ERROR] error - TypeError [ERR_HTTP_INVALID_HEADER_VALUE]: Invalid value "undefined" for header "Authorization"
+    at ClientRequest.setHeader (_http_outgoing.js:521:3)
+    at new ClientRequest (_http_client.js:241:14)
+    at Object.request (http.js:46:10)
+    at RedirectableRequest._performRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:169:24)
+    at new RedirectableRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:66:8)
+    at Object.wrappedProtocol.request (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:307:14)
+    at dispatchHttpRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\adapters\http.js:179:25)
+    at new Promise (<anonymous>)
+    at httpAdapter (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\adapters\http.js:21:10)
+    at dispatchRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\core\dispatchRequest.js:52:10) {
+  code: 'ERR_HTTP_INVALID_HEADER_VALUE'
+}
+[2020-08-06T19:59:44.334] [ERROR] error - TypeError [ERR_HTTP_INVALID_HEADER_VALUE]: Invalid value "undefined" for header "Authorization"
+    at ClientRequest.setHeader (_http_outgoing.js:521:3)
+    at new ClientRequest (_http_client.js:241:14)
+    at Object.request (http.js:46:10)
+    at RedirectableRequest._performRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:169:24)
+    at new RedirectableRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:66:8)
+    at Object.wrappedProtocol.request (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:307:14)
+    at dispatchHttpRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\adapters\http.js:179:25)
+    at new Promise (<anonymous>)
+    at httpAdapter (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\adapters\http.js:21:10)
+    at dispatchRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\core\dispatchRequest.js:52:10) {
+  code: 'ERR_HTTP_INVALID_HEADER_VALUE'
+}
+[2020-08-06T19:59:44.347] [ERROR] error - TypeError [ERR_HTTP_INVALID_HEADER_VALUE]: Invalid value "undefined" for header "Authorization"
+    at ClientRequest.setHeader (_http_outgoing.js:521:3)
+    at new ClientRequest (_http_client.js:241:14)
+    at Object.request (http.js:46:10)
+    at RedirectableRequest._performRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:169:24)
+    at new RedirectableRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:66:8)
+    at Object.wrappedProtocol.request (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:307:14)
+    at dispatchHttpRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\adapters\http.js:179:25)
+    at new Promise (<anonymous>)
+    at httpAdapter (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\adapters\http.js:21:10)
+    at dispatchRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\core\dispatchRequest.js:52:10) {
+  code: 'ERR_HTTP_INVALID_HEADER_VALUE'
+}
+[2020-08-06T19:59:44.357] [ERROR] error - TypeError [ERR_HTTP_INVALID_HEADER_VALUE]: Invalid value "undefined" for header "Authorization"
+    at ClientRequest.setHeader (_http_outgoing.js:521:3)
+    at new ClientRequest (_http_client.js:241:14)
+    at Object.request (http.js:46:10)
+    at RedirectableRequest._performRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:169:24)
+    at new RedirectableRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:66:8)
+    at Object.wrappedProtocol.request (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:307:14)
+    at dispatchHttpRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\adapters\http.js:179:25)
+    at new Promise (<anonymous>)
+    at httpAdapter (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\adapters\http.js:21:10)
+    at dispatchRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\core\dispatchRequest.js:52:10) {
+  code: 'ERR_HTTP_INVALID_HEADER_VALUE'
+}
+[2020-08-06T19:59:44.370] [ERROR] error - TypeError [ERR_HTTP_INVALID_HEADER_VALUE]: Invalid value "undefined" for header "Authorization"
+    at ClientRequest.setHeader (_http_outgoing.js:521:3)
+    at new ClientRequest (_http_client.js:241:14)
+    at Object.request (http.js:46:10)
+    at RedirectableRequest._performRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:169:24)
+    at new RedirectableRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:66:8)
+    at Object.wrappedProtocol.request (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:307:14)
+    at dispatchHttpRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\adapters\http.js:179:25)
+    at new Promise (<anonymous>)
+    at httpAdapter (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\adapters\http.js:21:10)
+    at dispatchRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\core\dispatchRequest.js:52:10) {
+  code: 'ERR_HTTP_INVALID_HEADER_VALUE'
+}
+[2020-08-06T20:00:25.557] [ERROR] error - TypeError [ERR_HTTP_INVALID_HEADER_VALUE]: Invalid value "undefined" for header "Authorization"
+    at ClientRequest.setHeader (_http_outgoing.js:521:3)
+    at new ClientRequest (_http_client.js:241:14)
+    at Object.request (http.js:46:10)
+    at RedirectableRequest._performRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:169:24)
+    at new RedirectableRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:66:8)
+    at Object.wrappedProtocol.request (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:307:14)
+    at dispatchHttpRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\adapters\http.js:179:25)
+    at new Promise (<anonymous>)
+    at httpAdapter (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\adapters\http.js:21:10)
+    at dispatchRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\core\dispatchRequest.js:52:10) {
+  code: 'ERR_HTTP_INVALID_HEADER_VALUE'
+}
+[2020-08-06T20:00:25.572] [ERROR] error - TypeError [ERR_HTTP_INVALID_HEADER_VALUE]: Invalid value "undefined" for header "Authorization"
+    at ClientRequest.setHeader (_http_outgoing.js:521:3)
+    at new ClientRequest (_http_client.js:241:14)
+    at Object.request (http.js:46:10)
+    at RedirectableRequest._performRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:169:24)
+    at new RedirectableRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:66:8)
+    at Object.wrappedProtocol.request (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:307:14)
+    at dispatchHttpRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\adapters\http.js:179:25)
+    at new Promise (<anonymous>)
+    at httpAdapter (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\adapters\http.js:21:10)
+    at dispatchRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\core\dispatchRequest.js:52:10) {
+  code: 'ERR_HTTP_INVALID_HEADER_VALUE'
+}
+[2020-08-06T20:00:25.586] [ERROR] error - TypeError [ERR_HTTP_INVALID_HEADER_VALUE]: Invalid value "undefined" for header "Authorization"
+    at ClientRequest.setHeader (_http_outgoing.js:521:3)
+    at new ClientRequest (_http_client.js:241:14)
+    at Object.request (http.js:46:10)
+    at RedirectableRequest._performRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:169:24)
+    at new RedirectableRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:66:8)
+    at Object.wrappedProtocol.request (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:307:14)
+    at dispatchHttpRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\adapters\http.js:179:25)
+    at new Promise (<anonymous>)
+    at httpAdapter (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\adapters\http.js:21:10)
+    at dispatchRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\core\dispatchRequest.js:52:10) {
+  code: 'ERR_HTTP_INVALID_HEADER_VALUE'
+}
+[2020-08-06T20:00:25.638] [ERROR] error - TypeError [ERR_HTTP_INVALID_HEADER_VALUE]: Invalid value "undefined" for header "Authorization"
+    at ClientRequest.setHeader (_http_outgoing.js:521:3)
+    at new ClientRequest (_http_client.js:241:14)
+    at Object.request (http.js:46:10)
+    at RedirectableRequest._performRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:169:24)
+    at new RedirectableRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:66:8)
+    at Object.wrappedProtocol.request (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:307:14)
+    at dispatchHttpRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\adapters\http.js:179:25)
+    at new Promise (<anonymous>)
+    at httpAdapter (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\adapters\http.js:21:10)
+    at dispatchRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\core\dispatchRequest.js:52:10) {
+  code: 'ERR_HTTP_INVALID_HEADER_VALUE'
+}
+[2020-08-06T20:01:19.322] [ERROR] error - TypeError [ERR_HTTP_INVALID_HEADER_VALUE]: Invalid value "undefined" for header "Authorization"
+    at ClientRequest.setHeader (_http_outgoing.js:521:3)
+    at new ClientRequest (_http_client.js:241:14)
+    at Object.request (http.js:46:10)
+    at RedirectableRequest._performRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:169:24)
+    at new RedirectableRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:66:8)
+    at Object.wrappedProtocol.request (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:307:14)
+    at dispatchHttpRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\adapters\http.js:179:25)
+    at new Promise (<anonymous>)
+    at httpAdapter (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\adapters\http.js:21:10)
+    at dispatchRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\core\dispatchRequest.js:52:10) {
+  code: 'ERR_HTTP_INVALID_HEADER_VALUE'
+}
+[2020-08-06T20:01:19.330] [ERROR] error - TypeError [ERR_HTTP_INVALID_HEADER_VALUE]: Invalid value "undefined" for header "Authorization"
+    at ClientRequest.setHeader (_http_outgoing.js:521:3)
+    at new ClientRequest (_http_client.js:241:14)
+    at Object.request (http.js:46:10)
+    at RedirectableRequest._performRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:169:24)
+    at new RedirectableRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:66:8)
+    at Object.wrappedProtocol.request (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:307:14)
+    at dispatchHttpRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\adapters\http.js:179:25)
+    at new Promise (<anonymous>)
+    at httpAdapter (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\adapters\http.js:21:10)
+    at dispatchRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\core\dispatchRequest.js:52:10) {
+  code: 'ERR_HTTP_INVALID_HEADER_VALUE'
+}
+[2020-08-06T20:01:19.336] [ERROR] error - TypeError [ERR_HTTP_INVALID_HEADER_VALUE]: Invalid value "undefined" for header "Authorization"
+    at ClientRequest.setHeader (_http_outgoing.js:521:3)
+    at new ClientRequest (_http_client.js:241:14)
+    at Object.request (http.js:46:10)
+    at RedirectableRequest._performRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:169:24)
+    at new RedirectableRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:66:8)
+    at Object.wrappedProtocol.request (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:307:14)
+    at dispatchHttpRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\adapters\http.js:179:25)
+    at new Promise (<anonymous>)
+    at httpAdapter (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\adapters\http.js:21:10)
+    at dispatchRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\core\dispatchRequest.js:52:10) {
+  code: 'ERR_HTTP_INVALID_HEADER_VALUE'
+}
+[2020-08-06T20:01:19.344] [ERROR] error - TypeError [ERR_HTTP_INVALID_HEADER_VALUE]: Invalid value "undefined" for header "Authorization"
+    at ClientRequest.setHeader (_http_outgoing.js:521:3)
+    at new ClientRequest (_http_client.js:241:14)
+    at Object.request (http.js:46:10)
+    at RedirectableRequest._performRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:169:24)
+    at new RedirectableRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:66:8)
+    at Object.wrappedProtocol.request (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:307:14)
+    at dispatchHttpRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\adapters\http.js:179:25)
+    at new Promise (<anonymous>)
+    at httpAdapter (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\adapters\http.js:21:10)
+    at dispatchRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\core\dispatchRequest.js:52:10) {
+  code: 'ERR_HTTP_INVALID_HEADER_VALUE'
+}
+[2020-08-06T20:01:48.518] [ERROR] error - TypeError [ERR_HTTP_INVALID_HEADER_VALUE]: Invalid value "undefined" for header "Authorization"
+    at ClientRequest.setHeader (_http_outgoing.js:521:3)
+    at new ClientRequest (_http_client.js:241:14)
+    at Object.request (http.js:46:10)
+    at RedirectableRequest._performRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:169:24)
+    at new RedirectableRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:66:8)
+    at Object.wrappedProtocol.request (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:307:14)
+    at dispatchHttpRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\adapters\http.js:179:25)
+    at new Promise (<anonymous>)
+    at httpAdapter (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\adapters\http.js:21:10)
+    at dispatchRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\core\dispatchRequest.js:52:10) {
+  code: 'ERR_HTTP_INVALID_HEADER_VALUE'
+}
+[2020-08-06T20:01:48.536] [ERROR] error - TypeError [ERR_HTTP_INVALID_HEADER_VALUE]: Invalid value "undefined" for header "Authorization"
+    at ClientRequest.setHeader (_http_outgoing.js:521:3)
+    at new ClientRequest (_http_client.js:241:14)
+    at Object.request (http.js:46:10)
+    at RedirectableRequest._performRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:169:24)
+    at new RedirectableRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:66:8)
+    at Object.wrappedProtocol.request (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:307:14)
+    at dispatchHttpRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\adapters\http.js:179:25)
+    at new Promise (<anonymous>)
+    at httpAdapter (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\adapters\http.js:21:10)
+    at dispatchRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\core\dispatchRequest.js:52:10) {
+  code: 'ERR_HTTP_INVALID_HEADER_VALUE'
+}
+[2020-08-06T20:01:48.548] [ERROR] error - TypeError [ERR_HTTP_INVALID_HEADER_VALUE]: Invalid value "undefined" for header "Authorization"
+    at ClientRequest.setHeader (_http_outgoing.js:521:3)
+    at new ClientRequest (_http_client.js:241:14)
+    at Object.request (http.js:46:10)
+    at RedirectableRequest._performRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:169:24)
+    at new RedirectableRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:66:8)
+    at Object.wrappedProtocol.request (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:307:14)
+    at dispatchHttpRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\adapters\http.js:179:25)
+    at new Promise (<anonymous>)
+    at httpAdapter (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\adapters\http.js:21:10)
+    at dispatchRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\core\dispatchRequest.js:52:10) {
+  code: 'ERR_HTTP_INVALID_HEADER_VALUE'
+}
+[2020-08-06T20:01:48.562] [ERROR] error - TypeError [ERR_HTTP_INVALID_HEADER_VALUE]: Invalid value "undefined" for header "Authorization"
+    at ClientRequest.setHeader (_http_outgoing.js:521:3)
+    at new ClientRequest (_http_client.js:241:14)
+    at Object.request (http.js:46:10)
+    at RedirectableRequest._performRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:169:24)
+    at new RedirectableRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:66:8)
+    at Object.wrappedProtocol.request (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:307:14)
+    at dispatchHttpRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\adapters\http.js:179:25)
+    at new Promise (<anonymous>)
+    at httpAdapter (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\adapters\http.js:21:10)
+    at dispatchRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\core\dispatchRequest.js:52:10) {
+  code: 'ERR_HTTP_INVALID_HEADER_VALUE'
+}
+[2020-08-06T20:02:05.069] [ERROR] error - TypeError [ERR_HTTP_INVALID_HEADER_VALUE]: Invalid value "undefined" for header "Authorization"
+    at ClientRequest.setHeader (_http_outgoing.js:521:3)
+    at new ClientRequest (_http_client.js:241:14)
+    at Object.request (http.js:46:10)
+    at RedirectableRequest._performRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:169:24)
+    at new RedirectableRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:66:8)
+    at Object.wrappedProtocol.request (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:307:14)
+    at dispatchHttpRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\adapters\http.js:179:25)
+    at new Promise (<anonymous>)
+    at httpAdapter (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\adapters\http.js:21:10)
+    at dispatchRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\core\dispatchRequest.js:52:10) {
+  code: 'ERR_HTTP_INVALID_HEADER_VALUE'
+}
+[2020-08-06T20:02:05.079] [ERROR] error - TypeError [ERR_HTTP_INVALID_HEADER_VALUE]: Invalid value "undefined" for header "Authorization"
+    at ClientRequest.setHeader (_http_outgoing.js:521:3)
+    at new ClientRequest (_http_client.js:241:14)
+    at Object.request (http.js:46:10)
+    at RedirectableRequest._performRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:169:24)
+    at new RedirectableRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:66:8)
+    at Object.wrappedProtocol.request (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:307:14)
+    at dispatchHttpRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\adapters\http.js:179:25)
+    at new Promise (<anonymous>)
+    at httpAdapter (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\adapters\http.js:21:10)
+    at dispatchRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\core\dispatchRequest.js:52:10) {
+  code: 'ERR_HTTP_INVALID_HEADER_VALUE'
+}
+[2020-08-06T20:02:05.087] [ERROR] error - TypeError [ERR_HTTP_INVALID_HEADER_VALUE]: Invalid value "undefined" for header "Authorization"
+    at ClientRequest.setHeader (_http_outgoing.js:521:3)
+    at new ClientRequest (_http_client.js:241:14)
+    at Object.request (http.js:46:10)
+    at RedirectableRequest._performRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:169:24)
+    at new RedirectableRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:66:8)
+    at Object.wrappedProtocol.request (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:307:14)
+    at dispatchHttpRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\adapters\http.js:179:25)
+    at new Promise (<anonymous>)
+    at httpAdapter (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\adapters\http.js:21:10)
+    at dispatchRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\core\dispatchRequest.js:52:10) {
+  code: 'ERR_HTTP_INVALID_HEADER_VALUE'
+}
+[2020-08-06T20:02:05.096] [ERROR] error - TypeError [ERR_HTTP_INVALID_HEADER_VALUE]: Invalid value "undefined" for header "Authorization"
+    at ClientRequest.setHeader (_http_outgoing.js:521:3)
+    at new ClientRequest (_http_client.js:241:14)
+    at Object.request (http.js:46:10)
+    at RedirectableRequest._performRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:169:24)
+    at new RedirectableRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:66:8)
+    at Object.wrappedProtocol.request (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:307:14)
+    at dispatchHttpRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\adapters\http.js:179:25)
+    at new Promise (<anonymous>)
+    at httpAdapter (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\adapters\http.js:21:10)
+    at dispatchRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\core\dispatchRequest.js:52:10) {
+  code: 'ERR_HTTP_INVALID_HEADER_VALUE'
+}
+[2020-08-06T20:02:42.584] [ERROR] error - TypeError [ERR_HTTP_INVALID_HEADER_VALUE]: Invalid value "undefined" for header "Authorization"
+    at ClientRequest.setHeader (_http_outgoing.js:521:3)
+    at new ClientRequest (_http_client.js:241:14)
+    at Object.request (http.js:46:10)
+    at RedirectableRequest._performRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:169:24)
+    at new RedirectableRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:66:8)
+    at Object.wrappedProtocol.request (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:307:14)
+    at dispatchHttpRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\adapters\http.js:179:25)
+    at new Promise (<anonymous>)
+    at httpAdapter (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\adapters\http.js:21:10)
+    at dispatchRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\core\dispatchRequest.js:52:10) {
+  code: 'ERR_HTTP_INVALID_HEADER_VALUE'
+}
+[2020-08-06T20:02:42.591] [ERROR] error - TypeError [ERR_HTTP_INVALID_HEADER_VALUE]: Invalid value "undefined" for header "Authorization"
+    at ClientRequest.setHeader (_http_outgoing.js:521:3)
+    at new ClientRequest (_http_client.js:241:14)
+    at Object.request (http.js:46:10)
+    at RedirectableRequest._performRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:169:24)
+    at new RedirectableRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:66:8)
+    at Object.wrappedProtocol.request (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:307:14)
+    at dispatchHttpRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\adapters\http.js:179:25)
+    at new Promise (<anonymous>)
+    at httpAdapter (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\adapters\http.js:21:10)
+    at dispatchRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\core\dispatchRequest.js:52:10) {
+  code: 'ERR_HTTP_INVALID_HEADER_VALUE'
+}
+[2020-08-06T20:02:42.599] [ERROR] error - TypeError [ERR_HTTP_INVALID_HEADER_VALUE]: Invalid value "undefined" for header "Authorization"
+    at ClientRequest.setHeader (_http_outgoing.js:521:3)
+    at new ClientRequest (_http_client.js:241:14)
+    at Object.request (http.js:46:10)
+    at RedirectableRequest._performRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:169:24)
+    at new RedirectableRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:66:8)
+    at Object.wrappedProtocol.request (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:307:14)
+    at dispatchHttpRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\adapters\http.js:179:25)
+    at new Promise (<anonymous>)
+    at httpAdapter (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\adapters\http.js:21:10)
+    at dispatchRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\core\dispatchRequest.js:52:10) {
+  code: 'ERR_HTTP_INVALID_HEADER_VALUE'
+}
+[2020-08-06T20:02:42.607] [ERROR] error - TypeError [ERR_HTTP_INVALID_HEADER_VALUE]: Invalid value "undefined" for header "Authorization"
+    at ClientRequest.setHeader (_http_outgoing.js:521:3)
+    at new ClientRequest (_http_client.js:241:14)
+    at Object.request (http.js:46:10)
+    at RedirectableRequest._performRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:169:24)
+    at new RedirectableRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:66:8)
+    at Object.wrappedProtocol.request (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:307:14)
+    at dispatchHttpRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\adapters\http.js:179:25)
+    at new Promise (<anonymous>)
+    at httpAdapter (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\adapters\http.js:21:10)
+    at dispatchRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\core\dispatchRequest.js:52:10) {
+  code: 'ERR_HTTP_INVALID_HEADER_VALUE'
+}
+[2020-08-06T20:03:04.092] [ERROR] error - TypeError [ERR_HTTP_INVALID_HEADER_VALUE]: Invalid value "undefined" for header "Authorization"
+    at ClientRequest.setHeader (_http_outgoing.js:521:3)
+    at new ClientRequest (_http_client.js:241:14)
+    at Object.request (http.js:46:10)
+    at RedirectableRequest._performRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:169:24)
+    at new RedirectableRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:66:8)
+    at Object.wrappedProtocol.request (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:307:14)
+    at dispatchHttpRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\adapters\http.js:179:25)
+    at new Promise (<anonymous>)
+    at httpAdapter (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\adapters\http.js:21:10)
+    at dispatchRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\core\dispatchRequest.js:52:10) {
+  code: 'ERR_HTTP_INVALID_HEADER_VALUE'
+}
+[2020-08-06T20:03:04.101] [ERROR] error - TypeError [ERR_HTTP_INVALID_HEADER_VALUE]: Invalid value "undefined" for header "Authorization"
+    at ClientRequest.setHeader (_http_outgoing.js:521:3)
+    at new ClientRequest (_http_client.js:241:14)
+    at Object.request (http.js:46:10)
+    at RedirectableRequest._performRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:169:24)
+    at new RedirectableRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:66:8)
+    at Object.wrappedProtocol.request (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:307:14)
+    at dispatchHttpRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\adapters\http.js:179:25)
+    at new Promise (<anonymous>)
+    at httpAdapter (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\adapters\http.js:21:10)
+    at dispatchRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\core\dispatchRequest.js:52:10) {
+  code: 'ERR_HTTP_INVALID_HEADER_VALUE'
+}
+[2020-08-06T20:03:04.108] [ERROR] error - TypeError [ERR_HTTP_INVALID_HEADER_VALUE]: Invalid value "undefined" for header "Authorization"
+    at ClientRequest.setHeader (_http_outgoing.js:521:3)
+    at new ClientRequest (_http_client.js:241:14)
+    at Object.request (http.js:46:10)
+    at RedirectableRequest._performRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:169:24)
+    at new RedirectableRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:66:8)
+    at Object.wrappedProtocol.request (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:307:14)
+    at dispatchHttpRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\adapters\http.js:179:25)
+    at new Promise (<anonymous>)
+    at httpAdapter (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\adapters\http.js:21:10)
+    at dispatchRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\core\dispatchRequest.js:52:10) {
+  code: 'ERR_HTTP_INVALID_HEADER_VALUE'
+}
+[2020-08-06T20:03:04.118] [ERROR] error - TypeError [ERR_HTTP_INVALID_HEADER_VALUE]: Invalid value "undefined" for header "Authorization"
+    at ClientRequest.setHeader (_http_outgoing.js:521:3)
+    at new ClientRequest (_http_client.js:241:14)
+    at Object.request (http.js:46:10)
+    at RedirectableRequest._performRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:169:24)
+    at new RedirectableRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:66:8)
+    at Object.wrappedProtocol.request (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:307:14)
+    at dispatchHttpRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\adapters\http.js:179:25)
+    at new Promise (<anonymous>)
+    at httpAdapter (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\adapters\http.js:21:10)
+    at dispatchRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\core\dispatchRequest.js:52:10) {
+  code: 'ERR_HTTP_INVALID_HEADER_VALUE'
+}
+[2020-08-06T20:03:17.128] [ERROR] error - TypeError [ERR_HTTP_INVALID_HEADER_VALUE]: Invalid value "undefined" for header "Authorization"
+    at ClientRequest.setHeader (_http_outgoing.js:521:3)
+    at new ClientRequest (_http_client.js:241:14)
+    at Object.request (http.js:46:10)
+    at RedirectableRequest._performRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:169:24)
+    at new RedirectableRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:66:8)
+    at Object.wrappedProtocol.request (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:307:14)
+    at dispatchHttpRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\adapters\http.js:179:25)
+    at new Promise (<anonymous>)
+    at httpAdapter (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\adapters\http.js:21:10)
+    at dispatchRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\core\dispatchRequest.js:52:10) {
+  code: 'ERR_HTTP_INVALID_HEADER_VALUE'
+}
+[2020-08-06T20:03:17.137] [ERROR] error - TypeError [ERR_HTTP_INVALID_HEADER_VALUE]: Invalid value "undefined" for header "Authorization"
+    at ClientRequest.setHeader (_http_outgoing.js:521:3)
+    at new ClientRequest (_http_client.js:241:14)
+    at Object.request (http.js:46:10)
+    at RedirectableRequest._performRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:169:24)
+    at new RedirectableRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:66:8)
+    at Object.wrappedProtocol.request (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:307:14)
+    at dispatchHttpRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\adapters\http.js:179:25)
+    at new Promise (<anonymous>)
+    at httpAdapter (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\adapters\http.js:21:10)
+    at dispatchRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\core\dispatchRequest.js:52:10) {
+  code: 'ERR_HTTP_INVALID_HEADER_VALUE'
+}
+[2020-08-06T20:03:17.145] [ERROR] error - TypeError [ERR_HTTP_INVALID_HEADER_VALUE]: Invalid value "undefined" for header "Authorization"
+    at ClientRequest.setHeader (_http_outgoing.js:521:3)
+    at new ClientRequest (_http_client.js:241:14)
+    at Object.request (http.js:46:10)
+    at RedirectableRequest._performRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:169:24)
+    at new RedirectableRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:66:8)
+    at Object.wrappedProtocol.request (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:307:14)
+    at dispatchHttpRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\adapters\http.js:179:25)
+    at new Promise (<anonymous>)
+    at httpAdapter (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\adapters\http.js:21:10)
+    at dispatchRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\core\dispatchRequest.js:52:10) {
+  code: 'ERR_HTTP_INVALID_HEADER_VALUE'
+}
+[2020-08-06T20:03:17.153] [ERROR] error - TypeError [ERR_HTTP_INVALID_HEADER_VALUE]: Invalid value "undefined" for header "Authorization"
+    at ClientRequest.setHeader (_http_outgoing.js:521:3)
+    at new ClientRequest (_http_client.js:241:14)
+    at Object.request (http.js:46:10)
+    at RedirectableRequest._performRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:169:24)
+    at new RedirectableRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:66:8)
+    at Object.wrappedProtocol.request (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:307:14)
+    at dispatchHttpRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\adapters\http.js:179:25)
+    at new Promise (<anonymous>)
+    at httpAdapter (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\adapters\http.js:21:10)
+    at dispatchRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\core\dispatchRequest.js:52:10) {
+  code: 'ERR_HTTP_INVALID_HEADER_VALUE'
+}
+[2020-08-06T20:03:26.644] [ERROR] error - TypeError [ERR_HTTP_INVALID_HEADER_VALUE]: Invalid value "undefined" for header "Authorization"
+    at ClientRequest.setHeader (_http_outgoing.js:521:3)
+    at new ClientRequest (_http_client.js:241:14)
+    at Object.request (http.js:46:10)
+    at RedirectableRequest._performRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:169:24)
+    at new RedirectableRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:66:8)
+    at Object.wrappedProtocol.request (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:307:14)
+    at dispatchHttpRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\adapters\http.js:179:25)
+    at new Promise (<anonymous>)
+    at httpAdapter (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\adapters\http.js:21:10)
+    at dispatchRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\core\dispatchRequest.js:52:10) {
+  code: 'ERR_HTTP_INVALID_HEADER_VALUE'
+}
+[2020-08-06T20:03:26.663] [ERROR] error - TypeError [ERR_HTTP_INVALID_HEADER_VALUE]: Invalid value "undefined" for header "Authorization"
+    at ClientRequest.setHeader (_http_outgoing.js:521:3)
+    at new ClientRequest (_http_client.js:241:14)
+    at Object.request (http.js:46:10)
+    at RedirectableRequest._performRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:169:24)
+    at new RedirectableRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:66:8)
+    at Object.wrappedProtocol.request (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:307:14)
+    at dispatchHttpRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\adapters\http.js:179:25)
+    at new Promise (<anonymous>)
+    at httpAdapter (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\adapters\http.js:21:10)
+    at dispatchRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\core\dispatchRequest.js:52:10) {
+  code: 'ERR_HTTP_INVALID_HEADER_VALUE'
+}
+[2020-08-06T20:03:26.749] [ERROR] error - TypeError [ERR_HTTP_INVALID_HEADER_VALUE]: Invalid value "undefined" for header "Authorization"
+    at ClientRequest.setHeader (_http_outgoing.js:521:3)
+    at new ClientRequest (_http_client.js:241:14)
+    at Object.request (http.js:46:10)
+    at RedirectableRequest._performRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:169:24)
+    at new RedirectableRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:66:8)
+    at Object.wrappedProtocol.request (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:307:14)
+    at dispatchHttpRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\adapters\http.js:179:25)
+    at new Promise (<anonymous>)
+    at httpAdapter (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\adapters\http.js:21:10)
+    at dispatchRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\core\dispatchRequest.js:52:10) {
+  code: 'ERR_HTTP_INVALID_HEADER_VALUE'
+}
+[2020-08-06T20:03:26.761] [ERROR] error - TypeError [ERR_HTTP_INVALID_HEADER_VALUE]: Invalid value "undefined" for header "Authorization"
+    at ClientRequest.setHeader (_http_outgoing.js:521:3)
+    at new ClientRequest (_http_client.js:241:14)
+    at Object.request (http.js:46:10)
+    at RedirectableRequest._performRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:169:24)
+    at new RedirectableRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:66:8)
+    at Object.wrappedProtocol.request (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:307:14)
+    at dispatchHttpRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\adapters\http.js:179:25)
+    at new Promise (<anonymous>)
+    at httpAdapter (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\adapters\http.js:21:10)
+    at dispatchRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\core\dispatchRequest.js:52:10) {
+  code: 'ERR_HTTP_INVALID_HEADER_VALUE'
+}
+[2020-08-06T20:03:53.439] [ERROR] error - TypeError [ERR_HTTP_INVALID_HEADER_VALUE]: Invalid value "undefined" for header "Authorization"
+    at ClientRequest.setHeader (_http_outgoing.js:521:3)
+    at new ClientRequest (_http_client.js:241:14)
+    at Object.request (http.js:46:10)
+    at RedirectableRequest._performRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:169:24)
+    at new RedirectableRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:66:8)
+    at Object.wrappedProtocol.request (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:307:14)
+    at dispatchHttpRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\adapters\http.js:179:25)
+    at new Promise (<anonymous>)
+    at httpAdapter (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\adapters\http.js:21:10)
+    at dispatchRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\core\dispatchRequest.js:52:10) {
+  code: 'ERR_HTTP_INVALID_HEADER_VALUE'
+}
+[2020-08-06T20:03:53.445] [ERROR] error - TypeError [ERR_HTTP_INVALID_HEADER_VALUE]: Invalid value "undefined" for header "Authorization"
+    at ClientRequest.setHeader (_http_outgoing.js:521:3)
+    at new ClientRequest (_http_client.js:241:14)
+    at Object.request (http.js:46:10)
+    at RedirectableRequest._performRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:169:24)
+    at new RedirectableRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:66:8)
+    at Object.wrappedProtocol.request (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:307:14)
+    at dispatchHttpRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\adapters\http.js:179:25)
+    at new Promise (<anonymous>)
+    at httpAdapter (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\adapters\http.js:21:10)
+    at dispatchRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\core\dispatchRequest.js:52:10) {
+  code: 'ERR_HTTP_INVALID_HEADER_VALUE'
+}
+[2020-08-06T20:03:53.453] [ERROR] error - TypeError [ERR_HTTP_INVALID_HEADER_VALUE]: Invalid value "undefined" for header "Authorization"
+    at ClientRequest.setHeader (_http_outgoing.js:521:3)
+    at new ClientRequest (_http_client.js:241:14)
+    at Object.request (http.js:46:10)
+    at RedirectableRequest._performRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:169:24)
+    at new RedirectableRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:66:8)
+    at Object.wrappedProtocol.request (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:307:14)
+    at dispatchHttpRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\adapters\http.js:179:25)
+    at new Promise (<anonymous>)
+    at httpAdapter (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\adapters\http.js:21:10)
+    at dispatchRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\core\dispatchRequest.js:52:10) {
+  code: 'ERR_HTTP_INVALID_HEADER_VALUE'
+}
+[2020-08-06T20:03:53.460] [ERROR] error - TypeError [ERR_HTTP_INVALID_HEADER_VALUE]: Invalid value "undefined" for header "Authorization"
+    at ClientRequest.setHeader (_http_outgoing.js:521:3)
+    at new ClientRequest (_http_client.js:241:14)
+    at Object.request (http.js:46:10)
+    at RedirectableRequest._performRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:169:24)
+    at new RedirectableRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:66:8)
+    at Object.wrappedProtocol.request (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:307:14)
+    at dispatchHttpRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\adapters\http.js:179:25)
+    at new Promise (<anonymous>)
+    at httpAdapter (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\adapters\http.js:21:10)
+    at dispatchRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\core\dispatchRequest.js:52:10) {
+  code: 'ERR_HTTP_INVALID_HEADER_VALUE'
+}
+[2020-08-06T20:04:46.148] [ERROR] error - TypeError: Do not know how to serialize a BigInt
+    at JSON.stringify (<anonymous>)
+    at stringify (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\express\lib\response.js:1123:12)
+    at ServerResponse.json (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\express\lib\response.js:260:14)
+    at C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\src\routers\post-router.ts:93:21
+    at step (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\src\routers\post-router.ts:33:23)
+    at Object.next (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\src\routers\post-router.ts:14:53)
+    at fulfilled (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\src\routers\post-router.ts:5:58)
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+[2020-08-07T10:30:50.113] [ERROR] error - TypeError: Do not know how to serialize a BigInt
+    at JSON.stringify (<anonymous>)
+    at stringify (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\express\lib\response.js:1123:12)
+    at ServerResponse.json (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\express\lib\response.js:260:14)
+    at C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\src\routers\post-router.ts:93:21
+    at step (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\src\routers\post-router.ts:33:23)
+    at Object.next (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\src\routers\post-router.ts:14:53)
+    at fulfilled (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\src\routers\post-router.ts:5:58)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+[2020-08-07T10:33:11.404] [ERROR] error - TypeError: Do not know how to serialize a BigInt
+    at JSON.stringify (<anonymous>)
+    at stringify (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\express\lib\response.js:1123:12)
+    at ServerResponse.json (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\express\lib\response.js:260:14)
+    at C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\src\routers\post-router.ts:93:21
+    at step (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\src\routers\post-router.ts:33:23)
+    at Object.next (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\src\routers\post-router.ts:14:53)
+    at fulfilled (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\src\routers\post-router.ts:5:58)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+[2020-08-07T10:35:00.472] [ERROR] error - TypeError: Do not know how to serialize a BigInt
+    at JSON.stringify (<anonymous>)
+    at stringify (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\express\lib\response.js:1123:12)
+    at ServerResponse.json (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\express\lib\response.js:260:14)
+    at C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\src\routers\post-router.ts:93:21
+    at step (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\src\routers\post-router.ts:33:23)
+    at Object.next (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\src\routers\post-router.ts:14:53)
+    at fulfilled (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\src\routers\post-router.ts:5:58)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+[2020-08-07T10:42:12.472] [ERROR] error - TypeError: Do not know how to serialize a BigInt
+    at JSON.stringify (<anonymous>)
+    at stringify (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\express\lib\response.js:1123:12)
+    at ServerResponse.json (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\express\lib\response.js:260:14)
+    at C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\src\routers\post-router.ts:93:21
+    at step (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\src\routers\post-router.ts:33:23)
+    at Object.next (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\src\routers\post-router.ts:14:53)
+    at fulfilled (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\src\routers\post-router.ts:5:58)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+[2020-08-07T10:56:56.396] [ERROR] error - TypeError: Do not know how to serialize a BigInt
+    at JSON.stringify (<anonymous>)
+    at stringify (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\express\lib\response.js:1123:12)
+    at ServerResponse.json (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\express\lib\response.js:260:14)
+    at C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\src\routers\post-router.ts:93:21
+    at step (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\src\routers\post-router.ts:33:23)
+    at Object.next (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\src\routers\post-router.ts:14:53)
+    at fulfilled (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\src\routers\post-router.ts:5:58)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+[2020-08-07T11:05:57.049] [ERROR] error - TypeError: Do not know how to serialize a BigInt
+    at JSON.stringify (<anonymous>)
+    at stringify (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\express\lib\response.js:1123:12)
+    at ServerResponse.json (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\express\lib\response.js:260:14)
+    at C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\src\routers\post-router.ts:93:21
+    at step (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\src\routers\post-router.ts:33:23)
+    at Object.next (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\src\routers\post-router.ts:14:53)
+    at fulfilled (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\src\routers\post-router.ts:5:58)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+[2020-08-07T11:13:18.204] [ERROR] error - TypeError: Do not know how to serialize a BigInt
+    at JSON.stringify (<anonymous>)
+    at stringify (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\express\lib\response.js:1123:12)
+    at ServerResponse.json (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\express\lib\response.js:260:14)
+    at C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\src\routers\post-router.ts:93:21
+    at step (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\src\routers\post-router.ts:33:23)
+    at Object.next (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\src\routers\post-router.ts:14:53)
+    at fulfilled (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\src\routers\post-router.ts:5:58)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+[2020-08-07T11:16:14.684] [ERROR] error - TypeError: Do not know how to serialize a BigInt
+    at JSON.stringify (<anonymous>)
+    at stringify (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\express\lib\response.js:1123:12)
+    at ServerResponse.json (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\express\lib\response.js:260:14)
+    at C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\src\routers\post-router.ts:93:21
+    at step (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\src\routers\post-router.ts:33:23)
+    at Object.next (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\src\routers\post-router.ts:14:53)
+    at fulfilled (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\src\routers\post-router.ts:5:58)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+[2020-08-07T11:35:51.857] [ERROR] error - TypeError [ERR_HTTP_INVALID_HEADER_VALUE]: Invalid value "undefined" for header "Authorization"
+    at ClientRequest.setHeader (_http_outgoing.js:521:3)
+    at new ClientRequest (_http_client.js:241:14)
+    at Object.request (http.js:46:10)
+    at RedirectableRequest._performRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:169:24)
+    at new RedirectableRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:66:8)
+    at Object.wrappedProtocol.request (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:307:14)
+    at dispatchHttpRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\adapters\http.js:179:25)
+    at new Promise (<anonymous>)
+    at httpAdapter (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\adapters\http.js:21:10)
+    at dispatchRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\core\dispatchRequest.js:52:10) {
+  code: 'ERR_HTTP_INVALID_HEADER_VALUE'
+}
+[2020-08-07T11:35:51.867] [ERROR] error - TypeError [ERR_HTTP_INVALID_HEADER_VALUE]: Invalid value "undefined" for header "Authorization"
+    at ClientRequest.setHeader (_http_outgoing.js:521:3)
+    at new ClientRequest (_http_client.js:241:14)
+    at Object.request (http.js:46:10)
+    at RedirectableRequest._performRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:169:24)
+    at new RedirectableRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:66:8)
+    at Object.wrappedProtocol.request (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:307:14)
+    at dispatchHttpRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\adapters\http.js:179:25)
+    at new Promise (<anonymous>)
+    at httpAdapter (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\adapters\http.js:21:10)
+    at dispatchRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\core\dispatchRequest.js:52:10) {
+  code: 'ERR_HTTP_INVALID_HEADER_VALUE'
+}
+[2020-08-07T11:35:51.873] [ERROR] error - TypeError [ERR_HTTP_INVALID_HEADER_VALUE]: Invalid value "undefined" for header "Authorization"
+    at ClientRequest.setHeader (_http_outgoing.js:521:3)
+    at new ClientRequest (_http_client.js:241:14)
+    at Object.request (http.js:46:10)
+    at RedirectableRequest._performRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:169:24)
+    at new RedirectableRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:66:8)
+    at Object.wrappedProtocol.request (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:307:14)
+    at dispatchHttpRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\adapters\http.js:179:25)
+    at new Promise (<anonymous>)
+    at httpAdapter (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\adapters\http.js:21:10)
+    at dispatchRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\core\dispatchRequest.js:52:10) {
+  code: 'ERR_HTTP_INVALID_HEADER_VALUE'
+}
+[2020-08-07T11:35:51.880] [ERROR] error - TypeError [ERR_HTTP_INVALID_HEADER_VALUE]: Invalid value "undefined" for header "Authorization"
+    at ClientRequest.setHeader (_http_outgoing.js:521:3)
+    at new ClientRequest (_http_client.js:241:14)
+    at Object.request (http.js:46:10)
+    at RedirectableRequest._performRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:169:24)
+    at new RedirectableRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:66:8)
+    at Object.wrappedProtocol.request (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:307:14)
+    at dispatchHttpRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\adapters\http.js:179:25)
+    at new Promise (<anonymous>)
+    at httpAdapter (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\adapters\http.js:21:10)
+    at dispatchRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\core\dispatchRequest.js:52:10) {
+  code: 'ERR_HTTP_INVALID_HEADER_VALUE'
+}
+[2020-08-07T11:35:51.886] [ERROR] error - TypeError [ERR_HTTP_INVALID_HEADER_VALUE]: Invalid value "undefined" for header "Authorization"
+    at ClientRequest.setHeader (_http_outgoing.js:521:3)
+    at new ClientRequest (_http_client.js:241:14)
+    at Object.request (http.js:46:10)
+    at RedirectableRequest._performRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:169:24)
+    at new RedirectableRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:66:8)
+    at Object.wrappedProtocol.request (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:307:14)
+    at dispatchHttpRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\adapters\http.js:179:25)
+    at new Promise (<anonymous>)
+    at httpAdapter (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\adapters\http.js:21:10)
+    at dispatchRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\core\dispatchRequest.js:52:10) {
+  code: 'ERR_HTTP_INVALID_HEADER_VALUE'
+}
+[2020-08-07T11:35:51.894] [ERROR] error - TypeError [ERR_HTTP_INVALID_HEADER_VALUE]: Invalid value "undefined" for header "Authorization"
+    at ClientRequest.setHeader (_http_outgoing.js:521:3)
+    at new ClientRequest (_http_client.js:241:14)
+    at Object.request (http.js:46:10)
+    at RedirectableRequest._performRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:169:24)
+    at new RedirectableRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:66:8)
+    at Object.wrappedProtocol.request (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:307:14)
+    at dispatchHttpRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\adapters\http.js:179:25)
+    at new Promise (<anonymous>)
+    at httpAdapter (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\adapters\http.js:21:10)
+    at dispatchRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\core\dispatchRequest.js:52:10) {
+  code: 'ERR_HTTP_INVALID_HEADER_VALUE'
+}
+[2020-08-07T11:35:51.900] [ERROR] error - TypeError [ERR_HTTP_INVALID_HEADER_VALUE]: Invalid value "undefined" for header "Authorization"
+    at ClientRequest.setHeader (_http_outgoing.js:521:3)
+    at new ClientRequest (_http_client.js:241:14)
+    at Object.request (http.js:46:10)
+    at RedirectableRequest._performRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:169:24)
+    at new RedirectableRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:66:8)
+    at Object.wrappedProtocol.request (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:307:14)
+    at dispatchHttpRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\adapters\http.js:179:25)
+    at new Promise (<anonymous>)
+    at httpAdapter (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\adapters\http.js:21:10)
+    at dispatchRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\core\dispatchRequest.js:52:10) {
+  code: 'ERR_HTTP_INVALID_HEADER_VALUE'
+}
+[2020-08-07T11:42:15.766] [ERROR] error - TypeError [ERR_HTTP_INVALID_HEADER_VALUE]: Invalid value "undefined" for header "Authorization"
+    at ClientRequest.setHeader (_http_outgoing.js:521:3)
+    at new ClientRequest (_http_client.js:241:14)
+    at Object.request (http.js:46:10)
+    at RedirectableRequest._performRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:169:24)
+    at new RedirectableRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:66:8)
+    at Object.wrappedProtocol.request (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:307:14)
+    at dispatchHttpRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\adapters\http.js:179:25)
+    at new Promise (<anonymous>)
+    at httpAdapter (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\adapters\http.js:21:10)
+    at dispatchRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\core\dispatchRequest.js:52:10) {
+  code: 'ERR_HTTP_INVALID_HEADER_VALUE'
+}
+[2020-08-07T11:42:15.775] [ERROR] error - TypeError [ERR_HTTP_INVALID_HEADER_VALUE]: Invalid value "undefined" for header "Authorization"
+    at ClientRequest.setHeader (_http_outgoing.js:521:3)
+    at new ClientRequest (_http_client.js:241:14)
+    at Object.request (http.js:46:10)
+    at RedirectableRequest._performRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:169:24)
+    at new RedirectableRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:66:8)
+    at Object.wrappedProtocol.request (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:307:14)
+    at dispatchHttpRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\adapters\http.js:179:25)
+    at new Promise (<anonymous>)
+    at httpAdapter (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\adapters\http.js:21:10)
+    at dispatchRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\core\dispatchRequest.js:52:10) {
+  code: 'ERR_HTTP_INVALID_HEADER_VALUE'
+}
+[2020-08-07T11:42:15.788] [ERROR] error - TypeError [ERR_HTTP_INVALID_HEADER_VALUE]: Invalid value "undefined" for header "Authorization"
+    at ClientRequest.setHeader (_http_outgoing.js:521:3)
+    at new ClientRequest (_http_client.js:241:14)
+    at Object.request (http.js:46:10)
+    at RedirectableRequest._performRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:169:24)
+    at new RedirectableRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:66:8)
+    at Object.wrappedProtocol.request (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:307:14)
+    at dispatchHttpRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\adapters\http.js:179:25)
+    at new Promise (<anonymous>)
+    at httpAdapter (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\adapters\http.js:21:10)
+    at dispatchRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\core\dispatchRequest.js:52:10) {
+  code: 'ERR_HTTP_INVALID_HEADER_VALUE'
+}
+[2020-08-07T11:42:15.794] [ERROR] error - TypeError [ERR_HTTP_INVALID_HEADER_VALUE]: Invalid value "undefined" for header "Authorization"
+    at ClientRequest.setHeader (_http_outgoing.js:521:3)
+    at new ClientRequest (_http_client.js:241:14)
+    at Object.request (http.js:46:10)
+    at RedirectableRequest._performRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:169:24)
+    at new RedirectableRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:66:8)
+    at Object.wrappedProtocol.request (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:307:14)
+    at dispatchHttpRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\adapters\http.js:179:25)
+    at new Promise (<anonymous>)
+    at httpAdapter (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\adapters\http.js:21:10)
+    at dispatchRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\core\dispatchRequest.js:52:10) {
+  code: 'ERR_HTTP_INVALID_HEADER_VALUE'
+}
+[2020-08-07T11:42:15.800] [ERROR] error - TypeError [ERR_HTTP_INVALID_HEADER_VALUE]: Invalid value "undefined" for header "Authorization"
+    at ClientRequest.setHeader (_http_outgoing.js:521:3)
+    at new ClientRequest (_http_client.js:241:14)
+    at Object.request (http.js:46:10)
+    at RedirectableRequest._performRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:169:24)
+    at new RedirectableRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:66:8)
+    at Object.wrappedProtocol.request (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:307:14)
+    at dispatchHttpRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\adapters\http.js:179:25)
+    at new Promise (<anonymous>)
+    at httpAdapter (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\adapters\http.js:21:10)
+    at dispatchRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\core\dispatchRequest.js:52:10) {
+  code: 'ERR_HTTP_INVALID_HEADER_VALUE'
+}
+[2020-08-07T11:42:15.806] [ERROR] error - TypeError [ERR_HTTP_INVALID_HEADER_VALUE]: Invalid value "undefined" for header "Authorization"
+    at ClientRequest.setHeader (_http_outgoing.js:521:3)
+    at new ClientRequest (_http_client.js:241:14)
+    at Object.request (http.js:46:10)
+    at RedirectableRequest._performRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:169:24)
+    at new RedirectableRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:66:8)
+    at Object.wrappedProtocol.request (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:307:14)
+    at dispatchHttpRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\adapters\http.js:179:25)
+    at new Promise (<anonymous>)
+    at httpAdapter (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\adapters\http.js:21:10)
+    at dispatchRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\core\dispatchRequest.js:52:10) {
+  code: 'ERR_HTTP_INVALID_HEADER_VALUE'
+}
+[2020-08-07T11:42:15.811] [ERROR] error - TypeError [ERR_HTTP_INVALID_HEADER_VALUE]: Invalid value "undefined" for header "Authorization"
+    at ClientRequest.setHeader (_http_outgoing.js:521:3)
+    at new ClientRequest (_http_client.js:241:14)
+    at Object.request (http.js:46:10)
+    at RedirectableRequest._performRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:169:24)
+    at new RedirectableRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:66:8)
+    at Object.wrappedProtocol.request (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:307:14)
+    at dispatchHttpRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\adapters\http.js:179:25)
+    at new Promise (<anonymous>)
+    at httpAdapter (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\adapters\http.js:21:10)
+    at dispatchRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\core\dispatchRequest.js:52:10) {
+  code: 'ERR_HTTP_INVALID_HEADER_VALUE'
+}
