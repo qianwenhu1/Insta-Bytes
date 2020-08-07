@@ -4,12 +4,10 @@ import { loggingMiddleware } from './middleware/logging-middleware'
 import { corsFilter } from './middleware/cors-filter'
 import { postRouter } from './routers/post-router'
 import { logger, errorLogger } from './utils/loggers'
-// import { NewPostInputError } from './errors/NewPostInputError'
-// import { Post } from './models/Post'
 import './event-listeners/new-post'
-//import { postTopic } from './messaging/index'
 
-//console.log(postTopic)
+const basePath = process.env['LB_BASE_PATH'] || ''
+
 const app = express()
 
 app.use(express.json({limit:'50mb'}))
@@ -18,7 +16,11 @@ app.use(loggingMiddleware);
 app.use(corsFilter);
 app.use(JWTVerifyMiddleware)
 
-app.use('/posts', postRouter);
+const basePathRouter = express.Router()
+
+app.use(basePath, basePathRouter)
+
+basePathRouter.use('/posts', postRouter);
 
 
 app.get('/health', (req:Request,res:Response)=>{

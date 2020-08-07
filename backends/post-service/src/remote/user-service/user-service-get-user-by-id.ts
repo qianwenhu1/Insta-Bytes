@@ -11,7 +11,6 @@ export const userServiceGetUserById = async (userId:number, token:string) => {
         })
         return res.data
     }catch(e){
-        console.log(e)
         logger.error(e)
         errorLogger.error(e)
     }
