@@ -10,7 +10,7 @@ spec:
         backend:
           serviceName: lb-user-service-service
           servicePort: 2006
-      - path: /book-service/*
+      - path: /post-service/*
         backend:
-          serviceName: lb-book-service-service
+          serviceName: lb-post-service-service
           servicePort: 2006
