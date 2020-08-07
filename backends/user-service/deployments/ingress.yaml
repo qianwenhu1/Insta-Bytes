@@ -9,4 +9,4 @@ spec:
       - path: /user-service/*
         backend:
           serviceName: lb-user-service-service
-          servicePort: 80
+          servicePort: 2006
