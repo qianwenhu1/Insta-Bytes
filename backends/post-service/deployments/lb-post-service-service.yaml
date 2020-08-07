@@ -2,6 +2,7 @@ apiVersion: v1
 kind: Service
 metadata:
   name: lb-post-service-service
+  namespace: p2
 spec:
   type: NodePort
   selector:
