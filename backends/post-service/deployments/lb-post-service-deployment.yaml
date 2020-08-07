@@ -2,6 +2,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: lb-post-service-deployment
+  namespace: p2
   labels:
     app: lb
     service: post-service
@@ -36,7 +37,7 @@ spec:
         - name: LB_PASSWORD
           valueFrom:
             secretKeyRef:
-              name: lb-post-service-secrets
+              name: lb-user-service-secrets
               key: password
         ports:
         - containerPort: 2006
