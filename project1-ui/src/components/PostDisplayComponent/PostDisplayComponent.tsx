@@ -126,31 +126,17 @@ export const PostDisplayComponent:FunctionComponent<IPostDisplayProps> = (props)
             className={classes.media}
             image={props.post?.image}
           />
-          <Grid container alignItems="flex-start">
-          <CardContent >
-            <Grid item alignItems="flex-start" justify="flex-start">
-            <Typography variant="body1" color="textPrimary" component="p">
-              {userMadePost?.username} 
-            </Typography>
-            <Typography variant="body1" color="textSecondary" component="p">
-              {props.post.caption}
-            </Typography>
-            </Grid>
-          </CardContent> 
-          </Grid>
-          {/* <CardActions>
-            <Box fontWeight="fontWeightMedium">
-                {userMadePost?.username}: <Typography variant="body2" color="textSecondary" component="p" >{props.post.caption} </Typography>
+
+          <CardActions>
+            <Box>
+              <Typography variant="body2" color="textPrimary" component="p" >{userMadePost?.username}: </Typography>
+                 
             </Box>
-          </CardActions> */}
+            <Box >
+                <Typography variant="body2" color="textSecondary" component="p" >{props.post.caption} </Typography>
+            </Box>
+          </CardActions>
           
-          {/* <CardContent >
-            <Grid alignItems="flex-start">
-            <Typography variant="body2" color="textPrimary" component="p" >
-              {userMadePost?.username}: 
-            </Typography> {props.post.caption}
-            </Grid>
-          </CardContent> */}
           
           <CardActions disableSpacing>
           {/* <IconButton aria-label="add to favorites"> */}
