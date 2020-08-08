@@ -69,7 +69,7 @@ app.use((err, req, res, next) => {
     }
 })
 
-app.listen(2006, ()=>{
+app.listen(2007, ()=>{
 //app.listen(2006, ()=>{
     logger.info('Server has started');
 })
