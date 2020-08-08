@@ -20431,3 +20431,445 @@
     at Object.next (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\src\routers\post-router.ts:14:53)
     at fulfilled (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\src\routers\post-router.ts:5:58)
     at processTicksAndRejections (internal/process/task_queues.js:97:5)
+[2020-08-07T20:31:57.404] [ERROR] error - TokenExpiredError: jwt expired
+    at C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\jsonwebtoken\verify.js:152:21
+    at getSecret (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\jsonwebtoken\verify.js:90:14)
+    at Object.module.exports [as verify] (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\jsonwebtoken\verify.js:94:10)
+    at exports.JWTVerifyMiddleware (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\src\middleware\jwt-verify-middleware.ts:10:28)
+    at Layer.handle [as handle_request] (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\express\lib\router\index.js:317:13)
+    at C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\express\lib\router\index.js:335:12)
+    at next (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\express\lib\router\index.js:275:10)
+    at corsFilter (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\src\middleware\cors-filter.ts:16:9) {
+  expiredAt: 2020-08-07T19:07:36.000Z
+}
+[2020-08-07T20:31:57.407] [ERROR] error - TokenExpiredError: jwt expired
+    at C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\jsonwebtoken\verify.js:152:21
+    at getSecret (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\jsonwebtoken\verify.js:90:14)
+    at Object.module.exports [as verify] (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\jsonwebtoken\verify.js:94:10)
+    at exports.JWTVerifyMiddleware (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\src\middleware\jwt-verify-middleware.ts:10:28)
+    at Layer.handle [as handle_request] (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\express\lib\router\index.js:317:13)
+    at C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\express\lib\router\index.js:335:12)
+    at next (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\express\lib\router\index.js:275:10)
+    at corsFilter (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\src\middleware\cors-filter.ts:16:9) {
+  expiredAt: 2020-08-07T19:07:36.000Z
+}
+[2020-08-07T20:32:12.103] [ERROR] error - TokenExpiredError: jwt expired
+    at C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\jsonwebtoken\verify.js:152:21
+    at getSecret (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\jsonwebtoken\verify.js:90:14)
+    at Object.module.exports [as verify] (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\jsonwebtoken\verify.js:94:10)
+    at exports.JWTVerifyMiddleware (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\src\middleware\jwt-verify-middleware.ts:10:28)
+    at Layer.handle [as handle_request] (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\express\lib\router\index.js:317:13)
+    at C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\express\lib\router\index.js:335:12)
+    at next (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\express\lib\router\index.js:275:10)
+    at corsFilter (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\src\middleware\cors-filter.ts:16:9) {
+  expiredAt: 2020-08-07T19:07:36.000Z
+}
+[2020-08-07T20:32:12.106] [ERROR] error - TokenExpiredError: jwt expired
+    at C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\jsonwebtoken\verify.js:152:21
+    at getSecret (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\jsonwebtoken\verify.js:90:14)
+    at Object.module.exports [as verify] (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\jsonwebtoken\verify.js:94:10)
+    at exports.JWTVerifyMiddleware (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\src\middleware\jwt-verify-middleware.ts:10:28)
+    at Layer.handle [as handle_request] (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\express\lib\router\index.js:317:13)
+    at C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\express\lib\router\index.js:335:12)
+    at next (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\express\lib\router\index.js:275:10)
+    at corsFilter (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\src\middleware\cors-filter.ts:16:9) {
+  expiredAt: 2020-08-07T19:07:36.000Z
+}
+[2020-08-07T20:32:14.259] [ERROR] error - TokenExpiredError: jwt expired
+    at C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\jsonwebtoken\verify.js:152:21
+    at getSecret (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\jsonwebtoken\verify.js:90:14)
+    at Object.module.exports [as verify] (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\jsonwebtoken\verify.js:94:10)
+    at exports.JWTVerifyMiddleware (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\src\middleware\jwt-verify-middleware.ts:10:28)
+    at Layer.handle [as handle_request] (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\express\lib\router\index.js:317:13)
+    at C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\express\lib\router\index.js:335:12)
+    at next (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\express\lib\router\index.js:275:10)
+    at corsFilter (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\src\middleware\cors-filter.ts:16:9) {
+  expiredAt: 2020-08-07T19:07:36.000Z
+}
+[2020-08-07T20:32:14.261] [ERROR] error - TokenExpiredError: jwt expired
+    at C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\jsonwebtoken\verify.js:152:21
+    at getSecret (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\jsonwebtoken\verify.js:90:14)
+    at Object.module.exports [as verify] (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\jsonwebtoken\verify.js:94:10)
+    at exports.JWTVerifyMiddleware (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\src\middleware\jwt-verify-middleware.ts:10:28)
+    at Layer.handle [as handle_request] (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\express\lib\router\index.js:317:13)
+    at C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\express\lib\router\index.js:335:12)
+    at next (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\express\lib\router\index.js:275:10)
+    at corsFilter (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\src\middleware\cors-filter.ts:16:9) {
+  expiredAt: 2020-08-07T19:07:36.000Z
+}
+[2020-08-07T20:32:26.170] [ERROR] error - TokenExpiredError: jwt expired
+    at C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\jsonwebtoken\verify.js:152:21
+    at getSecret (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\jsonwebtoken\verify.js:90:14)
+    at Object.module.exports [as verify] (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\jsonwebtoken\verify.js:94:10)
+    at exports.JWTVerifyMiddleware (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\src\middleware\jwt-verify-middleware.ts:10:28)
+    at Layer.handle [as handle_request] (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\express\lib\router\index.js:317:13)
+    at C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\express\lib\router\index.js:335:12)
+    at next (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\express\lib\router\index.js:275:10)
+    at corsFilter (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\src\middleware\cors-filter.ts:16:9) {
+  expiredAt: 2020-08-07T19:07:36.000Z
+}
+[2020-08-07T20:32:26.174] [ERROR] error - TokenExpiredError: jwt expired
+    at C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\jsonwebtoken\verify.js:152:21
+    at getSecret (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\jsonwebtoken\verify.js:90:14)
+    at Object.module.exports [as verify] (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\jsonwebtoken\verify.js:94:10)
+    at exports.JWTVerifyMiddleware (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\src\middleware\jwt-verify-middleware.ts:10:28)
+    at Layer.handle [as handle_request] (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\express\lib\router\index.js:317:13)
+    at C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\express\lib\router\index.js:335:12)
+    at next (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\express\lib\router\index.js:275:10)
+    at corsFilter (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\src\middleware\cors-filter.ts:16:9) {
+  expiredAt: 2020-08-07T19:07:36.000Z
+}
+[2020-08-07T20:32:55.101] [ERROR] error - TokenExpiredError: jwt expired
+    at C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\jsonwebtoken\verify.js:152:21
+    at getSecret (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\jsonwebtoken\verify.js:90:14)
+    at Object.module.exports [as verify] (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\jsonwebtoken\verify.js:94:10)
+    at exports.JWTVerifyMiddleware (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\src\middleware\jwt-verify-middleware.ts:10:28)
+    at Layer.handle [as handle_request] (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\express\lib\router\index.js:317:13)
+    at C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\express\lib\router\index.js:335:12)
+    at next (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\express\lib\router\index.js:275:10)
+    at corsFilter (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\src\middleware\cors-filter.ts:16:9) {
+  expiredAt: 2020-08-07T19:07:36.000Z
+}
+[2020-08-07T20:32:55.111] [ERROR] error - TokenExpiredError: jwt expired
+    at C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\jsonwebtoken\verify.js:152:21
+    at getSecret (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\jsonwebtoken\verify.js:90:14)
+    at Object.module.exports [as verify] (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\jsonwebtoken\verify.js:94:10)
+    at exports.JWTVerifyMiddleware (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\src\middleware\jwt-verify-middleware.ts:10:28)
+    at Layer.handle [as handle_request] (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\express\lib\router\index.js:317:13)
+    at C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\express\lib\router\index.js:335:12)
+    at next (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\express\lib\router\index.js:275:10)
+    at corsFilter (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\src\middleware\cors-filter.ts:16:9) {
+  expiredAt: 2020-08-07T19:07:36.000Z
+}
+[2020-08-07T20:33:39.859] [ERROR] error - TokenExpiredError: jwt expired
+    at C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\jsonwebtoken\verify.js:152:21
+    at getSecret (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\jsonwebtoken\verify.js:90:14)
+    at Object.module.exports [as verify] (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\jsonwebtoken\verify.js:94:10)
+    at exports.JWTVerifyMiddleware (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\src\middleware\jwt-verify-middleware.ts:10:28)
+    at Layer.handle [as handle_request] (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\express\lib\router\index.js:317:13)
+    at C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\express\lib\router\index.js:335:12)
+    at next (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\express\lib\router\index.js:275:10)
+    at corsFilter (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\src\middleware\cors-filter.ts:16:9) {
+  expiredAt: 2020-08-07T19:07:36.000Z
+}
+[2020-08-07T20:33:39.862] [ERROR] error - TokenExpiredError: jwt expired
+    at C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\jsonwebtoken\verify.js:152:21
+    at getSecret (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\jsonwebtoken\verify.js:90:14)
+    at Object.module.exports [as verify] (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\jsonwebtoken\verify.js:94:10)
+    at exports.JWTVerifyMiddleware (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\src\middleware\jwt-verify-middleware.ts:10:28)
+    at Layer.handle [as handle_request] (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\express\lib\router\index.js:317:13)
+    at C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\express\lib\router\index.js:335:12)
+    at next (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\express\lib\router\index.js:275:10)
+    at corsFilter (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\src\middleware\cors-filter.ts:16:9) {
+  expiredAt: 2020-08-07T19:07:36.000Z
+}
+[2020-08-07T20:33:46.036] [ERROR] error - TokenExpiredError: jwt expired
+    at C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\jsonwebtoken\verify.js:152:21
+    at getSecret (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\jsonwebtoken\verify.js:90:14)
+    at Object.module.exports [as verify] (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\jsonwebtoken\verify.js:94:10)
+    at exports.JWTVerifyMiddleware (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\src\middleware\jwt-verify-middleware.ts:10:28)
+    at Layer.handle [as handle_request] (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\express\lib\router\index.js:317:13)
+    at C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\express\lib\router\index.js:335:12)
+    at next (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\express\lib\router\index.js:275:10)
+    at corsFilter (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\src\middleware\cors-filter.ts:16:9) {
+  expiredAt: 2020-08-07T19:07:36.000Z
+}
+[2020-08-07T20:33:46.040] [ERROR] error - TokenExpiredError: jwt expired
+    at C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\jsonwebtoken\verify.js:152:21
+    at getSecret (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\jsonwebtoken\verify.js:90:14)
+    at Object.module.exports [as verify] (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\jsonwebtoken\verify.js:94:10)
+    at exports.JWTVerifyMiddleware (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\src\middleware\jwt-verify-middleware.ts:10:28)
+    at Layer.handle [as handle_request] (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\express\lib\router\index.js:317:13)
+    at C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\express\lib\router\index.js:335:12)
+    at next (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\express\lib\router\index.js:275:10)
+    at corsFilter (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\src\middleware\cors-filter.ts:16:9) {
+  expiredAt: 2020-08-07T19:07:36.000Z
+}
+[2020-08-07T20:33:59.710] [ERROR] error - TokenExpiredError: jwt expired
+    at C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\jsonwebtoken\verify.js:152:21
+    at getSecret (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\jsonwebtoken\verify.js:90:14)
+    at Object.module.exports [as verify] (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\jsonwebtoken\verify.js:94:10)
+    at exports.JWTVerifyMiddleware (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\src\middleware\jwt-verify-middleware.ts:10:28)
+    at Layer.handle [as handle_request] (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\express\lib\router\index.js:317:13)
+    at C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\express\lib\router\index.js:335:12)
+    at next (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\express\lib\router\index.js:275:10)
+    at corsFilter (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\src\middleware\cors-filter.ts:16:9) {
+  expiredAt: 2020-08-07T19:07:36.000Z
+}
+[2020-08-07T20:33:59.712] [ERROR] error - TokenExpiredError: jwt expired
+    at C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\jsonwebtoken\verify.js:152:21
+    at getSecret (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\jsonwebtoken\verify.js:90:14)
+    at Object.module.exports [as verify] (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\jsonwebtoken\verify.js:94:10)
+    at exports.JWTVerifyMiddleware (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\src\middleware\jwt-verify-middleware.ts:10:28)
+    at Layer.handle [as handle_request] (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\express\lib\router\index.js:317:13)
+    at C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\express\lib\router\index.js:335:12)
+    at next (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\express\lib\router\index.js:275:10)
+    at corsFilter (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\src\middleware\cors-filter.ts:16:9) {
+  expiredAt: 2020-08-07T19:07:36.000Z
+}
+[2020-08-07T20:37:29.969] [ERROR] error - TypeError [ERR_HTTP_INVALID_HEADER_VALUE]: Invalid value "undefined" for header "Authorization"
+    at ClientRequest.setHeader (_http_outgoing.js:521:3)
+    at new ClientRequest (_http_client.js:241:14)
+    at Object.request (http.js:46:10)
+    at RedirectableRequest._performRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:169:24)
+    at new RedirectableRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:66:8)
+    at Object.wrappedProtocol.request (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:307:14)
+    at dispatchHttpRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\adapters\http.js:179:25)
+    at new Promise (<anonymous>)
+    at httpAdapter (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\adapters\http.js:21:10)
+    at dispatchRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\core\dispatchRequest.js:52:10) {
+  code: 'ERR_HTTP_INVALID_HEADER_VALUE'
+}
+[2020-08-07T20:37:29.976] [ERROR] error - TypeError [ERR_HTTP_INVALID_HEADER_VALUE]: Invalid value "undefined" for header "Authorization"
+    at ClientRequest.setHeader (_http_outgoing.js:521:3)
+    at new ClientRequest (_http_client.js:241:14)
+    at Object.request (http.js:46:10)
+    at RedirectableRequest._performRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:169:24)
+    at new RedirectableRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:66:8)
+    at Object.wrappedProtocol.request (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:307:14)
+    at dispatchHttpRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\adapters\http.js:179:25)
+    at new Promise (<anonymous>)
+    at httpAdapter (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\adapters\http.js:21:10)
+    at dispatchRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\core\dispatchRequest.js:52:10) {
+  code: 'ERR_HTTP_INVALID_HEADER_VALUE'
+}
+[2020-08-07T20:37:29.990] [ERROR] error - TypeError [ERR_HTTP_INVALID_HEADER_VALUE]: Invalid value "undefined" for header "Authorization"
+    at ClientRequest.setHeader (_http_outgoing.js:521:3)
+    at new ClientRequest (_http_client.js:241:14)
+    at Object.request (http.js:46:10)
+    at RedirectableRequest._performRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:169:24)
+    at new RedirectableRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:66:8)
+    at Object.wrappedProtocol.request (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:307:14)
+    at dispatchHttpRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\adapters\http.js:179:25)
+    at new Promise (<anonymous>)
+    at httpAdapter (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\adapters\http.js:21:10)
+    at dispatchRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\core\dispatchRequest.js:52:10) {
+  code: 'ERR_HTTP_INVALID_HEADER_VALUE'
+}
+[2020-08-07T20:37:30.004] [ERROR] error - TypeError [ERR_HTTP_INVALID_HEADER_VALUE]: Invalid value "undefined" for header "Authorization"
+    at ClientRequest.setHeader (_http_outgoing.js:521:3)
+    at new ClientRequest (_http_client.js:241:14)
+    at Object.request (http.js:46:10)
+    at RedirectableRequest._performRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:169:24)
+    at new RedirectableRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:66:8)
+    at Object.wrappedProtocol.request (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:307:14)
+    at dispatchHttpRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\adapters\http.js:179:25)
+    at new Promise (<anonymous>)
+    at httpAdapter (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\adapters\http.js:21:10)
+    at dispatchRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\core\dispatchRequest.js:52:10) {
+  code: 'ERR_HTTP_INVALID_HEADER_VALUE'
+}
+[2020-08-07T20:37:30.016] [ERROR] error - TypeError [ERR_HTTP_INVALID_HEADER_VALUE]: Invalid value "undefined" for header "Authorization"
+    at ClientRequest.setHeader (_http_outgoing.js:521:3)
+    at new ClientRequest (_http_client.js:241:14)
+    at Object.request (http.js:46:10)
+    at RedirectableRequest._performRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:169:24)
+    at new RedirectableRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:66:8)
+    at Object.wrappedProtocol.request (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:307:14)
+    at dispatchHttpRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\adapters\http.js:179:25)
+    at new Promise (<anonymous>)
+    at httpAdapter (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\adapters\http.js:21:10)
+    at dispatchRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\core\dispatchRequest.js:52:10) {
+  code: 'ERR_HTTP_INVALID_HEADER_VALUE'
+}
+[2020-08-07T20:37:30.021] [ERROR] error - TypeError [ERR_HTTP_INVALID_HEADER_VALUE]: Invalid value "undefined" for header "Authorization"
+    at ClientRequest.setHeader (_http_outgoing.js:521:3)
+    at new ClientRequest (_http_client.js:241:14)
+    at Object.request (http.js:46:10)
+    at RedirectableRequest._performRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:169:24)
+    at new RedirectableRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:66:8)
+    at Object.wrappedProtocol.request (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:307:14)
+    at dispatchHttpRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\adapters\http.js:179:25)
+    at new Promise (<anonymous>)
+    at httpAdapter (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\adapters\http.js:21:10)
+    at dispatchRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\core\dispatchRequest.js:52:10) {
+  code: 'ERR_HTTP_INVALID_HEADER_VALUE'
+}
+[2020-08-07T20:38:04.094] [ERROR] error - TypeError [ERR_HTTP_INVALID_HEADER_VALUE]: Invalid value "undefined" for header "Authorization"
+    at ClientRequest.setHeader (_http_outgoing.js:521:3)
+    at new ClientRequest (_http_client.js:241:14)
+    at Object.request (http.js:46:10)
+    at RedirectableRequest._performRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:169:24)
+    at new RedirectableRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:66:8)
+    at Object.wrappedProtocol.request (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:307:14)
+    at dispatchHttpRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\adapters\http.js:179:25)
+    at new Promise (<anonymous>)
+    at httpAdapter (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\adapters\http.js:21:10)
+    at dispatchRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\core\dispatchRequest.js:52:10) {
+  code: 'ERR_HTTP_INVALID_HEADER_VALUE'
+}
+[2020-08-07T20:38:04.109] [ERROR] error - TypeError [ERR_HTTP_INVALID_HEADER_VALUE]: Invalid value "undefined" for header "Authorization"
+    at ClientRequest.setHeader (_http_outgoing.js:521:3)
+    at new ClientRequest (_http_client.js:241:14)
+    at Object.request (http.js:46:10)
+    at RedirectableRequest._performRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:169:24)
+    at new RedirectableRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:66:8)
+    at Object.wrappedProtocol.request (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:307:14)
+    at dispatchHttpRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\adapters\http.js:179:25)
+    at new Promise (<anonymous>)
+    at httpAdapter (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\adapters\http.js:21:10)
+    at dispatchRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\core\dispatchRequest.js:52:10) {
+  code: 'ERR_HTTP_INVALID_HEADER_VALUE'
+}
+[2020-08-07T20:38:04.117] [ERROR] error - TypeError [ERR_HTTP_INVALID_HEADER_VALUE]: Invalid value "undefined" for header "Authorization"
+    at ClientRequest.setHeader (_http_outgoing.js:521:3)
+    at new ClientRequest (_http_client.js:241:14)
+    at Object.request (http.js:46:10)
+    at RedirectableRequest._performRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:169:24)
+    at new RedirectableRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:66:8)
+    at Object.wrappedProtocol.request (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:307:14)
+    at dispatchHttpRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\adapters\http.js:179:25)
+    at new Promise (<anonymous>)
+    at httpAdapter (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\adapters\http.js:21:10)
+    at dispatchRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\core\dispatchRequest.js:52:10) {
+  code: 'ERR_HTTP_INVALID_HEADER_VALUE'
+}
+[2020-08-07T20:38:04.131] [ERROR] error - TypeError [ERR_HTTP_INVALID_HEADER_VALUE]: Invalid value "undefined" for header "Authorization"
+    at ClientRequest.setHeader (_http_outgoing.js:521:3)
+    at new ClientRequest (_http_client.js:241:14)
+    at Object.request (http.js:46:10)
+    at RedirectableRequest._performRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:169:24)
+    at new RedirectableRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:66:8)
+    at Object.wrappedProtocol.request (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:307:14)
+    at dispatchHttpRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\adapters\http.js:179:25)
+    at new Promise (<anonymous>)
+    at httpAdapter (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\adapters\http.js:21:10)
+    at dispatchRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\core\dispatchRequest.js:52:10) {
+  code: 'ERR_HTTP_INVALID_HEADER_VALUE'
+}
+[2020-08-07T20:38:04.150] [ERROR] error - TypeError [ERR_HTTP_INVALID_HEADER_VALUE]: Invalid value "undefined" for header "Authorization"
+    at ClientRequest.setHeader (_http_outgoing.js:521:3)
+    at new ClientRequest (_http_client.js:241:14)
+    at Object.request (http.js:46:10)
+    at RedirectableRequest._performRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:169:24)
+    at new RedirectableRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:66:8)
+    at Object.wrappedProtocol.request (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:307:14)
+    at dispatchHttpRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\adapters\http.js:179:25)
+    at new Promise (<anonymous>)
+    at httpAdapter (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\adapters\http.js:21:10)
+    at dispatchRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\core\dispatchRequest.js:52:10) {
+  code: 'ERR_HTTP_INVALID_HEADER_VALUE'
+}
+[2020-08-07T20:38:04.177] [ERROR] error - TypeError [ERR_HTTP_INVALID_HEADER_VALUE]: Invalid value "undefined" for header "Authorization"
+    at ClientRequest.setHeader (_http_outgoing.js:521:3)
+    at new ClientRequest (_http_client.js:241:14)
+    at Object.request (http.js:46:10)
+    at RedirectableRequest._performRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:169:24)
+    at new RedirectableRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:66:8)
+    at Object.wrappedProtocol.request (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:307:14)
+    at dispatchHttpRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\adapters\http.js:179:25)
+    at new Promise (<anonymous>)
+    at httpAdapter (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\adapters\http.js:21:10)
+    at dispatchRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\core\dispatchRequest.js:52:10) {
+  code: 'ERR_HTTP_INVALID_HEADER_VALUE'
+}
+[2020-08-07T20:38:55.830] [ERROR] error - TypeError [ERR_HTTP_INVALID_HEADER_VALUE]: Invalid value "undefined" for header "Authorization"
+    at ClientRequest.setHeader (_http_outgoing.js:521:3)
+    at new ClientRequest (_http_client.js:241:14)
+    at Object.request (http.js:46:10)
+    at RedirectableRequest._performRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:169:24)
+    at new RedirectableRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:66:8)
+    at Object.wrappedProtocol.request (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:307:14)
+    at dispatchHttpRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\adapters\http.js:179:25)
+    at new Promise (<anonymous>)
+    at httpAdapter (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\adapters\http.js:21:10)
+    at dispatchRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\core\dispatchRequest.js:52:10) {
+  code: 'ERR_HTTP_INVALID_HEADER_VALUE'
+}
+[2020-08-07T20:38:55.858] [ERROR] error - TypeError [ERR_HTTP_INVALID_HEADER_VALUE]: Invalid value "undefined" for header "Authorization"
+    at ClientRequest.setHeader (_http_outgoing.js:521:3)
+    at new ClientRequest (_http_client.js:241:14)
+    at Object.request (http.js:46:10)
+    at RedirectableRequest._performRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:169:24)
+    at new RedirectableRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:66:8)
+    at Object.wrappedProtocol.request (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:307:14)
+    at dispatchHttpRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\adapters\http.js:179:25)
+    at new Promise (<anonymous>)
+    at httpAdapter (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\adapters\http.js:21:10)
+    at dispatchRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\core\dispatchRequest.js:52:10) {
+  code: 'ERR_HTTP_INVALID_HEADER_VALUE'
+}
+[2020-08-07T20:38:55.881] [ERROR] error - TypeError [ERR_HTTP_INVALID_HEADER_VALUE]: Invalid value "undefined" for header "Authorization"
+    at ClientRequest.setHeader (_http_outgoing.js:521:3)
+    at new ClientRequest (_http_client.js:241:14)
+    at Object.request (http.js:46:10)
+    at RedirectableRequest._performRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:169:24)
+    at new RedirectableRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:66:8)
+    at Object.wrappedProtocol.request (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:307:14)
+    at dispatchHttpRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\adapters\http.js:179:25)
+    at new Promise (<anonymous>)
+    at httpAdapter (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\adapters\http.js:21:10)
+    at dispatchRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\core\dispatchRequest.js:52:10) {
+  code: 'ERR_HTTP_INVALID_HEADER_VALUE'
+}
+[2020-08-07T20:38:55.895] [ERROR] error - TypeError [ERR_HTTP_INVALID_HEADER_VALUE]: Invalid value "undefined" for header "Authorization"
+    at ClientRequest.setHeader (_http_outgoing.js:521:3)
+    at new ClientRequest (_http_client.js:241:14)
+    at Object.request (http.js:46:10)
+    at RedirectableRequest._performRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:169:24)
+    at new RedirectableRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:66:8)
+    at Object.wrappedProtocol.request (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:307:14)
+    at dispatchHttpRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\adapters\http.js:179:25)
+    at new Promise (<anonymous>)
+    at httpAdapter (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\adapters\http.js:21:10)
+    at dispatchRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\core\dispatchRequest.js:52:10) {
+  code: 'ERR_HTTP_INVALID_HEADER_VALUE'
+}
+[2020-08-07T20:38:55.912] [ERROR] error - TypeError [ERR_HTTP_INVALID_HEADER_VALUE]: Invalid value "undefined" for header "Authorization"
+    at ClientRequest.setHeader (_http_outgoing.js:521:3)
+    at new ClientRequest (_http_client.js:241:14)
+    at Object.request (http.js:46:10)
+    at RedirectableRequest._performRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:169:24)
+    at new RedirectableRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:66:8)
+    at Object.wrappedProtocol.request (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:307:14)
+    at dispatchHttpRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\adapters\http.js:179:25)
+    at new Promise (<anonymous>)
+    at httpAdapter (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\adapters\http.js:21:10)
+    at dispatchRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\core\dispatchRequest.js:52:10) {
+  code: 'ERR_HTTP_INVALID_HEADER_VALUE'
+}
+[2020-08-07T20:38:55.926] [ERROR] error - TypeError [ERR_HTTP_INVALID_HEADER_VALUE]: Invalid value "undefined" for header "Authorization"
+    at ClientRequest.setHeader (_http_outgoing.js:521:3)
+    at new ClientRequest (_http_client.js:241:14)
+    at Object.request (http.js:46:10)
+    at RedirectableRequest._performRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:169:24)
+    at new RedirectableRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:66:8)
+    at Object.wrappedProtocol.request (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\follow-redirects\index.js:307:14)
+    at dispatchHttpRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\adapters\http.js:179:25)
+    at new Promise (<anonymous>)
+    at httpAdapter (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\adapters\http.js:21:10)
+    at dispatchRequest (C:\Users\Geri Hu\Desktop\Revature\p2\Insta-Bytes\backends\post-service\node_modules\axios\lib\core\dispatchRequest.js:52:10) {
+  code: 'ERR_HTTP_INVALID_HEADER_VALUE'
+}
