@@ -40,17 +40,17 @@ spec:
               name: lb-user-service-secrets
               key: password
         ports:
-        - containerPort: 2006
+        - containerPort: 2007
         livenessProbe:
           httpGet:
             path: /health
-            port: 2006
+            port: 2007
           initialDelaySeconds: 3
           periodSeconds: 3
         readinessProbe:
           httpGet:
             path: /health
-            port: 2006
+            port: 2007
           initialDelaySeconds: 3
           periodSeconds: 3
 
