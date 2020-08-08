@@ -10,5 +10,5 @@ spec:
     service: post-service
   ports:
     - protocol: TCP
-      port: 2007
-      targetPort: 2007
+      port: 2006
+      targetPort: 2006
